@@ -1177,4 +1177,24 @@ p {
     margin-right: 5px;
   }
 }
+
+// /////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+.modal-title {
+  z-index: 1060;
+  font-family: 'PFRegalDisplayPro-MedItalic';
+  font-size: 1.7em;
+  color: #232323;
+}
+
+.modal-title-top {
+  font-family: 'PFRegalDisplayPro-MedItalic';
+  font-size: 1.9em;
+  letter-spacing: 4px;
+  color: #fff;
+  margin-top: 40px;
+}
+
+
 /*# sourceMappingURL=styles.css.map */
