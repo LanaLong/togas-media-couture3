@@ -360,6 +360,28 @@ p {
   border-color: #B49256;
 }
 
+/*.btn-outline-bronze > .txt-button-color {
+  color: #B49256;
+}*/
+
+.btn-outline-bronze-color {
+
+    font-family: 'PFBagueSansPro-Bold';
+    font-size: 0.55em;
+    text-transform: uppercase;
+    letter-spacing: 0.43em;
+    color: #B49256;
+    padding: 1rem 2rem !important;
+    -webkit-border-radius: 0rem;
+    border-radius: 0rem;
+    background-color: transparent;
+    border: 1px solid #B49256;
+
+}
+
+/*.btn-outline-bronze .txt-button-color:hover {
+  color: #B49256;
+}*/
 /*.btn-outline-bronze:focus, .btn-outline-bronze.focus {
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
@@ -555,9 +577,9 @@ nav {
   /* Цвет линии для остальных браузеров */
   background-color: #ffffff;
   /* Цвет линии для браузера Firefox и Opera */
-  height: 1px;
+  height: 1px; 
   /* Толщина линии */
-  margin-top: 2em;
+  margin-top: -0.05em;
   margin-right: 0;
   margin-left: 0;
 }
@@ -821,8 +843,16 @@ nav {
 
 .txt-inner {
   font-family: 'PFRegalDisplayPro-MedItalic';
-  font-size: 1.7em !important;
-  color: grey;
+  font-size: 1.8em !important;
+  /*line-height: 1.5rem;*/
+  color: #565656;
+}
+
+.txt-inner.active {
+  /*font-family: 'PFRegalDisplayPro-MedItalic';*/
+  font-family: Arial;
+  font-size: .9em !important;
+  color: #565656;
 }
 
 .modal-title {
@@ -1192,11 +1222,16 @@ p {
 }
 
 .modal-title-top {
-  font-family: 'PFRegalDisplayPro-MedItalic';
-  font-size: 1.9em;
-  letter-spacing: 4px;
-  color: #fff;
-  margin-top: 40px;
+    font-family: 'PFRegalDisplayPro-MedItalic';
+    font-size: 2.3em;
+    letter-spacing: 0.1em;
+    color: #fff;
+    margin-top: 1.3em;
+    padding-left: 2em;
+}
+
+.modal-title-top span {
+  letter-spacing: 0;
 }
 
 .container-header-fluid {
@@ -1286,20 +1321,6 @@ top: 2px;
 
 .carousel-fade .carousel-item {
   opacity: 0;
-/*  opacity: 0;
-  -webkit-transition-duration: 1.6s;
-  -o-transition-duration: 1.6s;
-  transition-duration: 1.6s;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;*/
-
-/*    position: relative;
-  display: none;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;*/
   transition: -webkit-transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out, 
@@ -1315,16 +1336,7 @@ top: 2px;
 
 /* SET  transition-duration: 0.6s; IF BLINK */
 
-/*.carousel-fade .carousel-item .active {
-  opacity: 0;
-  -webkit-transition-duration: 1.6s;
-  -o-transition-duration: 1.6s;
-  transition-duration: 1.6s;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-}
-*/
+
 .carousel-fade .carousel-item.active,
 .carousel-fade .carousel-item-next.carousel-item-left,
 .carousel-fade .carousel-item-prev.carousel-item-right {
@@ -1345,5 +1357,517 @@ top: 2px;
   font-variant: small-caps;
   color: #B49256;
 }
+
+@media screen and (max-width: 990px) {
+  .sub-title-custom {
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 1.5em;
+  letter-spacing: 0.35em;
+  font-variant: small-caps;
+  color: #B49256;
+  
+}
+}
+
+/* navbar top */
+.navbar {
+  padding-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 1141px) {
+    .navbar-nav li:not(:last-child) a:after {
+      content: "|";
+      color: #fff;
+      font-size: 100%;
+      padding-right: 0px;
+      padding-left: 1em;
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+      padding-right: 0.35rem;
+      padding-left: 0.35rem;
+  }
+
+    .sub-title-custom {
+      font-size: 1.74em;
+  }
+}
+
+/* MODAL FORM */
+/* MD FORM MDB */
+/*////////////////////////////////////////////////////////////////*/
+.md-form {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.md-form input[type=text],
+.md-form input[type=password],
+.md-form input[type=email],
+.md-form input[type=url],
+.md-form input[type=time],
+.md-form input[type=date],
+.md-form input[type=datetime-local],
+.md-form input[type=tel],
+.md-form input[type=number],
+.md-form input[type=search-md],
+.md-form input[type=search],
+.md-form textarea.md-textarea {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  background-color: transparent;
+}
+
+/*.md-form input[type=text]:focus:not([readonly]),
+.md-form input[type=password]:focus:not([readonly]),
+.md-form input[type=email]:focus:not([readonly]),
+.md-form input[type=url]:focus:not([readonly]),
+.md-form input[type=time]:focus:not([readonly]),
+.md-form input[type=date]:focus:not([readonly]),
+.md-form input[type=datetime-local]:focus:not([readonly]),
+.md-form input[type=tel]:focus:not([readonly]),
+.md-form input[type=number]:focus:not([readonly]),
+.md-form input[type=search-md]:focus:not([readonly]),
+.md-form input[type=search]:focus:not([readonly]),
+.md-form textarea.md-textarea:focus:not([readonly]) {
+  -webkit-box-shadow: 0 1px 0 0 #4285f4;
+  box-shadow: 0 1px 0 0 #4285f4;
+  border-bottom: 1px solid #4285f4;
+}*/
+
+/*.md-form input[type=text]:focus:not([readonly]) + label,
+.md-form input[type=password]:focus:not([readonly]) + label,
+.md-form input[type=email]:focus:not([readonly]) + label,
+.md-form input[type=url]:focus:not([readonly]) + label,
+.md-form input[type=time]:focus:not([readonly]) + label,
+.md-form input[type=date]:focus:not([readonly]) + label,
+.md-form input[type=datetime-local]:focus:not([readonly]) + label,
+.md-form input[type=tel]:focus:not([readonly]) + label,
+.md-form input[type=number]:focus:not([readonly]) + label,
+.md-form input[type=search-md]:focus:not([readonly]) + label,
+.md-form input[type=search]:focus:not([readonly]) + label,
+.md-form textarea.md-textarea:focus:not([readonly]) + label {
+  color: #4285f4;
+}*/
+
+.md-form input[type=text] + label:after,
+.md-form input[type=password] + label:after,
+.md-form input[type=email] + label:after,
+.md-form input[type=url] + label:after,
+.md-form input[type=time] + label:after,
+.md-form input[type=date] + label:after,
+.md-form input[type=datetime-local] + label:after,
+.md-form input[type=tel] + label:after,
+.md-form input[type=number] + label:after,
+.md-form input[type=search-md] + label:after,
+.md-form input[type=search] + label:after,
+.md-form textarea.md-textarea + label:after {
+  content: "";
+  position: absolute;
+  top: 65px;
+  display: block;
+  opacity: 0;
+  -webkit-transition: 0.2s opacity ease-out, 0.2s color ease-out;
+  -o-transition: 0.2s opacity ease-out, 0.2s color ease-out;
+  transition: 0.2s opacity ease-out, 0.2s color ease-out;
+}
+
+.md-form input[type=text].valid,
+.md-form input[type=text]:focus.valid,
+.md-form input[type=password].valid,
+.md-form input[type=password]:focus.valid,
+.md-form input[type=email].valid,
+.md-form input[type=email]:focus.valid,
+.md-form input[type=url].valid,
+.md-form input[type=url]:focus.valid,
+.md-form input[type=time].valid,
+.md-form input[type=time]:focus.valid,
+.md-form input[type=date].valid,
+.md-form input[type=date]:focus.valid,
+.md-form input[type=datetime-local].valid,
+.md-form input[type=datetime-local]:focus.valid,
+.md-form input[type=tel].valid,
+.md-form input[type=tel]:focus.valid,
+.md-form input[type=number].valid,
+.md-form input[type=number]:focus.valid,
+.md-form input[type=search-md].valid,
+.md-form input[type=search-md]:focus.valid,
+.md-form input[type=search].valid,
+.md-form input[type=search]:focus.valid,
+.md-form textarea.md-textarea.valid,
+.md-form textarea.md-textarea:focus.valid {
+  border-bottom: 1px solid #B49256;
+/*  -webkit-box-shadow: 0 1px 0 0 #B49256;
+  box-shadow: 0 1px 0 0 #00c851;*/
+  box-shadow: none;
+}
+
+.md-form input[type=text].valid + label:after,
+.md-form input[type=text]:focus.valid + label:after,
+.md-form input[type=password].valid + label:after,
+.md-form input[type=password]:focus.valid + label:after,
+.md-form input[type=email].valid + label:after,
+.md-form input[type=email]:focus.valid + label:after,
+.md-form input[type=url].valid + label:after,
+.md-form input[type=url]:focus.valid + label:after,
+.md-form input[type=time].valid + label:after,
+.md-form input[type=time]:focus.valid + label:after,
+.md-form input[type=date].valid + label:after,
+.md-form input[type=date]:focus.valid + label:after,
+.md-form input[type=datetime-local].valid + label:after,
+.md-form input[type=datetime-local]:focus.valid + label:after,
+.md-form input[type=tel].valid + label:after,
+.md-form input[type=tel]:focus.valid + label:after,
+.md-form input[type=number].valid + label:after,
+.md-form input[type=number]:focus.valid + label:after,
+.md-form input[type=search-md].valid + label:after,
+.md-form input[type=search-md]:focus.valid + label:after,
+.md-form input[type=search].valid + label:after,
+.md-form input[type=search]:focus.valid + label:after,
+.md-form textarea.md-textarea.valid + label:after,
+.md-form textarea.md-textarea:focus.valid + label:after {
+  content: attr(data-success);
+  /*color: #00c851;*/
+  color: #B49256;
+  opacity: 0;
+  border-bottom: 1px solid #B49256;
+}
+
+.md-form input[type=text].invalid,
+.md-form input[type=text]:focus.invalid,
+.md-form input[type=password].invalid,
+.md-form input[type=password]:focus.invalid,
+.md-form input[type=email].invalid,
+.md-form input[type=email]:focus.invalid,
+.md-form input[type=url].invalid,
+.md-form input[type=url]:focus.invalid,
+.md-form input[type=time].invalid,
+.md-form input[type=time]:focus.invalid,
+.md-form input[type=date].invalid,
+.md-form input[type=date]:focus.invalid,
+.md-form input[type=datetime-local].invalid,
+.md-form input[type=datetime-local]:focus.invalid,
+.md-form input[type=tel].invalid,
+.md-form input[type=tel]:focus.invalid,
+.md-form input[type=number].invalid,
+.md-form input[type=number]:focus.invalid,
+.md-form input[type=search-md].invalid,
+.md-form input[type=search-md]:focus.invalid,
+.md-form input[type=search].invalid,
+.md-form input[type=search]:focus.invalid,
+.md-form textarea.md-textarea.invalid,
+.md-form textarea.md-textarea:focus.invalid {
+  border-bottom: 1px solid #B49256;
+/*  -webkit-box-shadow: 0 1px 0 0 #f44336;
+  box-shadow: 0 1px 0 0 #f44336;*/
+}
+
+.md-form input[type=text].invalid + label:after,
+.md-form input[type=text]:focus.invalid + label:after,
+.md-form input[type=password].invalid + label:after,
+.md-form input[type=password]:focus.invalid + label:after,
+.md-form input[type=email].invalid + label:after,
+.md-form input[type=email]:focus.invalid + label:after,
+.md-form input[type=url].invalid + label:after,
+.md-form input[type=url]:focus.invalid + label:after,
+.md-form input[type=time].invalid + label:after,
+.md-form input[type=time]:focus.invalid + label:after,
+.md-form input[type=date].invalid + label:after,
+.md-form input[type=date]:focus.invalid + label:after,
+.md-form input[type=datetime-local].invalid + label:after,
+.md-form input[type=datetime-local]:focus.invalid + label:after,
+.md-form input[type=tel].invalid + label:after,
+.md-form input[type=tel]:focus.invalid + label:after,
+.md-form input[type=number].invalid + label:after,
+.md-form input[type=number]:focus.invalid + label:after,
+.md-form input[type=search-md].invalid + label:after,
+.md-form input[type=search-md]:focus.invalid + label:after,
+.md-form input[type=search].invalid + label:after,
+.md-form input[type=search]:focus.invalid + label:after,
+.md-form textarea.md-textarea.invalid + label:after,
+.md-form textarea.md-textarea:focus.invalid + label:after {
+  content: attr(data-error);
+  color: #B49256;
+  opacity: 0;
+}
+
+.md-form .was-validated input[type=text]:valid + label {
+  color: #B49256;
+  border-bottom: 1px solid #B49256;
+}
+
+.md-form .was-validated input[type=text]:invalid + label {
+  color: #f44336 !important;
+}
+
+.md-form .was-validated .form-control:valid:focus {
+
+}
+
+.md-form .was-validated .form-control:valid {
+
+}
+
+.md-form .was-validated .form-control:invalid:focus {
+
+}
+
+.md-form .was-validated .form-control:invalid {
+  border-color: #f44336 !important;
+}
+
+.md-form .form-control {
+  margin: 0 0 0.5rem 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  padding: 0.1rem 0 0.1rem 0;
+  background-image: none;
+  background-color: transparent;
+}
+
+.md-form .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.md-form .form-control:disabled,
+.md-form .form-control[readonly] {
+  border-bottom: 1px solid #bdbdbd;
+  background-color: transparent;
+}
+
+.form-control {
+    padding: 0.375rem 0.75rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #B49256;
+  }
+
+/*.md-form label {
+  
+
+}*/
+
+.md-form label.active {
+  font-size: 0.8rem;
+}
+
+.md-form .prefix {
+  top: 0.25rem;
+  font-size: 1.75rem;
+}
+
+.md-form .prefix ~ input,
+.md-form .prefix ~ textarea {
+  margin-left: 2.5rem;
+  width: -webkit-calc(100% - 2.5rem);
+  width: calc(100% - 2.5rem);
+}
+
+.md-form .prefix ~ label {
+  margin-left: 2.5rem;
+}
+
+.md-form .prefix ~ .form-text {
+  margin-left: 2.6rem;
+}
+
+.md-form label.active {
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.md-form .prefix {
+  position: absolute;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.md-form .prefix.active {
+  color: #4285f4;
+}
+
+.md-form.form-lg label {
+  font-size: 1.25rem;
+}
+
+.md-form.form-lg label.active {
+  font-size: 0.95rem;
+}
+
+.md-form.form-lg .prefix {
+  top: 0.4rem;
+  font-size: 2rem;
+}
+
+.md-form.form-lg .prefix ~ input,
+.md-form.form-lg .prefix ~ textarea {
+  margin-left: 3rem;
+  width: -webkit-calc(100% - 3rem);
+  width: calc(100% - 3rem);
+}
+
+.md-form.form-lg .prefix ~ label {
+  margin-left: 3rem;
+}
+
+.md-form.form-lg .prefix ~ .form-text {
+  margin-left: 3.1rem;
+}
+
+.md-form.form-sm label {
+  font-size: 0.875rem;
+}
+
+.md-form.form-sm label.active {
+  font-size: 0.75rem;
+}
+
+.md-form.form-sm .prefix {
+  top: 0.35rem;
+  font-size: 1.5rem;
+}
+
+.md-form.form-sm .prefix ~ input,
+.md-form.form-sm .prefix ~ textarea {
+  margin-left: 2rem;
+  width: -webkit-calc(100% - 2rem);
+  width: calc(100% - 2rem);
+}
+
+.md-form.form-sm .prefix ~ label {
+  margin-left: 2rem;
+}
+
+.md-form.form-sm .prefix ~ .form-text {
+  margin-left: 2rem;
+}
+
+.md-form textarea.md-textarea {
+  overflow-y: hidden;
+  padding: 1.5rem 0;
+  resize: none;
+}
+
+.md-form textarea.md-textarea-auto {
+  padding: 0;
+  padding-top: 1.5rem;
+}
+/*//////////////////////////////////////////////////////////////////*/
+/* ENDE MD FORM /////////////////////////////////////////////////  */
+
+
+.md-form {
+    margin-top: 0;
+}
+
+.modal-body {
+  padding: 0 3em;
+}
+
+.md-form label {
+    top: -0.1rem;
+    left: 0;
+    color: #565656;
+    position: absolute;
+    -webkit-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+    cursor: text;
+    
+}
+
+.md-form label.active {
+  -webkit-transform: translateY(-35%);
+  -ms-transform: translateY(-35%);
+  transform: translateY(-35%);
+  font-size: 0.3rem;
+  color: grey;
+}
+
+.minus-mt-1 {
+  margin-top: -2em;
+}
+
+.md-form input[type=text]:focus:not([readonly]) + label,
+.md-form input[type=password]:focus:not([readonly]) + label,
+.md-form input[type=email]:focus:not([readonly]) + label,
+.md-form input[type=url]:focus:not([readonly]) + label,
+.md-form input[type=time]:focus:not([readonly]) + label,
+.md-form input[type=date]:focus:not([readonly]) + label,
+.md-form input[type=datetime-local]:focus:not([readonly]) + label,
+.md-form input[type=tel]:focus:not([readonly]) + label,
+.md-form input[type=number]:focus:not([readonly]) + label,
+.md-form input[type=search-md]:focus:not([readonly]) + label,
+.md-form input[type=search]:focus:not([readonly]) + label,
+.md-form textarea.md-textarea:focus:not([readonly]) + label {
+ color: grey;
+}
+
+.md-form input[type=text]:focus:not([readonly]),
+.md-form input[type=password]:focus:not([readonly]),
+.md-form input[type=email]:focus:not([readonly]),
+.md-form input[type=url]:focus:not([readonly]),
+.md-form input[type=time]:focus:not([readonly]),
+.md-form input[type=date]:focus:not([readonly]),
+.md-form input[type=datetime-local]:focus:not([readonly]),
+.md-form input[type=tel]:focus:not([readonly]),
+.md-form input[type=number]:focus:not([readonly]),
+.md-form input[type=search-md]:focus:not([readonly]),
+.md-form input[type=search]:focus:not([readonly]),
+.md-form textarea.md-textarea:focus:not([readonly]) {
+  box-shadow: none;
+  border-bottom: 1px solid #B49256;
+  color: #B49256;
+
+}
+
+.txt-pre {
+
+}
+
+
+/* RADIO BUTTON //////////////////////////////////////////////*/
+.form-check-input {
+    margin-top: 0.9rem;
+    margin-left: -1.4rem;
+}
+
+.form-check {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* REPLACE IMAGE RADIO BUTTON */
+input[type=radio] {
+    display:none; 
+ }
+
+input[type=radio]:checked + label::before {
+  content:  url(/media/couture/img/img-togas-lp3/check.png?v=3);
+  margin-left: -1rem;
+}
+
+
+
+
+
+/*
+    content: url('/img/img-togas-lp3/check.png?v=3');
+    margin-right: 1rem;
+    z-index: 11;*/
 
 /*# sourceMappingURL=styles.css.map */
