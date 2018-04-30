@@ -29,7 +29,7 @@
 
     <!-- STYLES FOR FULL BACKGROUND IMAGE -->
     <style>
-         html, body, header, #intro {
+/*         html, body, header, #intro {
         height: 100%;
     }
         #intro {
@@ -38,7 +38,43 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-        }
+        }*/
+
+/* Necessary for full page carousel*/
+    html,
+    body,
+    /*.view */{
+      height: 100%;
+    }
+
+    /* Carousel*/
+    .carousel,
+    .carousel-item,
+    .carousel-item.active {
+      height: 100%;
+    }
+    .carousel-inner {
+      height: 100%;
+    }
+    .carousel-item:nth-child(1) {
+      background-image: url("https://media1.togas.com/media/couture/img/img-togas-lp3/slider1-sh.jpg?v=2");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .carousel-item:nth-child(2) {
+      background-image: url("https://media1.togas.com/media/couture/img/img-togas-lp3/slider2-sh.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .carousel-item:nth-child(3) {
+      background-image: url("https://media1.togas.com/media/couture/img/img-togas-lp3/slider3-sh.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
     </style>
 
 </head>
@@ -77,14 +113,17 @@
 </div> -->
 <!-- /DEBUG from smartgrid -->
 
-<header id="intro" class="header">
+<header id="top-slider" class="">
+
+    <div class="header-block">
+
     <div class="container-header">
        <div class="row-header justify-content-center">
 
             <!-- LOGO -->  
             <div class="logo">            
-                <img src="/media/couture/img/img-togas-lp3/logo_sm.png" alt="Togas – House of textiles" class="img-fluid mt-4 w-25 mx-auto d-block d-md-none">
-                <img src="/media/couture/img/img-togas-lp3/logo-freestand-03.png" alt="Togas – House of textiles" class="img-fluid mt-4 d-none d-md-block">
+                <img src="/media/couture/img/img-togas-lp3/logo_sm.png?v=2" alt="Togas – House of textiles" class="img-fluid mt-4 w-25 mx-auto d-block d-md-none">
+                <img src="/media/couture/img/img-togas-lp3/logo-freestand-02.png?v=3" alt="Togas – House of textiles" class="img-fluid mt-4 mb-2 d-none d-md-block">
             </div>
 
         </div>  
@@ -100,8 +139,8 @@
         </div>
                 
          <div class="third-col">
-            <!-- <div class="sublogo align-self-center"><img src="/img/img-togas-lp3/sign-shadow02.png" alt="Custom-made" class="img-fluid"></div> -->
-            <div class="sublogo align-self-center"><img src="/media/couture/img/img-togas-lp3/sign-shadow02.png" alt="Custom-made" class="img-fluid"></div>
+           <!--  <div class="sublogo align-self-center"><img src="/media/couture/img/img-togas-lp3/sign-shadow02.png?v=2" alt="Custom-made" class="img-fluid"></div> -->
+           <h3 class="sub-title-custom">custom-made</h3>
         </div>
 
         <div class="third-col align-self-center">
@@ -111,91 +150,154 @@
     </div>
     <!-- /container-header-fluid -->
 
-<!-- MODAL WINDOW -->
-<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content modal-bg pb-5">
-            <div class="modal-header-togas-top text-center mb-4">
-                <h4 class="modal-title-top w-100">Talk with our expert on +1 212 300 2876</h4>
 
+        <!-- MENU TOP -->
+        <div class="container-header-fluid">
+        <nav class="navbar navbar-expand-md navbar-togas text-center">
+          
+          <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto nav-togas">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#custom-made-services">services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vendors">vendors</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experts">experts</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-info">contacts info</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">about us</a>
+                    </li>
+                       
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ready-made">ready made</a>
+                    </li>
+                </ul>
             </div>
-            <div class="modal-body mx-5">
-            <p><span class="txt-inner">- Or</span></p>
-            <p><span class="txt-inner">Let us call you back!</span></p>
-
-                <div class="md-form py-2 px-3">
-                    <input type="text" id="form34" class="form-control validate">
-                    <label class="txt-inner pl-5" data-error="wrong" data-success="right" for="form34">Name Surname: </label>
-                </div>
-
-                <div class="md-form py-2 px-3">
-                    <input type="text" id="form32" class="form-control validate">
-                    <label class="txt-inner pl-5" data-error="wrong" data-success="right" for="form32">Phone: </label>
-                </div>
-
-                <div class="md-form py-2 px-3">
-                    <input type="email" id="form29" class="form-control validate">
-                    <label class="txt-inner pl-5" data-error="wrong" data-success="right" for="form29">Email: </label>
-                </div>
-                 <p><span class="txt-inner">Best time to contact you</span></p>
-                 <p><span class="txt-inner">Now</span>&nbsp;&nbsp;&nbsp;<span class="txt-inner">Morning</span>&nbsp;&nbsp;&nbsp;<span class="txt-inner">Afternoon</span>&nbsp;&nbsp;&nbsp;<span class="txt-inner">Evening</span>
-            </div>
-
-            </div>
-            <div class="modal-footer-togas d-flex justify-content-center">
-                <button class="btn btn-outline-bronze btn-fill">Send</button>
-            </div>
+            
+        </nav>
         </div>
+        <!-- /container-header-fluid for nav -->
+        <!-- /TOP MENU -->
+            
+        <hr class="line-top">
+
     </div>
-<!-- /MODAL WINDOW -->
+    <!-- /header-block -->
 
-<!-- MENU TOP -->
-<div class="container-header-fluid">
-<nav class="navbar navbar-expand-md navbar-togas text-center">
-  
-  <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<!--Carousel Wrapper-->
+  <div id="carousel-example-1" class="carousel slide carousel-fade carousel-bg" data-ride="carousel" data-interval="10000" data-pause="hover" data-keyboard="true">
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto nav-togas">
-            <li class="nav-item active">
-                <a class="nav-link" href="#custom-made-services">services</a>
-            </li>
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
 
-            <li class="nav-item">
-                <a class="nav-link" href="#vendors">vendors</a>
-            </li>
+    <!--Slides-->
+    <div class="carousel-inner carousel-bg" role="listbox">
 
-            <li class="nav-item">
-                <a class="nav-link" href="#experts">experts</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#contact-info">contacts info</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#about-us">about us</a>
-            </li>
-               
-            <li class="nav-item">
-                <a class="nav-link" href="#ready-made">ready made</a>
-            </li>
-            </ul>
+      <!--First slide-->
+      <div class="carousel-item active">
+        <!--Mask-->
+        <div class="view">
+          <div class="full-bg-img flex-center white-text">
+          </div>
         </div>
-    
-</nav>
-</div>
-<!-- /container-header for nav -->
-<!-- /TOP MENU -->
+        <!--/.Mask-->
+      </div>
+      <!--/.First slide-->
 
-            </div>
-            <hr class="line-top">
+      <!--Second slide -->
+      <div class="carousel-item">
+        <!--Mask-->
+        <div class="view">
+          <div class="full-bg-img flex-center white-text">
+          </div>
         </div>
+        <!--/.Mask-->
+      </div>
+      <!--/.Second slide -->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <!--Mask-->
+        <div class="view">
+          <div class="full-bg-img flex-center white-text">
+          </div>
+        </div>
+        <!--/.Mask-->
+      </div>
+      <!--/.Third slide-->
+
     </div>
+    <!--/.Slides-->   
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <script>
+
+// $('#carousel-example-1').carousel({
+//   interval: 2000,
+//   ride: true
+// })
+
+  </script>
+
 </header>
 <!-- /HEADER -->
+
+<!-- MODAL WINDOW -->
+    <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-bg pb-5">
+                <div class="modal-header-togas-top text-center mb-4">
+                    <h4 class="modal-title-top w-100">Talk with our expert on +1 212 300 2876</h4>
+
+                </div>
+                <div class="modal-body mx-5">
+                <p><span class="txt-inner">- Or</span></p>
+                <p><span class="txt-inner">Let us call you back!</span></p>
+
+                    <div class="md-form py-2 px-3">
+                        <input type="text" id="form34" class="form-control validate">
+                        <label class="txt-inner pl-5" data-error="wrong" data-success="right" for="form34">Name Surname: </label>
+                    </div>
+
+                    <div class="md-form py-2 px-3">
+                        <input type="text" id="form32" class="form-control validate">
+                        <label class="txt-inner pl-5" data-error="wrong" data-success="right" for="form32">Phone: </label>
+                    </div>
+
+                    <div class="md-form py-2 px-3">
+                        <input type="email" id="form29" class="form-control validate">
+                        <label class="txt-inner pl-5" data-error="wrong" data-success="right" for="form29">Email: </label>
+                    </div>
+                     <p><span class="txt-inner">Best time to contact you</span></p>
+                     <p><span class="txt-inner">Now</span>&nbsp;&nbsp;&nbsp;<span class="txt-inner">Morning</span>&nbsp;&nbsp;&nbsp;<span class="txt-inner">Afternoon</span>&nbsp;&nbsp;&nbsp;<span class="txt-inner">Evening</span>
+                </div>
+
+                </div>
+                <div class="modal-footer-togas d-flex justify-content-center">
+                    <button class="btn btn-outline-bronze btn-fill">Send</button>
+                </div>
+            </div>
+        </div>
+        <!-- /MODAL WINDOW -->
 
 <!-- SECTION :: create-dreams -->
 <section id="create-dreams">
