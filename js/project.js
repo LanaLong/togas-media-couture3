@@ -30,7 +30,7 @@ $(document).ready(function(){
                 items:1,
                 nav:true
             },
-            600:{
+            500:{
                 items:2,
                 nav:true
             },

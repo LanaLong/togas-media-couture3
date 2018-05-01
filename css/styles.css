@@ -670,12 +670,6 @@ nav {
   font-weight: 500;
 }
 
-.subscript-name {
-  text-transform: uppercase;
-  font-size: 0.9em;
-  color: #B49256;
-  font-weight: 500;
-}
 
 /* EXPERTS */
 
@@ -1004,26 +998,32 @@ p {
 .txt-quote {
   font-family: 'PFBagueSansPro-Light';
   font-size: 1em;
+  font-weight: 100;
   color: #fff !important;
+  letter-spacing: 0.05em;
 }
 
 .subscript-name {
-  font-family: 'PFBagueSansPro-Bold';
-  font-size: 0.6em;
-  letter-spacing: 3px;
+  font-family: 'PFBagueSansPro-Light';
+  font-size: 0.55em;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #B49256;
+  font-weight: 800;
 }
 
 #top {
-  background-image: url("/media/couture/img/img-togas-lp3/arrow-top11.svg") no-repeat;
+  background-image: url("/media/couture/img/img-togas-lp3/top2.png") no-repeat;
   width: 50px;
   height: 50px;
-  bottom: 100px;
   position: fixed;
-  right: 100px;
+  right: 2rem;
+  bottom: 2rem;
   cursor: pointer;
   display: none;
   font-size: 150%;
   color: #B49256;
+  margin: 1rem;
 }
 
 @media screen and (max-width: 1140px) {
@@ -1256,6 +1256,74 @@ header {
   background-color: #000;
 }
 
+/* OWL CAROUSEL */
+/*ORIGINAL*/
+      .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 10px; }
+
+      .owl-theme .owl-dots {
+        text-align: center;
+        -webkit-tap-highlight-color: transparent; }
+      .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 1;
+        *display: inline; }
+      .owl-theme .owl-dots .owl-dot span {
+        width: 10px;
+        height: 10px;
+        margin: 5px 7px;
+        background: #D6D6D6;
+        display: block;
+        -webkit-backface-visibility: visible;
+        transition: opacity 200ms ease;
+        border-radius: 30px; }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #869791; }
+
+
+/* REWRITE CONTROLS FOR OWL CAROUSEL TESTEMONIALS*/
+      .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 10px; }
+
+      .owl-theme .owl-dots {
+        text-align: center;
+        padding-top: 5rem;
+        margin-bottom: 5rem;
+        z-index: 15;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+
+      }
+      .owl-theme .owl-dots .owl-dot {
+          cursor: pointer;
+      }
+
+      .owl-theme .owl-dots .owl-dot.active span {
+          width: 6rem;
+          height: 0.25rem;
+          display: flex;
+          transition: opacity 200ms ease;
+          border-radius: 0;
+      }
+
+      .owl-theme .owl-dots .owl-dot span {
+          width: 6rem;
+          height: 0.08rem;
+          background-color: #B49256;
+          top: 2px;
+          display: flex;
+          transition: opacity 200ms ease;
+          border-radius: 0;
+          padding: 0;
+          margin: 0 ;
+      }
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #B49256; }
+
+
 /* carousel-indicators ////////////////////////////////////// */
 
 .carousel-indicators {
@@ -1317,8 +1385,6 @@ top: 2px;
   background-color: #B49256;
 }
 
-
-
 .carousel-fade .carousel-item {
   opacity: 0;
   transition: -webkit-transform 0.6s ease-in-out;
@@ -1335,8 +1401,6 @@ top: 2px;
 }
 
 /* SET  transition-duration: 0.6s; IF BLINK */
-
-
 .carousel-fade .carousel-item.active,
 .carousel-fade .carousel-item-next.carousel-item-left,
 .carousel-fade .carousel-item-prev.carousel-item-right {
@@ -1428,37 +1492,6 @@ top: 2px;
   background-color: transparent;
 }
 
-/*.md-form input[type=text]:focus:not([readonly]),
-.md-form input[type=password]:focus:not([readonly]),
-.md-form input[type=email]:focus:not([readonly]),
-.md-form input[type=url]:focus:not([readonly]),
-.md-form input[type=time]:focus:not([readonly]),
-.md-form input[type=date]:focus:not([readonly]),
-.md-form input[type=datetime-local]:focus:not([readonly]),
-.md-form input[type=tel]:focus:not([readonly]),
-.md-form input[type=number]:focus:not([readonly]),
-.md-form input[type=search-md]:focus:not([readonly]),
-.md-form input[type=search]:focus:not([readonly]),
-.md-form textarea.md-textarea:focus:not([readonly]) {
-  -webkit-box-shadow: 0 1px 0 0 #4285f4;
-  box-shadow: 0 1px 0 0 #4285f4;
-  border-bottom: 1px solid #4285f4;
-}*/
-
-/*.md-form input[type=text]:focus:not([readonly]) + label,
-.md-form input[type=password]:focus:not([readonly]) + label,
-.md-form input[type=email]:focus:not([readonly]) + label,
-.md-form input[type=url]:focus:not([readonly]) + label,
-.md-form input[type=time]:focus:not([readonly]) + label,
-.md-form input[type=date]:focus:not([readonly]) + label,
-.md-form input[type=datetime-local]:focus:not([readonly]) + label,
-.md-form input[type=tel]:focus:not([readonly]) + label,
-.md-form input[type=number]:focus:not([readonly]) + label,
-.md-form input[type=search-md]:focus:not([readonly]) + label,
-.md-form input[type=search]:focus:not([readonly]) + label,
-.md-form textarea.md-textarea:focus:not([readonly]) + label {
-  color: #4285f4;
-}*/
 
 .md-form input[type=text] + label:after,
 .md-form input[type=password] + label:after,
@@ -1861,13 +1894,70 @@ input[type=radio]:checked + label::before {
   margin-left: -1rem;
 }
 
+<!-- SECTION :: BLACK BOX -->
+.p-advance-15 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////*/
+
+/*         Just for demo     */
+#myCarousel .list-inline {
+    white-space:nowrap;
+    overflow-x:auto;
+}
+
+#myCarousel .carousel-indicators {
+    position: static;
+    left: initial;
+    width: initial;
+    margin-left: initial;
+}
+
+#myCarousel .carousel-indicators > li {
+    width: initial;
+    height: initial;
+    text-indent: initial;
+}
+
+#myCarousel .carousel-indicators > li.active img {
+    opacity: 0.7;
+}
 
 
 
 
-/*
-    content: url('/img/img-togas-lp3/check.png?v=3');
-    margin-right: 1rem;
-    z-index: 11;*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*# sourceMappingURL=styles.css.map */
