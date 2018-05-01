@@ -589,13 +589,17 @@ nav {
   font-size: 3.5em;
   line-height: 1.2em;
   text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0.25rem;
 }
 
 .section-title-center {
-  font-family: DisplayPro;
-  font-size: 4em;
-  font-weight: 600;
+  font-family: 'PFRegalDisplayPro-Reg';
+  font-size: 3.5em;
+  line-height: 1.2em;
   text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
 }
 
 .subscript-one {
@@ -788,9 +792,10 @@ nav {
 }
 
 .txt-p {
-  font-family: 'PFBagueSansPro-Light';
-  font-size: 1.1em !important;
-  line-height: 1.4em !important;
+  font-size: 1em !important;
+  line-height: 1.45em !important;
+  letter-spacing: 0.02rem;
+  color: #9D9D9C;
 }
 
 .modal-bg {
@@ -876,7 +881,7 @@ nav {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.125em;
   color: #9D9D9C;
 }
 
@@ -885,10 +890,10 @@ p {
 
 .txt-under {
   font-family: 'PFRegalDisplayPro-MedItalic';
-  font-size: 1.6em;
-  font-weight: 600;
+  font-size: 1.8em;
   line-height: 1.2em;
-  color: black;
+  color: #232323;
+  letter-spacing: 0.06rem;
 }
 
 /* <!-- /SECTION 1.TWO HALF --> *****************************************/
@@ -1116,10 +1121,6 @@ p {
     margin: auto;
   }
 
-  .section-title {
-    font-family: 'PFRegalDisplayPro-Medium';
-    font-size: 3em;
-  }
 
   .section-title-center {
     font-size: 3em;
