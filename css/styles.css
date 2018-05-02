@@ -691,7 +691,13 @@ nav {
 .card-text {
   font-family: 'PFBagueSansPro-Light';
   font-size: 1em;
-  color: grey;
+  color: #9D9D9C;
+  letter-spacing: 0.003rem;
+  line-height: 1.6rem;
+}
+
+.transition {
+  transition: 3s;
 }
 
 /* CONTACTS */
@@ -1013,7 +1019,7 @@ p {
 }
 
 #top {
-  background-image: url("/media/couture/img/img-togas-lp3/top2.png") no-repeat;
+  background-image: url("/media/couture/img/img-togas-lp3/top2.png?v=3") no-repeat;
   width: 50px;
   height: 50px;
   position: fixed;
@@ -1073,19 +1079,8 @@ p {
 
 @media screen and (max-width: 768px) {
   .navbar-nav li:not(:last-child) a:after {
-    content: "";
-  }
-
-  .navbar-nav li:not(:last-child) a:after {
-    padding: 0px 0px;
-  }
-
-  .navbar-nav li:not(:last-child) a:after {
-    content: "";
-  }
-
-  .navbar-nav li:not(:last-child) a:after {
-    padding: 0px 0px;
+    content: "" !important;
+    padding: 0px 0px !important;
   }
 
   .wrapper {
@@ -1104,8 +1099,6 @@ p {
   }
 
   .logo {
-/*    width: -webkit-calc(66.66667% - 30px);
-    width: calc(66.66667% - 30px);*/
     width: 620px;
   }
 
@@ -1113,6 +1106,25 @@ p {
     width: -webkit-calc(100% - 30px);
     width: calc(100% - 30px);
   }
+
+  .section-title {
+  font-family: 'PFRegalDisplayPro-Medium';
+    font-size: 2.2em;
+    line-height: 1.4em;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0.25rem;
+}
+
+.section-black-title {
+  font-size: 1.8em;
+  line-height: 1.3em;
+}
+
+.txt-under {
+    font-size: 1.4em;
+ }
+
 }
 
 @media (max-width: 720px) {
@@ -1926,25 +1938,90 @@ input[type=radio]:checked + label::before {
 }
 
 
+/* NAV FOR SECTION "OUR STORY" */
+
+.controls-story {
+  /*background-color: gold;*/
+  height: 140px;
+  width: auto;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  
+}
+
+.nav-pills .nav-link {
+  background-image: url('/media/couture/img/img-togas-lp3/dot2.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 0;
+  height: 140px;
+  width: 2.5em;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.3rem 2.4rem;
+}
+
+.nav-pills .nav-link a {
+  padding: 0;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-image: url('/media/couture/img/img-togas-lp3/dot1.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #232323;
+  background-color: transparent;
+  width: 2.5em;
+}
 
 
+.nav-pills .nav-link span{
+  display: none;
+}
 
+.nav-pills .nav-link.active span{
+  display: block;
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 2em;
+  letter-spacing: 0.01em;
+  width: 2em;
+  padding-top: 140px;
+ margin-left: -35px;
+}
 
+.nav-pills .nav-link.active span:hover{
+  display: block;
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 2em;
+  letter-spacing: 0.01em;
+  width: 2em;
+  padding-top: 140px;
+ margin-left: -35px;
+ color: #232323;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.nav-pills .nav-link:hover span{
+  display: block;
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 2em;
+  letter-spacing: 0.01em;
+  width: 2em;
+  padding-top: 140px;
+ margin-left: -35px;
+ color: #CCCCCC;
+}
 
 
 
