@@ -826,25 +826,41 @@
               <div class="modal-body">
                 <div class="container-modal">
                     <div class="row">
-                        <div class="col-sm-12 col-md-5 mt-1 px-5">
+                        <div class="col-sm-12 col-md-6 mt-1 px-5">
 
-                            <div class="img-wrapper text-center mx-auto mb-5">
+<!-- TEST THUMBNAIL 2 see styles&jQuery -->
+<ul id="thumbnails">
+ <li><a href="#slide1"><img src="/media/couture/img/img-togas-lp3/hardware (1).jpg" alt="Hardware & Accessories"></a></li>
+ <li><a href="#slide2"><img src="/media/couture/img/img-togas-lp3/hardware (4).jpg" alt="Hardware & Accessories"></a></li>
+ <li><a href="#slide3"><img src="/media/couture/img/img-togas-lp3/hardware (3).jpg" alt="Hardware & Accessories"></a></li>
+ <li><a href="#slide4"><img src="/media/couture/img/img-togas-lp3/hardware (5).jpg" alt="Hardware & Accessories"></a></li>
+</ul>
+<div class="thumb-box">
+  <ul class="thumbs">
+    <li><a href="#1" data-slide="1"><img src="/media/couture/img/img-togas-lp3/hardware (1).jpg" alt="Hardware & Accessories"></a></li>
+    <li><a href="#2" data-slide="2"><img src="/media/couture/img/img-togas-lp3/hardware (4).jpg"  alt="Hardware & Accessories"></a></li>
+    <li><a href="#4" data-slide="3"><img src="/media/couture/img/img-togas-lp3/hardware (3).jpg" alt="Hardware & Accessories"></a></li>
+    <li><a href="#4" data-slide="4"><img src="/media/couture/img/img-togas-lp3/hardware (5).jpg" alt="Hardware & Accessories"></a></li>
+  </ul>
+</div>
+<!-- /TEST THUMBNAIL 2 -->
+
+<!--                             <div class="img-wrapper text-center mx-auto mb-5">
                                 <img src="img/img-togas-lp3/hardware (4).jpg" alt="Hardware & Accessories">
                             </div>
                             
                             <div id="modal-slider" class="owl-carousel owl-theme">
-                                <div class="item"><img src="img/img-togas-lp3/fabrics (1).jpg" alt="Hardware & Accessories"></div>
-                                <div class="item"><img src="img/img-togas-lp3/fabrics (2).jpg" alt="Hardware & Accessories"></div>
-                                <div class="item"><img src="img/img-togas-lp3/fabrics (5).jpg" alt="Hardware & Accessories"></div>
-                                <div class="item"><img src="img/img-togas-lp3/fabrics (7).jpg" alt="Hardware & Accessories"></div>
-                                <div class="item"><img src="img/img-togas-lp3/fabrics (8).jpg" alt="Hardware & Accessories"></div>
-                                <div class="item"><img src="img/img-togas-lp3/fabrics (9).jpg" alt="Hardware & Accessories"></div>
-                            </div>
+                                <div class="item"><img src="img/img-togas-lp3/hardware (1).jpg" alt="Hardware & Accessories"></div>
+                                <div class="item"><img src="img/img-togas-lp3/hardware (2).jpg" alt="Hardware & Accessories"></div>
+                                <div class="item"><img src="img/img-togas-lp3/hardware (3).jpg" alt="Hardware & Accessories"></div>
+                                <div class="item"><img src="img/img-togas-lp3/hardware (4.jpg" alt="Hardware & Accessories"></div>
+                                <div class="item"><img src="img/img-togas-lp3/hardware (5).jpg" alt="Hardware & Accessories"></div>
+                            </div> -->
 
                         </div>
                         <!-- /col -->
 
-                        <div class="col-sm-12 col-md-7 pt-sm-5 pt-md-0 pl-sm-5 pl-md-0 pr-5 mb-5">
+                        <div class="col-sm-12 col-md-6 pt-sm-5 pt-md-0 pl-5 pl-md-0 pr-4 mb-5">
                               <p class="card-text">Drapery hardware can be an integral part of your window treatment and another decorative element with which you can create your final look. Curtain rods, poles, finials, brackets and rings are available in both modern and traditional styles in order to complement your decor. Rods are made of plastic or metal, they come in different finishes including brass and brushed metal as well as in different shapes such as fluted, twisted etc. Poles are usually made of wood, bamboo or plastic, but are not adjustable. Brackets are the supportive holders that keep rods and poles in place; they can mount onto walls, window frames or even ceilings. Finials are attractive and can keep curtain rings from sliding off the rod or pole while rings can complement your other hardware elements. In addition to the above, custom pillows can be another touch to your room. Explore the wide array of fabrics and shapes available as you create precisely the pillow you need to complement your furniture. They can virtually soften any room, making it more comfortable and inviting! You will love the distinctive touches of our pillows, including hidden zipper enclosures, flanged or piped edges and a variety of fill materials to help you create precisely the pillows you desire. Our custom options are made in order to fit your busy lifestyle and your own personality.</p>
                         </div>
                     </div>
@@ -1561,6 +1577,8 @@
 
 
 <script>
+    // FOR MAPS // Google Maps Api
+
       function initMap() {
         // Styles a map in silver mode.
         var map = new google.maps.Map(document.getElementById('map1'), {
@@ -1731,6 +1749,30 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN9sk__f4JaHJBCIJAnmoqa2m8ZbGrvuA&callback=initMap"
     async defer></script>
+
+    <script>
+// For carousel with thumbnail
+// http://slippry.com/examples/thumbnails/
+
+        var thumbs = jQuery('#thumbnails').slippry({
+          // general elements & wrapper
+          slippryWrapper: '<div class="slippry_box thumbnails" />',
+          // options
+          transition: 'horizontal',
+          pager: false,
+          auto: false,
+          onSlideBefore: function (el, index_old, index_new) {
+            jQuery('.thumbs a img').removeClass('active');
+            jQuery('img', jQuery('.thumbs a')[index_new]).addClass('active');
+          }
+        });
+
+        jQuery('.thumbs a').click(function () {
+          thumbs.goToSlide($(this).data('slide'));
+          return false;
+        });
+
+    </script>
 
 
 

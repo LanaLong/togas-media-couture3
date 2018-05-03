@@ -342,10 +342,10 @@ p {
 /* BUTTONS TOGAS TOP */
 
 .btn-outline-bronze {
-  font-family: 'PFBagueSansPro-Bold';
-  font-size: 0.55em;
+  font-family: 'PFBagueSansPro-Light';
+  font-size: 0.65em;
   text-transform: uppercase;
-  letter-spacing: 0.43em;
+  letter-spacing: 0.35em;
   color: #fff;
   padding: 0.5rem 0.8rem !important;
   -webkit-border-radius: 0rem;
@@ -408,10 +408,10 @@ p {
 }*/
 
 .btn-fill {
-  font-family: 'PFBagueSansPro-Bold';
-  font-size: 0.55em;
+  font-family: 'PFBagueSansPro-Light';
+  font-size: 0.65em;
   text-transform: uppercase;
-  letter-spacing: 0.43em;
+  letter-spacing: 0.35em;
   color: #fff !important;
   padding: 0.5rem 1.3rem !important;
   -webkit-border-radius: 0rem;
@@ -522,13 +522,13 @@ p {
   text-transform: uppercase;
   color: #ffffff;
 font-size: 0.8em;
-letter-spacing: 0.2em;
+letter-spacing: 0.25em;
 }
 
 .nav-togas > li > a:hover {
   color: #B49256;
 font-size: 0.8em;
-letter-spacing: 0.2em;
+letter-spacing: 0.25em;
 }
 
 /* REMOVE BOOTSTRAP NAVBAR SHADOW */
@@ -791,9 +791,10 @@ nav {
 }
 
 .txt-p {
-  font-size: 1em !important;
+  font-family: 'PFBagueSansPro-Light';
+  font-size: 1.15em !important;
   line-height: 1.45em !important;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.025em;
   color: #9D9D9C;
 }
 
@@ -2083,7 +2084,7 @@ input[type=radio]:checked + label::before {
 
 
 
-/* THUMBCAROUSEL */
+/* THUMBCAROUSEL 1 */
 
 /*.product-slider { padding: ; }
 
@@ -2111,7 +2112,80 @@ input[type=radio]:checked + label::before {
 /* /THUMBCAROUSEL */
 
 
+/* THUMBCAROUSEL 2 :: http://slippry.com/examples/thumbnails/ */
+/* Thumbnails */
+/*.thumb-box {
+  padding: 1.4em 0 1em;
+  margin-left: -1%;
+  width: 102%;
+  .thumbs {
+    @include clearfix;
+    li {
+      float: left;
+      width: 25%;
+      text-align: center;
+      padding: 0 1%;
+      img {
+        width: 100%;
+        opacity: .8;
+        @include transition(opacity .32s);
+        border-bottom: 4px solid transparent;
+        &.active {
+          border-color: $bc-rk-blue;
+          opacity: 1;
+        }
+      }
+      &:hover {
+        img {
+          opacity: 1;
+          @include transition(opacity .2s);
+        }
+      }
+    }
+  }
+}*/
 
+.thumb-box {
+  padding: 1.4em 0 1em;
+  margin-left: -1%;
+  width: 102%;
+}
+
+.thumb-box .thumbs::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.thumb-box .thumbs li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 0 1%;
+}
+
+.thumb-box .thumbs li img {
+    width: 100%;
+    opacity: .8;
+    border-bottom: 4px solid transparent;
+    -webkit-transition: .32s opacity;
+    -o-transition: .32s opacity;
+    transition: .32s opacity;
+}
+
+.thumb-box .thumbs li img.active {
+    border-color: $bc-rk-blue;
+    opacity: 1;
+}
+
+.thumb-box .thumbs:hover img {
+    opacity: 1;
+    -webkit-transition: .2s opacity;
+    -o-transition: .2s opacity;
+    transition: .2s opacity;
+}
+
+/* THUMBCAROUSEL 2 :: http://slippry.com/examples/thumbnails/ */
 
 
 
