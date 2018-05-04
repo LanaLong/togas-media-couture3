@@ -220,25 +220,30 @@
                     </div>
 
                 <!-- FORM -->
-                <form>
+                <form name = "callback" method = "post">
+					<div class="ajax-wrapper" id="ajax-wrapper" style = "margin:auto;position: relative;min-width: 50px;"></div>
+					<div id = "valid"></div>
+					<div id = "fail">Something is wrong. Please, check information in the form.</div>	
                     <!-- Input text -->
                     <div class="md-form">
-                        <input type="text" id="form34" class="form-control validate">
+                        <input type="text" id="form34" name="firstname" class="form-control validate">
                         <label class="txt-inner" data-error="wrong" data-success="right" for="form34">Name Surname: </label>
                     </div>
 
                     <!-- Input phone -->
                     <div class="md-form">
-                        <input type="tel" id="form32" class="form-control validate">
+                        <input type="tel" id="form32" name="phone" class="form-control validate">
                         <label class="txt-inner" data-error="wrong" data-success="right" for="form32">Phone: </label>
                     </div>
                     
                     <!-- Input email -->
                     <div class="md-form">
-                        <input type="email" id="form29" class="form-control validate">
+                        <input type="email" id="form29" name="email" class="form-control validate">
                         <label class="txt-inner" data-error="wrong" data-success="right" for="form29">Email: </label>
                     </div>
-
+					<div style = "display:none">
+						<input type="text" value = "hBouW9el5zSYrsN1E4q9" name = "key">                    
+					</div>
                     <div class="txt-pre mt-4">
                         <p><span class="txt-inner">Best time to contact you</span></p>
                     </div>
@@ -246,23 +251,23 @@
                     <!--Radio group-->
                     <div class="d-flex flex-row justify-content-start align-items-end">
                         <div class="form-check">
-                            <input class="form-check-input" name="group100" type="radio" id="radio100">
+                            <input class="form-check-input" name="group100" value = "now" type="radio" id="radio100">
                             <label class="form-check-label txt-inner" for="radio100">Now</label>
                         </div>
 
 
                         <div class="form-check">
-                            <input class="form-check-input" name="group100" type="radio" id="radio101" checked>
+                            <input class="form-check-input" name="group100" value = "morning" type="radio" id="radio101" checked>
                             <label class="form-check-label txt-inner" for="radio101">Morning</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" name="group100" type="radio" id="radio102">
+                            <input class="form-check-input" name="group100" value = "afternoon" type="radio" id="radio102">
                             <label class="form-check-label txt-inner" for="radio102">Afternoon</label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" name="group100" type="radio" id="radio103">
+                            <input class="form-check-input" name="group100" value = "evening" type="radio" id="radio103">
                             <label class="form-check-label txt-inner" for="radio103">Evening</label>
                         </div>
                     </div>
@@ -270,7 +275,7 @@
 
                     <!--Button SEND-->
                     <div class="modal-footer-togas d-flex justify-content-center">
-                        <button class="btn btn-outline-bronze-color my-4">Send</button>
+                        <button id ="callback-submit" type="submit" name="submit" class="btn btn-outline-bronze-color my-4">Send</button>
                     </div>
                 </form>
 
@@ -1552,6 +1557,8 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Form validation -->
+<script type="text/javascript" src="js/validate.min.js"></script>
 
 
 <!-- BUTTON TOP -->
@@ -1829,6 +1836,65 @@
 <script>
 </script>
 
+<script>
+$(document).ready(function() {
+$('#valid').hide(); 
+$('#fail').hide();
+}); 
 
+function sendMessage() {
+    var formData = {
+        'name'               : $('input[name=firstname]').val(),
+        'phone'             : $('input[name=phone]').val(),
+        'email'            : $('input[name=email]').val(),
+        'key'            : $('input[name=key]').val(),
+		'time'            : $('input[name=group100]:checked').val(),
+        'submit'      : 1 
+    };
+    $.ajax({
+        type: 'post', 
+        url:  'sender.php',
+        data:  formData,
+        dataType: 'json',
+		beforeSend: function() {$('#ajax-wrapper').html('<img src="img/img-togas-lp3/ajax-loader.gif" id="loading-indicator">');$('#callback-submit').prop( "disabled", true );},
+        encode: true,
+		success: function(data)
+		{	
+			$('#callback-submit').prop( "disabled", false );
+			$('#ajax-wrapper').html('');
+			$('#valid').show();
+			$('#valid').text(data['message']);	
+			if (data['code'] < 300) {				
+				$('#form34').val('');
+				$('#form32').val('');
+				$('#form29').val('');
+			}
+				
+		}
+    })
+    event.preventDefault();
+}
+var validator = new FormValidator('callback', [{
+	name: 'firstname',
+	rules: 'required'
+	},{
+	name: 'phone',
+	rules: 'min_length[5]|max_length[15]|required'
+	},{
+	name: 'email',
+	rules: 'valid_email|required'
+	},{
+	name: 'key',
+	rules: 'required'
+	}],function(errors, event) {	
+	$('#valid').hide(); 	
+	$('#fail').hide();	
+    if (errors.length > 0) {
+        $('#fail').show();
+    } else {		
+		sendMessage();		
+		}	   
+});
+</script>
 </body>
 </html>
