@@ -2062,15 +2062,32 @@ input[type=radio]:checked + label::before {
     }
 
 
+/* Social links  */
+.txt-line a {
+  color: #232323;
+}
+
+.txt-line a::hover {
+  color: #B49256;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Modal */
 
-  .modal {
-/*    display: inline-block;*/
-/*    vertical-align: middle;*/
-/*    content: " ";
-    height: 100%;*/
-  }
 
 
 

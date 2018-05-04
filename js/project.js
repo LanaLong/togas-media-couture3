@@ -10,8 +10,8 @@ $(document).ready(function(){
 
 
         autoplay:false,
-        autoplayTimeout:5000,
-        autoplayHoverPause:true,
+        autoplayTimeout:10000,
+        autoplayHoverPause:false,
         nav:true,    
         dots: false,   
         navText: ["<img src='https://media1.togas.com/media/couture/img/img-togas-lp3/left.png'>","<img src='https://media1.togas.com/media/couture/img/img-togas-lp3/right.png'>"],
