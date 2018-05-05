@@ -1953,6 +1953,7 @@ input[type=radio]:checked + label::before {
 
 .nav-pills .nav-link span{
   display: none;
+  opacity: 0;
 }
 
 .nav-pills .nav-link.active span{
