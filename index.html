@@ -1506,7 +1506,6 @@
 <!-- SCRIPTS -->
  <!-- JQuery -->
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-
 <!-- Owl carousel -->
 <script type="text/javascript" src="js/owl.carousel.js"></script>
 <script type="text/javascript" src="js/project.js"></script>
@@ -1519,6 +1518,12 @@
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <!-- Form validation -->
 <script type="text/javascript" src="js/validate.min.js"></script>
+<!-- For SmoothScroll -->
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script src="js/smoothScroll.js"></script>
+
+
+
 
 
 <!-- BUTTON TOP -->
@@ -1540,6 +1545,14 @@
   });
 </script>
 
+<!-- SMOOTH SCROLL-->
+<script type="text/javascript">
+$('.nav-togas a').smoothScroll({
+    duration: 2000, // animation speed
+    easing: 'swing', // find more easing options on http://api.jqueryui.com/easings/
+    offset: 0 // custom offset
+    });
+</script>
 
 
 <script>
