@@ -1961,9 +1961,9 @@ input[type=radio]:checked + label::before {
 .nav-pills .nav-link:hover span {
   display: block;
   opacity: 1;
-  -webkit-transition: transparent 1s ease-out;
-  -o-transition: transparent 1s ease-out;
-  transition: transparent 1s ease-out;
+/*  -webkit-transition: transparent 1s ease-out;
+  -o-transition: transparent 1s ease-out;*/
+  transition: all 1s ease;
 }
 
 .nav-pills .nav-link:hover span{
