@@ -1953,7 +1953,7 @@ input[type=radio]:checked + label::before {
 
 .nav-pills .nav-link span{
   display: none;
-  opacity: 0;
+ /* opacity: 0;*/
 }
 
 .nav-pills .nav-link.active span{
@@ -1976,9 +1976,9 @@ input[type=radio]:checked + label::before {
   margin-left: -35px;
   color: #232323;
   opacity: 1;
-  -webkit-transition: 0.2s ease-out;
-  -o-transition: 0.2s ease-out;
-  transition: 0.2s ease-out;
+/*  -webkit-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;*/
+  transition: transparent 0.2s ease-out;
 }
 
 .nav-pills .nav-link:hover span{
