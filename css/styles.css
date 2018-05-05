@@ -1,42 +1,5 @@
 @charset "UTF-8";
 
-/*@font-face {
-  font-family: 'PFRegalDisplayPro-Reg';
-    src: url('/media/couture/font/pf-togas2/pfregaldisplaypro-reg.eot');
-    src: url('/media/couture/font/pf-togas2/pfregaldisplaypro-reg.eot?#iefix') format('/media/couture/font/pf-togas2/embedded-opentype'),
-         url('/media/couture/font/pf-togas2/pfregaldisplaypro-reg.woff2') format('woff2'),
-         url('/media/couture/font/pf-togas2/pfregaldisplaypro-reg.woff') format('woff'),
-         url('/media/couture/font/pf-togas2/pfregaldisplaypro-reg.ttf') format('truetype'),
-         url('/media/couture/font/pf-togas2/pfregaldisplaypro-reg.svg#pf_regal_display_proregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-  font-family: 'PFRegalDisplayPro-Medium';
-    src: url('/media/couture/font/pf-togas2/pfregaldisplaypro-medium.eot');
-    src: url('/media/couture/font/pf-togas2/pfregaldisplaypro-medium.eot?#iefix') format('embedded-opentype'),
-         url('/media/couture/font/pf-togas2/pfregaldisplaypro-medium.woff2') format('woff2'),
-         url('/media/couture/font/pf-togas2/pfregaldisplaypro-medium.woff') format('woff'),
-         url('/media/couture/font/pf-togas2/pfregaldisplaypro-medium.ttf') format('truetype'),
-         url('/media/couture/font/pf-togas2/pfregaldisplaypro-medium.svg#pf_regal_display_promedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'PFRegalDisplayPro-MedItalic';
-    src: url('/media/couture/font/pf-togas2/pfregaldisplaypro-meditalic.eot');
-    src: url('/media/couture/font/pf-togas2/pfregaldisplaypro-meditalic.eot?#iefix') format('embedded-opentype'),
-         url('/media/couture/font/pf-togas2/pfregaldisplaypro-meditalic.woff2') format('woff2'),
-         url('/media/couture/font/pf-togas2/pfregaldisplaypro-meditalic.woff') format('woff'),
-         url('/media/couture/font/pf-togas2/pfregaldisplaypro-meditalic.ttf') format('truetype'),
-         url('/media/couture/font/pf-togas2/pfregaldisplaypro-meditalic.svg#pf_regal_display_proMdIt') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}*/
-
 @font-face {
   font-family: 'PFRegalDisplayPro-Reg';
   src: url("/media/couture/font/pf-togas/PFRegalDisplayPro-Reg_0.eot");
@@ -1999,7 +1962,7 @@ input[type=radio]:checked + label::before {
   letter-spacing: 0.01em;
   width: 2em;
   padding-top: 140px;
- margin-left: -35px;
+  margin-left: -35px;
 }
 
 .nav-pills .nav-link.active span:hover{
@@ -2009,8 +1972,12 @@ input[type=radio]:checked + label::before {
   letter-spacing: 0.01em;
   width: 2em;
   padding-top: 140px;
- margin-left: -35px;
- color: #232323;
+  margin-left: -35px;
+  color: #232323;
+  opacity: 1;
+  -webkit-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 .nav-pills .nav-link:hover span{
@@ -2020,8 +1987,8 @@ input[type=radio]:checked + label::before {
   letter-spacing: 0.01em;
   width: 2em;
   padding-top: 140px;
- margin-left: -35px;
- color: #CCCCCC;
+  margin-left: -35px;
+  color: #CCCCCC;
 
 }
 
