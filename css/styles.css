@@ -658,7 +658,7 @@ nav {
   letter-spacing: 0.003rem;
   line-height: 1.6rem;
   opacity: 1;
-  transition: opacity 1s ease;
+  transition: opacity 2s ease;
 }
 
 .fade {
@@ -762,8 +762,8 @@ nav {
 
 .txt-p {
   font-family: 'PFBagueSansPro-Light';
-  font-size: 1.15em !important;
-  line-height: 1.45em !important;
+  font-size: 1em !important;
+  line-height: 1.4em !important;
   letter-spacing: 0.025em;
   color: #9D9D9C;
 }
