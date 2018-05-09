@@ -860,10 +860,10 @@ p {
 
 .txt-under {
   font-family: 'PFRegalDisplayPro-MedItalic';
-  font-size: 1.8em;
-  line-height: 1.2em;
+  font-size: 1.65em;
+  line-height: 1.18em;
   color: #232323;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.06em;
 }
 
 /* <!-- /SECTION 1.TWO HALF --> *****************************************/
@@ -2161,10 +2161,61 @@ input[type=radio]:checked + label::before {
 /* THUMBCAROUSEL 2 :: http://slippry.com/examples/thumbnails/ */
 
 
+/* Collapce cards styles */
+.container-collapse {
+  max-width: 1046px;
+}
 
+.card-tg {
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #B49256;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  box-sizing: border-box;
+  display: flex;
+  width: 100% !important;
 
+}
 
+.card-body-tg {
+ padding: 3rem;
+}
 
+.modal-content-tg {
+    width: 100%;
+  }
+
+.card-text {
+  margin-right: -3rem;
+}
+
+.carousel-collapse .owl-dots {
+  display: none;
+}
+
+.carousel-collapse .owl-nav {
+  margin-top: 0;
+}
+
+.btn-fill-bronze-collapse {
+  font-family: 'PFBagueSansPro-Bold';
+  font-size: 0.7em;
+  padding: 1.3rem 1.6rem;
+  color: #ffffff;
+  background-color: #B49256;
+  border: 1px solid #B49256 !important;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  -webkit-border-radius: 0rem;
+  border-radius: 0rem;
+}
+
+.btn-fill-bronze-collapse:hover {
+  color: #B49256;
+  background-color: #fff;
+}
 
 
 
