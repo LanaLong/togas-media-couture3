@@ -323,7 +323,11 @@
                     <h4 class="card-title service-title py-3">Fabrics</h4>
                     <p class="txt-sub-cm">The most premium<br/>inspiring fabrics that excel</br>in quality and style!</p>
                     <!--Button-->
-					 <button type="button" class="btn btn-outline-bronze-cm mt-4" data-toggle="collapse" onclick = "fabricsCollapse();" aria-expanded="false" aria-controls="collapseShades" class="ShowBind" data-element=".bind-absolute">Discover</button>
+                    <div class="button-wrapper">
+    					<button type="button" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "fabricsCollapse();" aria-expanded="false" aria-controls="collapseFabrics" data-element="#bind-button-fabrics">Discover</button>
+                        <div id="bind-button-fabrics"></div>
+                    </div>  
+ 
                 </div>            
 
             </div>
@@ -403,7 +407,10 @@
                     <h4 class="card-title service-title py-3">Shades</h4>
                     <p class="txt-sub-cm">The perfect way<br>to dress up your windows<br>for beauty and function!</p>
                     <!--Button-->
-					 <button type="button" class="btn btn-outline-bronze-cm mt-4" data-toggle="collapse" onclick = "shadesCollapse();" aria-expanded="false" aria-controls="collapseShades">Discover</button>
+					 <div class="button-wrapper">
+                        <button type="button" class="btn btn-outline-bronze-cm mt-4 waves-effect waves-light show-bind-button" data-toggle="collapse" onclick="shadesCollapse();" aria-expanded="false" aria-controls="collapseShades" data-element="#bind-button-shades">Discover</button>
+                        <div id="bind-button-shades"></div>
+                    </div>
                 </div>
 
             </div>
@@ -476,8 +483,13 @@
                     <h4 class="card-title service-title py-3">Upholstery</h4>
                     <p class="txt-sub-cm">A unique range of the finest<br>upholstery that creates<br>a feeling of luxury & style.</p>
                     <!--Button-->
-					 <button type="button" class="btn btn-outline-bronze-cm mt-4" data-toggle="collapse" onclick = "upholsteryCollapse();" aria-expanded="false" aria-controls="collapseUpholstery">Discover</button>
-                </div>
+                    <div class="button-wrapper">
+                        <button type="button" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "upholsteryCollapse();" aria-expanded="false" aria-controls="collapseUpholstery" data-element="#bind-button-upholstery">Discover</button>
+                        <div id="bind-button-upholstery"></div>
+                    </div>  
+
+				</div>
+                <!-- /card-body -->
 
             </div>
             <!--/.Card-->
@@ -528,9 +540,9 @@
         
         <!-- Desktop collapseFabrics -->
         <div class="container-collapse mb-5 mt-2">
-        <div class="row bind">
+        <div class="row">
             <div class="col">
-                <div class="bind-absolute">1</div>
+                <div id="#bind1" class="bind-absolute"></div>
 
         <div class="collapse" id="collapseDesktopFabrics">
           <div class="card-tg card-body-tg">
@@ -556,6 +568,7 @@
                                     </div>                          
 
                                 </div>
+
                                 <div class="col-12 col-md-6 pl-3 ml-3">
                                      <p class="card-text">Togas offers an exclusive professional consulting service in interior design, provided by a team of highly skilled and dedicated craftsmen. These professionals have the ability to propose a vast selection of fabrics of the highest quality and adjust them to your personality, therefore making your stylistic vision a reality. Our fabric collection captures eclectic style at its best, bridging design styles and sensibilities across today's multiple trends. The fabrics are created by leading European factories renown in the world of textiles with the use of traditional techniques; within those factories, the fabrics are subjected to an accurate and meticulous check, using the widely regarded Martindale test, where results are used to evaluate fabrics for their durability, strength and suitability making them the finest fabrics in the market. The exquisite quality of work combined with the vast variety of fabrics lead to results that completely mix quality with luxury. Bringing opulence to the forefront, we help you embody the freedom to create eclectic individualized living spaces. Each fabric is a masterpiece beyond fashion trends, beyond time itself. Inspired by the past with the future in mind. Let yourself be guided by Togas in order to create the home of your dreams.</p>
                                 </div>
@@ -563,37 +576,36 @@
                         </div>
                     </div>
 
-                </div>
-          </div>
+                    </div>
+              </div>
+            </div>
+    	</div>
+        <!-- / col -->
         </div>
-		<!-- / Desktop collapseFabrics -->
-    </div>
-    <!-- /col -->
-    </div>
-    <!-- /row for desktop collapseFabrics -->
-    </div>
-    <!-- /container -->
+        <!-- / row -->
+        </div>
+        <!-- / container for desktop collapseFabrics-->
+        <!-- / Desktop collapseFabrics -->
 
-		<!-- Desktop collapseShades -->
+
+
+        <!-- Desktop collapseShades -->
+        <div class="container-collapse mb-5 mt-2">
+        <div class="row">
+            <div class="col">
+                <div id="#bind2" class="bind-absolute"></div>
+
         <div class="collapse" id="collapseDesktopShades">
-          <div class="card card-body">
-                <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title card-title service-title py-3 pl-4 ml-1" id="shadesModalCenterTitle">Shades</h4>           
-                        <button type="button" class="close mr-3 mt-1" data-toggle="collapse" data-target="#collapseDesktopShades" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                       <p class="txt-sub-cm px-5 py-3">The perfect way to dress up your windows for beauty and function!</p>
-
-                      <div class="modal-body">
+          <div class="card-tg card-body-tg">
+                <div class="modal-content-tg">
+                      <div class="modal-body-tg">
                         <div class="container-modal">
                             <div class="row">
-                                <div class="col-sm-12 col-md-5 mt-1 px-5">
+                                <div class="col-12 col-md-5">
                                     <div class="img-wrapper text-center mx-auto mb-5">
                                         <img src="img/img-togas-lp3/shades (5).jpg" alt="Shades">
-                                    </div>                                    
-                                    <div id="modal-slider" class="owl-carousel owl-theme">
+                                    </div>
+                                    <div id="modal-slider" class="owl-carousel owl-theme carousel-collapse">
 										<div class="item"><img src="img/img-togas-lp3/shades (1).jpg" alt="Shades"></div>
 										<div class="item"><img src="img/img-togas-lp3/shades (2).jpg" alt="Shades"></div>
 										<div class="item"><img src="img/img-togas-lp3/shades (3).jpg" alt="Shades"></div>
@@ -605,57 +617,75 @@
 										<div class="item"><img src="img/img-togas-lp3/shades (9).jpg" alt="Shades"></div>
 										<div class="item"><img src="img/img-togas-lp3/shades (10).jpg" alt="Shades"></div>
                                     </div>
+
+                                    <div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" href="#">get a quote</button> 
+                                    </div> 
+
                                 </div>
-                                <div class="col-sm-12 col-md-7 pt-sm-5 pt-md-0 pl-sm-5 pl-md-0 pr-5 mb-5">
+                                <div class="col-12 col-md-6 pl-3 ml-3">
                                      <p class="card-text">Just as we pursue balance and harmony in our everyday life, we seek perfection for our personal space. Under this context, Togas offers beautiful custom Roman shades that can completely transform the interior, complement the decoration, set the tone, and create a room’s atmosphere. They are made exclusively with premium quality textiles, carefully selected from leading European manufacturers who source the very best in raw materials from around the world. Thanks to our special tailoring techniques the results are truly unique and trendsetting. Furthermore, the meticulous attention to detail and the professional craftsmanship used are apparent in the final result. Our Roman shades are available in many different styles, colors and patterns, a variety that enables our customers to apply them to any personal taste or style. Our custom collection is subtlety coordinated by Togas talented designers and master craftsmen who are here to bring limitless possibilities for creativity and synthesis while helping you perfect your vision. The options to bring into existence the interior of your dreams therefore become endless.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
-          </div>
+                    </div>
+              </div>
+            </div>
         </div>
-		<!-- / Desktop collapseShades -->	
+        <!-- / col -->
+        </div>
+        <!-- / row -->
+        </div>
+        <!-- / container for desktop collapseShades-->
+        <!-- / Desktop collapseShades -->
 
 		<!-- Desktop collapseUpholstery -->   
-        <div class="collapse" id="collapseDesktopUpholstery">
-          <div class="card card-body">
-                <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title card-title service-title py-3 pl-4 ml-1" id="upholsteryModalCenterTitle">Upholstery</h4>           
-                        <button type="button" class="close mr-3 mt-1" data-toggle="collapse" data-target="#collapseDesktopUpholstery" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                       <p class="txt-sub-cm px-5 py-3">A unique range of the finest upholstery that creates a feeling of luxury & style.</p>
+        <div class="container-collapse mb-5 mt-2">
+        <div class="row">
+        <div class="col">
 
-                      <div class="modal-body">
+        <div class="collapse" id="collapseDesktopUpholstery">
+          <div class="card-tg card-body-tg">
+                <div class="modal-content-tg">
+                      <div class="modal-body-tg">
                         <div class="container-modal">
                             <div class="row">
-                                <div class="col-sm-12 col-md-5 mt-1 px-5">
+                                <div class="col-12 col-md-5">
                                     <div class="img-wrapper text-center mx-auto mb-5">
                                         <img src="img/img-togas-lp3/upholstery (1).jpg" alt="Upholstery">
-                                    </div>                                    
-									<div id="modal-slider" class="owl-carousel owl-theme">
+                                    </div>
+                                    <div id="modal-slider" class="owl-carousel owl-theme carousel-collapse">
 										<div class="item"><img src="img/img-togas-lp3/upholstery (1).jpg" alt="Upholstery"></div>
 										<div class="item"><img src="img/img-togas-lp3/upholstery (2).jpg" alt="Upholstery"></div>
 										<div class="item"><img src="img/img-togas-lp3/upholstery (3).jpg" alt="Upholstery"></div>
 										<div class="item"><img src="img/img-togas-lp3/upholstery (4).jpg" alt="Upholstery"></div>
 										<div class="item"><img src="img/img-togas-lp3/upholstery (5).jpg" alt="Upholstery"></div>
 									</div>
+
+                                    <div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" href="#">get a quote</button> 
+                                    </div> 
+
                                 </div>
-                                <div class="col-sm-12 col-md-7 pt-sm-5 pt-md-0 pl-sm-5 pl-md-0 pr-5 mb-5">
+                                <div class="col-12 col-md-6 pl-3 ml-3">
                                      <p class="card-text">Upholstery is a reflection of who we are, an extension of our individuality and style; and Togas is capturing this philosophy through a luxurious custom collection, crafted by the best artisans of our time. Togas has compiled unique furniture to suit all needs and tastes; a range of premium quality that has a strong place in your modern, classic or sophisticated ambiance. Our premium custom furniture is created and produced by leading European factories renown in the world of textiles with the use of traditional techniques, passed from generation to generation, as well as with the use of innovative think “outside the box” high-technology methods. Our custom upholstery is exquisite, yet the value gets stronger with their superior design; our designs are hand-created by our dedicated in-house team, with artistic influences from different cultures, including Chinoiserie, Arabesque and European styles added with classic, floral and geometric motifs and of course the Art Deco style which has become an iconic part of the company’s heritage. Our objective in interior design is simple and clear: help you create the home of your dreams! And we achieve this by carefully listening to your desires and ideas; by making your vision our passion.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
-          </div>
+                    </div>
+              </div>
+            </div>
         </div>
-		<!-- / Desktop collapseUpholstery -->
+        <!-- / col -->
+        </div>
+        <!-- / row -->
+        </div>
+        <!-- / container for desktop collapseUpholstery-->
+        <!-- / Desktop collapseUpholstery -->
 
         <div>
         <!-- /row1 -->
@@ -685,9 +715,13 @@
                     <h4 class="card-title service-title py-2">Custom draparies</h4>
                     <p class="txt-sub-cm">We frame your window in the way<br>that a beautiful accessory<br>complements a dress.</p>
                     <!--Button-->
-					 <button type="button" class="btn btn-outline-bronze-cm mt-4" data-toggle="collapse" onclick = "drapsCollapse();" aria-expanded="false" aria-controls="drapsFabrics">Discover</button>
+                    <div class="button-wrapper">
+                        <button type="button" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "drapsCollapse();" aria-expanded="false" aria-controls="collapseDraps" data-element="#bind-button-draps">Discover</button>
+                        <div id="bind-button-draps"></div>
+                    </div> 
+					
                 </div>
-
+                <!-- /card-body -->
             </div>
             <!--/.Card-->
         </div>
@@ -754,9 +788,13 @@
                     <p class="txt-sub-cm">A unique collection<br>of finely crafted custom designed<br>headboards of high quality.</p>
                     
                      <!--Button-->
-					 <button type="button" class="btn btn-outline-bronze-cm mt-4" data-toggle="collapse" onclick = "headboardsCollapse();" aria-expanded="false" aria-controls="headboardsFabrics">Discover</button>
+                     <div class="button-wrapper">
+                        <button type="button" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "headboardsCollapse();" aria-expanded="false" aria-controls="collapseHeadboards" data-element="#bind-button-headboards">Discover</button>
+                        <div id="bind-button-headboards"></div>
+                    </div> 
+					 
                 </div>
-
+                <!-- /card-body -->
             </div>
             <!--/.Card-->
         </div>
@@ -822,9 +860,13 @@
                     <p class="txt-sub-cm">A unique range of the finest<br>upholstery fabrics in order to suit</p>
                     
                      <!--Button-->
-					 <button type="button" class="btn btn-outline-bronze-cm mt-4" data-toggle="collapse" onclick = "accessoriesCollapse();" aria-expanded="false" aria-controls="collapseAccessories">Discover</button>
+                    <div class="button-wrapper">
+                        <button type="button" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "accessoriesCollapse();" aria-expanded="false" aria-controls="collapseAccessories" data-element="#bind-button-accessories">Discover</button>
+                        <div id="bind-button-accessories"></div>
+                    </div> 
+					 
                 </div>
-
+                <!-- /card-body -->
             </div>
             <!--/.Card-->
         </div>
@@ -892,145 +934,162 @@
 		<!-- / Mobile collapseAccessories -->
 
 		<!-- Desktop collapseDraps -->
-        <div class="collapse" id="collapseDesktopDraps">
-          <div class="card card-body">
-                <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title card-title service-title py-3 pl-4 ml-1" id="drapsModalCenterTitle">Custom draparies</h4>           
-                        <button type="button" class="close mr-3 mt-1" data-toggle="collapse" data-target="#collapseDesktopDraps" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                       <p class="txt-sub-cm px-5 py-3">We frame your window in the way that a beautiful accessory complements a dress.</p>
+        <div class="container-collapse mb-5 mt-2">
+        <div class="row">
+        <div class="col">
 
-                      <div class="modal-body">
+        <div class="collapse" id="collapseDesktopDraps">
+          <div class="card-tg card-body-tg">
+                <div class="modal-content-tg">
+                      <div class="modal-body-tg">
                         <div class="container-modal">
                             <div class="row">
-                                <div class="col-sm-12 col-md-5 mt-1 px-5">
+                                <div class="col-12 col-md-5">
                                     <div class="img-wrapper text-center mx-auto mb-5">
-										<img src="img/img-togas-lp3/custom-drapes (2).jpg" alt="Custom draparies">
+                                        <img src="img/img-togas-lp3/custom-drapes (2).jpg" alt="Draps">
                                     </div>
-                                    
-								<div id="modal-slider" class="owl-carousel owl-theme">
+                                    <div id="modal-slider" class="owl-carousel owl-theme carousel-collapse">
 									<div class="item"><img src="img/img-togas-lp3/custom-drapes (1).jpg" alt="Custom draparies"></div>
 									<div class="item"><img src="img/img-togas-lp3/custom-drapes (2).jpg" alt="Custom draparies"></div>
 									<div class="item"><img src="img/img-togas-lp3/custom-drapes (3).jpg" alt="Custom draparies"></div>
 									<div class="item"><img src="img/img-togas-lp3/custom-drapes (4).jpg" alt="Custom draparies"></div>
 									<div class="item"><img src="img/img-togas-lp3/custom-drapes (5).jpg" alt="Custom draparies"></div>
 								</div>
+
+                                    <div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" href="#">get a quote</button> 
+                                    </div> 
+
                                 </div>
-                                <div class="col-sm-12 col-md-7 pt-sm-5 pt-md-0 pl-sm-5 pl-md-0 pr-5 mb-5">
+                                <div class="col-12 col-md-6 pl-3 ml-3">
                                      <p class="card-text">Emphasizing on the bespoke world of custom draperies, Togas offers exquisite taste and premium style. Combining our extensive expertise, Togas offers a premium custom-made service for your window treatment, therefore transpiring into top quality results. Our in-house bureau creates the most exclusive designs on the highest quality fabrics, from light sheers to glamorous silks, relaxed linen and heavy luxury velvets. We study each customer’s requirements and needs in order to offer the best solution while determining the draperies’ function within each space; they can be either used to add privacy, block the light, set the mood, help maintain a steady temperature or emphasize the style. We offer our experts’ service in order to incorporate Deco motifs into modern designs, reinventing vintage looks in order to suit the contemporary customer. Our design ideas (blinds, classic or moderns heading, layering, valances) they all aim to match the interior character and atmosphere. Each bespoke drapery crafted either in our studios or in our leading worldwide factories is an exceptional masterpiece worked to the last detail throughout the process of production and creation. Our aim is to create unique custom draperies and therefore present the perfect item for every window corner.</p>
-                                </div>
+                               </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
-          </div>
+                    </div>
+              </div>
+            </div>
         </div>
-		<!-- / Desktop collapseDraps -->
+        <!-- / col -->
+        </div>
+        <!-- / row -->
+        </div>
+        <!-- / container for desktop collapseDraps-->
+        <!-- / Desktop collapseDraps -->
 
 		<!-- Desktop collapseHeadboards -->
-        <div class="collapse" id="collapseDesktopHeadboards">
-          <div class="card card-body">
-                <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title card-title service-title py-3 pl-4 ml-1" id="headboardsModalCenterTitle">Headboards</h4>           
-                        <button type="button" class="close mr-3 mt-1" data-toggle="collapse" data-target="#collapseDesktopHeadboards" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                       <p class="txt-sub-cm px-5 py-3">A unique collection of finely crafted custom designed headboards of high quality.</p>
+        <div class="container-collapse mb-5 mt-2">
+        <div class="row">
+        <div class="col">
 
-                      <div class="modal-body">
+        <div class="collapse" id="collapseDesktopHeadboards">
+          <div class="card-tg card-body-tg">
+                <div class="modal-content-tg">
+                      <div class="modal-body-tg">
                         <div class="container-modal">
                             <div class="row">
-                                <div class="col-sm-12 col-md-5 mt-1 px-5">
-									<div class="img-wrapper text-center mx-auto mb-5">
-										<img src="img/img-togas-lp3/headboards (3).jpg" alt="Headboards">
-									</div>
-									
-									<div id="modal-slider" class="owl-carousel owl-theme">
+                                <div class="col-12 col-md-5">
+                                    <div class="img-wrapper text-center mx-auto mb-5">
+                                        <img src="img/img-togas-lp3/headboards (3).jpg" alt="Headboards">
+                                    </div>
+                                    <div id="modal-slider" class="owl-carousel owl-theme carousel-collapse">
 										<div class="item"><img src="img/img-togas-lp3/headboards (1).jpg" alt="Headboards"></div>
 										<div class="item"><img src="img/img-togas-lp3/headboards (2).jpg" alt="Headboards"></div>
 										<div class="item"><img src="img/img-togas-lp3/headboards (5).jpg" alt="Headboards"></div>
 									</div>
 
-								</div>
+                                    <div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" href="#">get a quote</button> 
+                                    </div> 
+
+                                </div>
                             
-                                <div class="col-sm-12 col-md-7 pt-sm-5 pt-md-0 pl-sm-5 pl-md-0 pr-5 mb-5">
+                                <div class="col-12 col-md-6 pl-3 ml-3">
                                      <p class="card-text">Headboards have become a key element in contemporary interior design, as are a subtle way to convey your personal style. Upholstered headboards, in particular, can enhance the motif of your bedroom while introducing alluring fabrics, colors and patterns. Fully aware of these possibilities, Togas presents an attractive collection of unique custom headboards featuring an array of different styles in order to meet the individual requirements and personal tastes of the discerning homeowner. The collection features various styles, from classic and romantic to sophisticated and modern Art Deco, and a wide range from eclectic statement pieces with beautifully silhouetted outlines or modern editions of the classic wingback style, plain, piped or deep buttoned, channeled padded panels and antique brass nailhead outlines. We are talking about an outstanding collection of finely crafted custom designed headboards that can suit all needs and wishes! In this context, our talented design team can help you choose the right upholstered headboards to upgrade your bedroom. Togas knows how to blend its time-honored tradition and experience in the world of textiles and ensure that each and every item is delivered as a masterpiece. Headboard collection; be it traditional, timeless or contemporary – it will be a personal statement of the highest quality.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
-          </div>
+                    </div>
+              </div>
+            </div>
         </div>
-		<!-- / Desktop collapseHeadboards -->	
+        <!-- / col -->
+        </div>
+        <!-- / row -->
+        </div>
+        <!-- / container for desktop collapseHeadboards-->
+        <!-- / Desktop collapseHeadboards -->
 
 		<!-- Desktop collapseAccessories -->
-        <div class="collapse" id="collapseDesktopAccessories">
-          <div class="card card-body">
-                <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title card-title service-title py-3 pl-4 ml-1" id="acessoriesModalCenterTitle">Hardware & accessories</h4>           
-                        <button type="button" class="close mr-3 mt-1" data-toggle="collapse" data-target="#collapseDesktopAccessories" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                       <p class="txt-sub-cm px-5 py-3">A unique range of the finest upholstery fabrics in order to suit</p>
+        <div class="container-collapse mb-5 mt-2">
+        <div class="row">
+        <div class="col">
 
-                      <div class="modal-body">
+        <div class="collapse" id="collapseDesktopAccessories">
+          <div class="card-tg card-body-tg">
+                <div class="modal-content-tg">
+                      <div class="modal-body-tg">
                         <div class="container-modal">
                             <div class="row">
-									<div class="col-sm-12 col-md-5 mt-1 px-5">
+                                <div class="col-12 col-md-5">
+                                    <div class="img-wrapper text-center mx-auto mb-5">
+                                        <img src="img/img-togas-lp3/hardware.jpg" alt="Accessories">
+                                    </div>
+                                    <div id="modal-slider" class="owl-carousel owl-theme carousel-collapse">
 
-										<!-- TEST THUMBNAIL 2 see styles&jQuery -->
-										<ul id="thumbnails">
-										 <li><a href="#slide1"><img src="/media/couture/img/img-togas-lp3/hardware (1).jpg" alt="Hardware & Accessories"></a></li>
-										 <li><a href="#slide2"><img src="/media/couture/img/img-togas-lp3/hardware (4).jpg" alt="Hardware & Accessories"></a></li>
-										 <li><a href="#slide3"><img src="/media/couture/img/img-togas-lp3/hardware (3).jpg" alt="Hardware & Accessories"></a></li>
-										 <li><a href="#slide4"><img src="/media/couture/img/img-togas-lp3/hardware (5).jpg" alt="Hardware & Accessories"></a></li>
-										</ul>
-										<div class="thumb-box">
-										  <ul class="thumbs">
-											<li><a href="#1" data-slide="1"><img src="/media/couture/img/img-togas-lp3/hardware (1).jpg" alt="Hardware & Accessories"></a></li>
-											<li><a href="#2" data-slide="2"><img src="/media/couture/img/img-togas-lp3/hardware (4).jpg"  alt="Hardware & Accessories"></a></li>
-											<li><a href="#4" data-slide="3"><img src="/media/couture/img/img-togas-lp3/hardware (3).jpg" alt="Hardware & Accessories"></a></li>
-											<li><a href="#4" data-slide="4"><img src="/media/couture/img/img-togas-lp3/hardware (5).jpg" alt="Hardware & Accessories"></a></li>
-										  </ul>
-										</div>
-										<!-- /TEST THUMBNAIL 2 -->
 
-			<!--                             <div class="img-wrapper text-center mx-auto mb-5">
-											<img src="img/img-togas-lp3/hardware (4).jpg" alt="Hardware & Accessories">
-										</div>
-										
-										<div id="modal-slider" class="owl-carousel owl-theme">
-											<div class="item"><img src="img/img-togas-lp3/hardware (1).jpg" alt="Hardware & Accessories"></div>
+                                    <!-- TEST THUMBNAIL 2 see styles&jQuery -->
+                                    <ul id="thumbnails">
+                                         <li><a href="#slide1"><img src="/media/couture/img/img-togas-lp3/hardware (1).jpg" alt="Hardware & Accessories"></a></li>
+                                         <li><a href="#slide2"><img src="/media/couture/img/img-togas-lp3/hardware (4).jpg" alt="Hardware & Accessories"></a></li>
+                                         <li><a href="#slide3"><img src="/media/couture/img/img-togas-lp3/hardware (3).jpg" alt="Hardware & Accessories"></a></li>
+                                         <li><a href="#slide4"><img src="/media/couture/img/img-togas-lp3/hardware (5).jpg" alt="Hardware & Accessories"></a></li>
+                                    </ul>
+                                    <div class="thumb-box">
+                                      <ul class="thumbs">
+                                        <li><a href="#1" data-slide="1"><img src="/media/couture/img/img-togas-lp3/hardware (1).jpg" alt="Hardware & Accessories"></a></li>
+                                        <li><a href="#2" data-slide="2"><img src="/media/couture/img/img-togas-lp3/hardware (4).jpg"  alt="Hardware & Accessories"></a></li>
+                                        <li><a href="#4" data-slide="3"><img src="/media/couture/img/img-togas-lp3/hardware (3).jpg" alt="Hardware & Accessories"></a></li>
+                                        <li><a href="#4" data-slide="4"><img src="/media/couture/img/img-togas-lp3/hardware (5).jpg" alt="Hardware & Accessories"></a></li>
+                                      </ul>
+                                    </div>
+                                    <!-- /TEST THUMBNAIL 2 -->
+
+											<!-- <div class="item"><img src="img/img-togas-lp3/hardware (1).jpg" alt="Hardware & Accessories"></div>
 											<div class="item"><img src="img/img-togas-lp3/hardware (2).jpg" alt="Hardware & Accessories"></div>
 											<div class="item"><img src="img/img-togas-lp3/hardware (3).jpg" alt="Hardware & Accessories"></div>
 											<div class="item"><img src="img/img-togas-lp3/hardware (4.jpg" alt="Hardware & Accessories"></div>
-											<div class="item"><img src="img/img-togas-lp3/hardware (5).jpg" alt="Hardware & Accessories"></div>
-										</div> -->
-
+											<div class="item"><img src="img/img-togas-lp3/hardware (5).jpg" alt="Hardware & Accessories"></div> -->
 									</div>
-									<!-- /col -->
+
+                                    <div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" href="#">get a quote</button> 
+                                    </div> 
+
+                                </div>
+								<!-- /col -->
                            
-                                <div class="col-sm-12 col-md-7 pt-sm-5 pt-md-0 pl-sm-5 pl-md-0 pr-5 mb-5">
+                                <div class="col-12 col-md-6 pl-3 ml-3">
                                      <p class="card-text">Drapery hardware can be an integral part of your window treatment and another decorative element with which you can create your final look. Curtain rods, poles, finials, brackets and rings are available in both modern and traditional styles in order to complement your decor. Rods are made of plastic or metal, they come in different finishes including brass and brushed metal as well as in different shapes such as fluted, twisted etc. Poles are usually made of wood, bamboo or plastic, but are not adjustable. Brackets are the supportive holders that keep rods and poles in place; they can mount onto walls, window frames or even ceilings. Finials are attractive and can keep curtain rings from sliding off the rod or pole while rings can complement your other hardware elements. In addition to the above, custom pillows can be another touch to your room. Explore the wide array of fabrics and shapes available as you create precisely the pillow you need to complement your furniture. They can virtually soften any room, making it more comfortable and inviting! You will love the distinctive touches of our pillows, including hidden zipper enclosures, flanged or piped edges and a variety of fill materials to help you create precisely the pillows you desire. Our custom options are made in order to fit your busy lifestyle and your own personality.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
-          </div>
+                    </div>
+              </div>
+            </div>
         </div>
-		<!-- / Desktop collapseAccessories -->		
+        <!-- / col -->
+        </div>
+        <!-- / row -->
+        </div>
+        <!-- / container for desktop collapseAccessories-->
+        <!-- / Desktop collapseAccessories -->	
 		
         </div>
         <!-- Container row2 -->
@@ -2162,7 +2221,9 @@ function accessoriesCollapse()
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-Ootg3jURt5KMNOQD2vgrENb6x9IrDNg&callback=initMap"></script>
 
 <script type="text/javascript">
-    // show .bind for collapse blocks
+    // show #bind-button-NAME for collapse blocks
+    // http://realadmin.ru/coding/real-show-hide.html
+
   (function( $ ) {
   $.fn.RealShowHide = function(options) {
     
@@ -2175,6 +2236,7 @@ function accessoriesCollapse()
       var block = $(e.target).data(settings['dataName']);
       if (block===undefined) return;
       $(block).slideToggle(settings['speed']);
+      // $(!block).hide;
       return;
     });
     
@@ -2182,12 +2244,21 @@ function accessoriesCollapse()
   };
 })(jQuery);
 
-// on click .showBind show .bind
-$('.showBind').RealShowHide({'speed':'fast'});
+// on click .show-bind-button show .bind-button
+$('.show-bind-button').RealShowHide({'speed':'fast'});
 </script>
 
 <!-- <script>
     $('.collapse').show(function() {
+    $(this).addClass('bind')
+}, function() {
+    $(this).removeClass('bind')
+});
+</script> -->
+
+
+<!-- <script>
+    $('.btn-fill-bronze-collapse').onCli(function() {
     $(this).addClass('bind')
 }, function() {
     $(this).removeClass('bind')

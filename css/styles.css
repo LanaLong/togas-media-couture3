@@ -2239,10 +2239,54 @@ transition: opacity 1s ease;
   content: "test .bind-absolute";
 }
 
+
+.bind-fabric::before {
+  height: 50px;
+  border-left: 1px solid #B49256;
+  margin-top: -3.1rem;
+  margin-left: 9.5rem;
+  content: "";
+}
+
 .fade-collapse {
   opacity: 0;
   transition: opacity 1s ease;
 }
 
+#bind-button-fabrics,
+#bind-button-shades,
+#bind-button-upholstery,
+#bind-button-draps,
+#bind-button-headboards,
+#bind-button-accessories {
+  display: none;
+  position: absolute;
+  height: 51px;
+  width: 2px;
+  border-left: 1px solid #B49256;
+  margin-top: -0.4rem;
+  margin-left: 9.3rem;
+  
+  opacity: 1;
+  transition: all .5s ease;
+}
 
+.button-wrapper {
+  position: relative;
+}
+
+
+/*.bind-button2::after {
+  display: none;
+  position: absolute;
+  height: 51px;
+  width: 2px;
+  border-left: 1px solid #000;
+  margin-top: -0.9rem;
+  margin-left: -0.4rem;
+  content: "";
+  
+  opacity: 1;
+  transition: all .5s ease;
+}*/
 /*# sourceMappingURL=styles.css.map */
