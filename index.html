@@ -323,7 +323,7 @@
                     <h4 class="card-title service-title py-3">Fabrics</h4>
                     <p class="txt-sub-cm">The most premium<br/>inspiring fabrics that excel</br>in quality and style!</p>
                     <!--Button-->
-					 <button type="button" class="btn btn-outline-bronze-cm mt-4" data-toggle="collapse" onclick = "fabricsCollapse();" aria-expanded="false" aria-controls="collapseShades">Discover</button>
+					 <button type="button" class="btn btn-outline-bronze-cm mt-4" data-toggle="collapse" onclick = "fabricsCollapse();" aria-expanded="false" aria-controls="collapseShades" class="ShowBind" data-element=".bind-absolute">Discover</button>
                 </div>            
 
             </div>
@@ -528,8 +528,9 @@
         
         <!-- Desktop collapseFabrics -->
         <div class="container-collapse mb-5 mt-2">
-        <div class="row">
+        <div class="row bind">
             <div class="col">
+                <div class="bind-absolute">1</div>
 
         <div class="collapse" id="collapseDesktopFabrics">
           <div class="card-tg card-body-tg">
@@ -1935,6 +1936,7 @@ function accessoriesCollapse()
 	}
 } 
 </script>
+
 <script>
     // FOR MAPS // Google Maps Api
       function initMap() {
@@ -2158,6 +2160,39 @@ function accessoriesCollapse()
       }
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-Ootg3jURt5KMNOQD2vgrENb6x9IrDNg&callback=initMap"></script>
+
+<script type="text/javascript">
+    // show .bind for collapse blocks
+  (function( $ ) {
+  $.fn.RealShowHide = function(options) {
+    
+    var settings = $.extend( {
+      'speed' : undefined,
+      'dataName' : 'element'
+    }, options);
+
+    this.click(function(e){
+      var block = $(e.target).data(settings['dataName']);
+      if (block===undefined) return;
+      $(block).slideToggle(settings['speed']);
+      return;
+    });
+    
+    return this;
+  };
+})(jQuery);
+
+// on click .showBind show .bind
+$('.showBind').RealShowHide({'speed':'fast'});
+</script>
+
+<!-- <script>
+    $('.collapse').show(function() {
+    $(this).addClass('bind')
+}, function() {
+    $(this).removeClass('bind')
+});
+</script> -->
 
 </body>
 </html>
