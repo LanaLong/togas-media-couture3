@@ -375,7 +375,9 @@ p {
   border-radius: 0rem !important;
 }
 
-
+.cards-center {
+  margin:auto;	
+}
 
 
 

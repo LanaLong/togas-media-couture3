@@ -2188,9 +2188,9 @@ input[type=radio]:checked + label::before {
     width: 100%;
   }
 
-.card-text {
+/*.card-text {
   margin-right: -3rem;
-}
+}*/
 
 .carousel-collapse .owl-dots {
   display: none;
