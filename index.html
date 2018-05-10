@@ -325,7 +325,7 @@
                     <!--Button-->
                     <div class="button-wrapper">
     					<button type="button" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "fabricsCollapse();" aria-expanded="false" aria-controls="collapseFabrics" data-element="#bind-button-fabrics">Discover</button>
-                        <div id="bind-button-fabrics"></div>
+                        <div class = "bind-button" id="bind-button-fabrics"></div>
                     </div>  
  
                 </div>            
@@ -409,7 +409,7 @@
                     <!--Button-->
 					 <div class="button-wrapper">
                         <button type="button" class="btn btn-outline-bronze-cm mt-4 waves-effect waves-light show-bind-button" data-toggle="collapse" onclick="shadesCollapse();" aria-expanded="false" aria-controls="collapseShades" data-element="#bind-button-shades">Discover</button>
-                        <div id="bind-button-shades"></div>
+                        <div class = "bind-button" id="bind-button-shades"></div>
                     </div>
                 </div>
 
@@ -485,7 +485,7 @@
                     <!--Button-->
                     <div class="button-wrapper">
                         <button type="button" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "upholsteryCollapse();" aria-expanded="false" aria-controls="collapseUpholstery" data-element="#bind-button-upholstery">Discover</button>
-                        <div id="bind-button-upholstery"></div>
+                        <div class = "bind-button"  id="bind-button-upholstery"></div>
                     </div>  
 
 				</div>
@@ -717,7 +717,7 @@
                     <!--Button-->
                     <div class="button-wrapper">
                         <button type="button" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "drapsCollapse();" aria-expanded="false" aria-controls="collapseDraps" data-element="#bind-button-draps">Discover</button>
-                        <div id="bind-button-draps"></div>
+                        <div class = "bind-button" id="bind-button-draps"></div>
                     </div> 
 					
                 </div>
@@ -790,7 +790,7 @@
                      <!--Button-->
                      <div class="button-wrapper">
                         <button type="button" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "headboardsCollapse();" aria-expanded="false" aria-controls="collapseHeadboards" data-element="#bind-button-headboards">Discover</button>
-                        <div id="bind-button-headboards"></div>
+                        <div class = "bind-button" id="bind-button-headboards"></div>
                     </div> 
 					 
                 </div>
@@ -862,7 +862,7 @@
                      <!--Button-->
                     <div class="button-wrapper">
                         <button type="button" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "accessoriesCollapse();" aria-expanded="false" aria-controls="collapseAccessories" data-element="#bind-button-accessories">Discover</button>
-                        <div id="bind-button-accessories"></div>
+                        <div class = "bind-button" id="bind-button-accessories"></div>
                     </div> 
 					 
                 </div>
@@ -1913,13 +1913,14 @@ var validator = new FormValidator('callback', [{
 </script>
 <script>
 $(window).resize(function() {
-
+$('.bind-button').hide();
 $('.collapse').collapse('hide');
 
 });
 function fabricsCollapse()
 {	
-	$('.collapse').collapse('hide');
+	$('.bind-button:not(#bind-button-fabrics)').hide();	
+	$('.collapse').collapse('hide');	
 	if ($(window).width() > 768 )
 	{
 		$('#collapseDesktopFabrics').collapse('toggle');
@@ -1931,7 +1932,8 @@ function fabricsCollapse()
 } 
 
 function shadesCollapse()
-{
+{	
+	$('.bind-button:not(#bind-button-shades)').hide();
 	$('.collapse').collapse('hide');
 	if ($(window).width() > 768 )
 	{
@@ -1945,6 +1947,7 @@ function shadesCollapse()
 
 function upholsteryCollapse()
 {
+	$('.bind-button:not(#bind-button-upholstery)').hide();
 	$('.collapse').collapse('hide');
 	if ($(window).width() > 768 )
 	{
@@ -1958,6 +1961,7 @@ function upholsteryCollapse()
 
 function drapsCollapse()
 {
+	$('.bind-button:not(#bind-button-draps)').hide();
 	$('.collapse').collapse('hide');
 	if ($(window).width() > 768 )
 	{
@@ -1971,6 +1975,7 @@ function drapsCollapse()
 
 function headboardsCollapse()
 {
+	$('.bind-button:not(#bind-button-headboards)').hide();
 	$('.collapse').collapse('hide');
 	if ($(window).width() > 768 )
 	{
@@ -1984,6 +1989,7 @@ function headboardsCollapse()
 
 function accessoriesCollapse()
 {
+	$('.bind-button:not(#bind-button-accessories)').hide();
 	$('.collapse').collapse('hide');
 	if ($(window).width() > 768 )
 	{
