@@ -2188,9 +2188,9 @@ input[type=radio]:checked + label::before {
     width: 100%;
   }
 
-/*.card-text {
+.card-text {
   margin-right: -3rem;
-}*/
+}
 
 .carousel-collapse .owl-dots {
   display: none;
@@ -2297,31 +2297,31 @@ transition: opacity 1s ease;
    background-color: #f6f5f5;
             }
 
-  .modal-title-top {
+  .modal-callyou .modal-title-top {
     padding-left: 1rem;
     padding-right: 1rem;
     color:#000;
   }
 
-  .modal-body {
+  .modal-callyou .modal-body {
     padding: 0;
   }
 
-  .modal-dialog {
+  .modal-callyou {
     max-width: inherit;
     margin: 1.75rem auto;
     max-width: 500px;
   }
 
-  .modal-dialog .modal-content {
+  .modal-callyou .modal-content {
     margin-top: inherit;
   }
 
-  .modal-dialog .time-select {
+  .modal-callyou .time-select {
     display: block !important;
   }
 
-  .modal-dialog .txt-inner {
+  .modal-callyou .txt-inner {
     font-size:1.5em !important;
   }
 }
