@@ -2189,7 +2189,7 @@ input[type=radio]:checked + label::before {
   }
 
 .card-text {
-  margin-right: -3rem;
+  /* margin-right: -3rem; */
 }
 
 .carousel-collapse .owl-dots {
@@ -2290,6 +2290,17 @@ transition: opacity 1s ease;
   transition: all .5s ease;
 }*/
 /*# sourceMappingURL=styles.css.map */
+
+.modal-callyou #fail {
+  color: red;
+  margin:1rem
+}
+
+.modal-callyou #valid {
+  color: green;
+  margin:1rem;
+  font-weight:bold;
+}
 
 @media screen and (max-width: 769px) {
  .modal-bg {
