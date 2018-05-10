@@ -1884,9 +1884,12 @@ var validator = new FormValidator('callback', [{
 </script>
 <script>
 $(window).resize(function() {
-$('.bind-button').hide();
-$('.collapse').collapse('hide');
-//$('.show-bind-button').html('Discover');	
+	if ($(window).width > 991 )
+	{
+		$('.bind-button').hide();
+		$('.collapse').collapse('hide');
+		//$('.show-bind-button').html('Discover');	
+	}
 
 });
 function fabricsCollapse()
