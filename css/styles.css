@@ -2290,3 +2290,38 @@ transition: opacity 1s ease;
   transition: all .5s ease;
 }*/
 /*# sourceMappingURL=styles.css.map */
+
+@media screen and (max-width: 769px) {
+ .modal-bg {
+   background-image:none;
+   background-color: #f6f5f5;
+            }
+
+  .modal-title-top {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color:#000;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  .modal-dialog {
+    max-width: inherit;
+    margin: 1.75rem auto;
+    max-width: 500px;
+  }
+
+  .modal-dialog .modal-content {
+    margin-top: inherit;
+  }
+
+  .modal-dialog .time-select {
+    display: block !important;
+  }
+
+  .modal-dialog .txt-inner {
+    font-size:1.5em !important;
+  }
+}
