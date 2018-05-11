@@ -1230,7 +1230,7 @@ header {
 
 .header-block {
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   text-align: center;
   width: 100%;
 }
@@ -2016,7 +2016,13 @@ input[type=radio]:checked + label::before {
       background-size: cover;
       background-position: center center;
     }
-
+	
+.carousel-control { 
+	position: absolute;
+	width: 50%;
+	height: 100%; 
+	z-index: 5; 
+}
 
 /* Social links  */
 .txt-line a {
@@ -2073,7 +2079,7 @@ input[type=radio]:checked + label::before {
 
 .product-slider .item img { width: 100%; height: auto; }
 
-.carousel-control { color: #0284b8; text-align: center; text-shadow: none; font-size: 30px; width: 30px; height: 30px; line-height: 20px; top: 23%; }
+
 
 .carousel-control:hover, .carousel-control:focus, .carousel-control:active { color: #333; }
 
