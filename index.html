@@ -194,7 +194,7 @@
 
         <!-- FORM -->
         <form name = "callback" method = "post">
-			<div class="ajax-wrapper" id="ajax-wrapper" style = "margin:auto;position: relative;min-width: 50px;"></div>
+			<div class="ajax-wrapper" id="ajax-wrapper" style = "text-align:center;margin:auto;position: relative;min-width: 50px;"></div>
 			<div id = "valid"></div>
 			<div id = "fail">Something is wrong. Please, check information in the form.</div>	
             <!-- Input text -->
@@ -1890,8 +1890,10 @@ function sendMessage() {
 			$('#callback-submit').prop( "disabled", false );
 			$('#ajax-wrapper').html('');
 			$('#valid').show();
+			$('#valid').css("color", "red");
 			$('#valid').text(data['message']);	
-			if (data['code'] < 300) {				
+			if (data['code'] < 300) {
+				$('#valid').css("color", "green");
 				$('#form34').val('');
 				$('#form32').val('');
 				$('#form29').val('');
