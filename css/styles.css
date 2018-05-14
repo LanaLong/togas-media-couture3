@@ -2310,7 +2310,24 @@ transition: opacity 1s ease;
   font-weight:bold;
   text-align:center;
 }
-
+.ajax-wrapper {
+	text-align:center;
+	margin:auto;
+	position: relative;
+	min-width: 50px;	
+}
+@media only screen  and (min-width : 770px) {
+	.modal-callyou #valid,#fail {
+		position:absolute;
+		top:0;
+		right:2rem;	
+	}
+	.ajax-wrapper {
+		position:absolute;
+		top:0;
+		right:3rem;
+	}
+}
 .collapse-carousel .carousel-indicators {
 
       position: relative;
