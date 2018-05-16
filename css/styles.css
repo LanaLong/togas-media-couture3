@@ -698,6 +698,9 @@ nav {
   padding-top:0!important;
   padding-bottom:0!important;
 }
+.catalog-button:hover{
+	color: #232323;
+}
 
 .txt-line {
   font-family: 'PFRegalDisplayPro-Medium';
