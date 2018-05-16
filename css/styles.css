@@ -580,6 +580,9 @@ nav {
 .bg-grey {
   background: #F7F7F7;
 }
+.bg-dark-grey {
+  background: #e8e8e8;
+}
 
 .bg-section-black {
   background-color: #232323;
@@ -683,6 +686,17 @@ nav {
   font-family: 'PFRegalDisplayPro-Reg';
   font-size: 1.1em;
   color: #232323;
+}
+.txt-catalog {
+  font-family: 'PFRegalDisplayPro-Reg';
+  font-size: 1.5rem;	
+  margin-top:0.5rem;
+}
+
+.catalog-button {
+  height: 2rem;
+  padding-top:0!important;
+  padding-bottom:0!important;
 }
 
 .txt-line {
