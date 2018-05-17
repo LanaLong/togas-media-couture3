@@ -374,11 +374,11 @@ p {
   text-transform: uppercase;
   border-radius: 0rem !important;
 }
-
+@media (max-width: 991px) { 
 .cards-center {
   margin:auto;	
 }
-
+}
 
 
 @media (max-width: 720px) { 
