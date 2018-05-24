@@ -1227,7 +1227,8 @@ p {
     font-size: 1.7em;
     letter-spacing: 0.1em;
     color: #fff;
-    margin-top: 1.8em;    
+    margin-top: 1.8em; 
+    padding-left: 2em;	
 }
 
 .modal-title-top span {
