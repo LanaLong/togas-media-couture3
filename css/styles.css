@@ -878,7 +878,7 @@ p {
 
 .txt-under {
   font-family: 'PFRegalDisplayPro-MedItalic';
-  font-size: 1.65em;
+  font-size: 1.25em;
   line-height: 1.18em;
   color: #232323;
   letter-spacing: 0.06em;
@@ -1019,6 +1019,10 @@ p {
   font-size: 150%;
   color: #B49256;
   margin: 1rem;
+}
+@media screen and (max-width: 960px) { 
+ #store-locator {
+  height: 1285px;
 }
 
 @media screen and (max-width: 1140px) {
