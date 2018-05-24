@@ -2373,6 +2373,14 @@ transition: opacity 1s ease;
 	position: relative;
 	min-width: 50px;	
 }
+
+.free_numb_rus {
+	font-size: 1em;
+    text-transform: none;
+    letter-spacing: 0.2em;
+}
+
+
 @media only screen  and (min-width : 770px) {
 	.modal-callyou #valid,#fail {
 		position:absolute;
