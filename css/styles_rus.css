@@ -692,6 +692,7 @@ nav {
   font-size: 1.4rem;	
   margin-top:0.5rem;
   text-align: center;
+  color: black;
 }
 
 .catalog-button {
@@ -1228,7 +1229,7 @@ p {
     letter-spacing: 0.1em;
     color: #fff;
     margin-top: 1.8em; 
-    padding-left: 2em;	
+    padding-left: 2.6em;	
 }
 
 .modal-title-top span {
