@@ -1440,6 +1440,25 @@ top: 2px;
   padding-bottom: 1.5rem;
 }
 
+@media screen and (max-width: 1528px) {
+    .navbar-nav li:not(:last-child) a:after {
+      content: "|";
+      color: #fff;
+      font-size: 100%;
+      padding-right: 0px;
+      padding-left: 1em;
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+  }
+
+    .sub-title-custom {
+      font-size: 1.74em;
+  }
+}
+
 @media screen and (max-width: 1401px) {
     .navbar-nav li:not(:last-child) a:after {
       content: "|";
@@ -1450,8 +1469,8 @@ top: 2px;
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
-      padding-right: 1rem;
-      padding-left: 1rem;
+      padding-right: 0.8rem;
+      padding-left: 0.8rem;
   }
 
     .sub-title-custom {
