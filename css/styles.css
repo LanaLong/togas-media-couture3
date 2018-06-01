@@ -696,11 +696,11 @@ nav {
 
 .catalog-button {
   height: 2rem;
-  padding-top:0!important;
-  padding-bottom:0!important;
+  padding: 1.5rem 1.5rem 2.2rem 1.6rem !important;
+
 }
 .catalog-button:hover{
-	color: #232323;
+	color: #B49256;
 }
 
 .txt-line {
