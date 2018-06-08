@@ -22,7 +22,7 @@
     <link href="https://media.togas.com/media/couture/css/style-togas-lp-v2.css" rel="stylesheet">
 
     <!-- Your custom styles (optional) -->
-    <link href="https://media.togas.com/media/couture/css/styles.css?v=5" rel="stylesheet">
+    <link href="https://media.togas.com/media/couture/css/styles.css?v=4" rel="stylesheet">
 
 	<!-- fotorama.css & fotorama.js. -->
 <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
@@ -45,6 +45,8 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PSZKS4');</script>
+
+
 	 
 <header id="top-slider" class="mb-5">
 
@@ -68,11 +70,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="row-header mb-2 text-center justify-content-between">
 
             <div class="third-col align-self-center order-2 order-lg-0">
-                <button type="button" class="btn btn-outline-bronze" data-toggle="modal" data-target="#modalContactForm">call us: 1 212 300 2876</button>
+                <button type="button" class="btn btn-outline-bronze" data-toggle="modal" data-target="#modalContactForm">call us: <span id="phonetop">+1 212 300 2876</span></button>
             </div>
                     
              <div class="third-col">
-               <h3 class="sub-title-custom my-2">custom-made</h3>
+               <h1 class="sub-title-custom my-2">custom-made</h1>
             </div>
 
             <div class="third-col align-self-center">
@@ -293,7 +295,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="row row-margin mt-5">
         <!-- class="mt-5" DELETE -->
         <div class="col-sm-12 col-md-8 mt-4 pr-5">
-        <h1 class="section-title">CREATING THE<br/>INTERIOR<br/>OF YOUR DREAMS</h1>
+        <h2 class="section-title">CREATING THE<br/>INTERIOR<br/>OF YOUR DREAMS</h2>
             <h6 class="subscript-one pt-4 pb-2">EXCELLENCE IN CUSTOM SERVICE&nbsp;&nbsp;<span><img src="https://media.togas.com/media/couture/img/img-togas-lp3/line-02-right-09.svg" width="150" alt=""></span></h6>
                 <img src="https://media.togas.com/media/couture/img/img-togas-lp3/create2.jpg" alt="Custom-made" class="img-fluid d-block d-md-none w-50 my-4 float-left float-md-none pr-3 pr-sm-5">
                 <p class="text-justify txt-p py-4">Togas offers exclusive Custom textile services, from professional window treatments and shades, bespoke upholstery & reupholstery options, custom designed and crafted headboards all the way to contract solutions cattered towards interior design professionals or hoteliers.</p> 
@@ -302,7 +304,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <p class="text-justify txt-p pb-4">Not unlike your personality, each project we individualy design and craft is a unique masterpiece which has no replica in the world. The exquisite quality of artisan work combined with the vast variety of fabrics and accessories, attain results worth of the highest aesthetic standards, balancing quality and luxury.</p>			
 				<p class="text-justify txt-p pb-4">The result – an exclusive interior, born from the dynamics of your individuality!</p>
         </div>
-        <div class="col-md-4 d-flex flex-column align-items-end mt-5 pl-5 pl-sm-3">
+        <div class="col-md-4 flex-column align-items-end mt-5 pl-5 pl-sm-3">
         <div class="view zoom">
             <img src="https://media.togas.com/media/couture/img/img-togas-lp3/create.png" alt="Create the home of your dreams" class="img-fluid d-none d-md-block pl-md-4 ">
         </div>
@@ -355,7 +357,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <!--Card content-->
                 <div class="card-body">
                     <!--Title-->
-                    <h4 class="card-title service-title py-3">Shades</h4>
+                    <h3 class="card-title service-title py-3">Shades</h3>
                     <p class="txt-sub-cm">The perfect way<br>to dress up your windows<br>for beauty and function.</p>
                     <!--Button-->
 					 <div class="button-wrapper">
@@ -440,7 +442,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <!--Card content-->
                 <div class="card-body">
                     <!--Title-->
-                    <h4 class="card-title service-title py-3">Upholstery</h4>
+                    <h3 class="card-title service-title py-3">Upholstery</h3>
                     <p class="txt-sub-cm">The best upholstery & reupholstery<br/>options, carefully customized<br/>to your own needs and desires.</p>
                     <!--Button-->
                     <div class="button-wrapper">
@@ -522,7 +524,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <!--Card content-->
                 <div class="card-body">
                     <!--Title-->
-                    <h4 class="card-title service-title py-3">Custom drapes</h4>
+                    <h3 class="card-title service-title py-3">Custom drapes</h3>
                     <p class="txt-sub-cm">We frame your window in the way<br/>that a beautiful accessory<br/>complements a dress.</p>
                     <!--Button-->
                     <div class="button-wrapper">
@@ -583,9 +585,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- / container for mobile collapseDraps-->
 		</div>
         <!-- / mobile collapseDraps -->  		
-		
+		</div>
+		<div class="row d-flex justify-content-center mx-auto">
+		<div class="col-sm-12">
         <!-- Desktop collapseShades -->
-        <div class="container-collapse mb-5 mt-2">
+        <div class="container-collapse mt-2">
         <div class="row">
             <div class="col">
                 <div id="#bind2" class="bind-absolute"></div>
@@ -637,9 +641,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <!-- / container for desktop collapseShades-->
         <!-- / Desktop collapseShades -->
-
+		</div>
+		<div class="col-sm-12">
 		<!-- Desktop collapseUpholstery -->   
-        <div class="container-collapse mb-5 mt-2">
+        <div class="container-collapse mt-2">
         <div class="row">
         <div class="col">
 
@@ -685,9 +690,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <!-- / container for desktop collapseUpholstery-->
         <!-- / Desktop collapseUpholstery -->
-
+		</div>
+		<div class="col-sm-12">
 		<!-- Desktop collapseDraps -->
-        <div class="container-collapse mb-5 mt-2">
+        <div class="container-collapse mt-2">
         <div class="row">
         <div class="col">
 
@@ -732,6 +738,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- / container for desktop collapseDraps-->
         <!-- / Desktop collapseDraps -->
         </div>
+		</div>		
         <!-- /row1 -->
 
 
@@ -756,7 +763,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <!--Card content-->
                 <div class="card-body">
                     <!--Title-->
-                    <h4 class="card-title service-title py-3">Headboards</h4>
+                    <h3 class="card-title service-title py-3">Headboards</h3>
                     <p class="txt-sub-cm">A high-quality collection<br/> of finely crafted custom designed<br/>headboards.</p>
                     
                      <!--Button-->
@@ -834,7 +841,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <!--Card content-->
                 <div class="card-body">
                     <!--Title-->
-                    <h4 class="card-title service-title py-3">in-house</br>design</h4>
+                    <h3 class="card-title service-title py-3">in-house</br>design</h3>
                     <p class="txt-sub-cm">Limitless possibilities for creativity </br>and style by our talented in-house consulting team.</p>
                     
                      <!--Button-->
@@ -916,7 +923,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <!--Card content-->
                 <div class="card-body">
                     <!--Title-->
-                    <h4 class="card-title service-title py-3">Contract</h4>
+                    <h3 class="card-title service-title py-3">Contract</h3>
                     <p class="txt-sub-cm">Are you a professional<br/>in interior or architectural design?<br/>Then, get in touch!</p>
                     <!--Button-->
                     <div class="button-wrapper" style = "margin-top:0.5rem">
@@ -977,12 +984,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- / container for mobile collapseDraps-->
 		</div>
         <!-- / mobile collapseB2b -->    
-                
+        </div>
+        <div class="row d-flex justify-content-center mx-auto">                       
 
  
-
+		<div class="col-sm-12">
 		<!-- Desktop collapseHeadboards -->
-        <div class="container-collapse mb-5 mt-2">
+        <div class="container-collapse mt-2">
         <div class="row">
         <div class="col">
 
@@ -1025,10 +1033,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <!-- / container for desktop collapseHeadboards-->
         <!-- / Desktop collapseHeadboards -->		
-
-
+        </div>
+		<div class="col-sm-12">
 		<!-- Desktop collapseInHouseDesigners -->
-        <div class="container-collapse mb-5 mt-2">
+        <div class="container-collapse mt-2">
         <div class="row">
         <div class="col">
 
@@ -1074,9 +1082,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <!-- / container for desktop collapseInHouseDesigners-->
         <!-- / Desktop collapseInHouseDesigners -->			
-		
+		</div>
+		<div class="col-sm-12">		
 		<!-- Desktop collapseB2b -->
-        <div class="container-collapse mb-5 mt-2">
+        <div class="container-collapse mt-2">
         <div class="row">
         <div class="col">
 
@@ -1121,15 +1130,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- / container for desktop collapseB2b-->
         <!-- / Desktop collapseB2b -->
         </div>
+		</div>		
 	</div>
 	</div>
 
-<div class="container-fluid bg-dark-grey">
+<div class="container-fluid  bg-dark-grey">
     <div class="container py-5">	
 		<!-- Row2 ::catalog-download -->
-		<div class="row align-items-center">
-			<div class = "col-xs-12 col-sm-12 col-md-8 d-flex justify-content-center "><h3 class = "txt-catalog">Discover the Custom-Made 2018 Togas Collection</h3></div>
-			<div class = "col-xs-12 col-sm-12 col-md-4 d-flex  justify-content-center mt-sm-4 mt-md-0" ><button type = "button" class = "btn btn-fill-bronze waves-effect waves-light catalog-button" onclick = "window.open('https://media.togas.com/media/wysiwyg/couture/COUTURE_INTERNATIONAL_2018_web.pdf')">Download Catalogue</div>
+		<div class="row">
+			<div class = "col-xs-12 col-sm-12 col-md-8 d-flex justify-content-center "><p class = "txt-catalog">Discover the Custom-Made 2018 Togas Collection</p></div>
+			<div class = "col-xs-12 col-sm-12 col-md-4 d-flex justify-content-center " ><button type = "button" class = "btn btn-fill-bronze waves-effect waves-light catalog-button" onclick = "window.open('https://media.togas.com/media/wysiwyg/couture/COUTURE_INTERNATIONAL_2018_web.pdf')">Download Catalogue</div>
 		</div>
 		<!-- row -->
 	</div>
@@ -1171,7 +1181,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <!--Card content-->
                 <div class="card-body">
                     <!--Title-->
-                    <h4 class="card-title service-title py-3">Fabrics</h4>
+                    <h3 class="card-title service-title py-3">Fabrics</h3>
                     <p class="txt-sub-cm">Discover our exclusive<br/>fabrics that excel in<br/>quality and style!</p>
                     <!--Button-->
                     <div class="button-wrapper">
@@ -1270,7 +1280,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <!--Card content-->
                 <div class="card-body">
                     <!--Title-->
-                    <h4 class="card-title service-title py-3">Hardware</h4>
+                    <h3 class="card-title service-title py-3">Hardware</h3>
                     <p class="txt-sub-cm">Complete your final<br/>look with the top<br/>hardware items.</p>
                     <!--Button-->
                     <div class="button-wrapper">
@@ -1349,7 +1359,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <!--Card content-->
                 <div class="card-body">
                     <!--Title-->
-                    <h4 class="card-title service-title py-3">Accessories</h4>
+                    <h3 class="card-title service-title py-3">Accessories</h3>
                     <p class="txt-sub-cm">Beauty lies in the details! <br/>Check our collection of pillows,<br/>tassels and trimmings.<br/></p>
                     
                      <!--Button-->
@@ -1412,9 +1422,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- / container for desktop collapseAccessories-->
 		</div>
         <!-- / mobile collapseAccessories -->	
-
+		</div>
+        <div class="row d-flex justify-content-center mx-auto">
+		<div class="col-sm-12">
         <!-- Desktop collapseFabrics -->
-        <div class="container-collapse mb-5 mt-2">
+        <div class="container-collapse mt-2">
         <div class="row">
             <div class="col">
                 <div id="#bind1" class="bind-absolute"></div>
@@ -1473,9 +1485,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <!-- / container for desktop collapseFabrics-->
         <!-- / Desktop collapseFabrics -->
-
+		</div>
+		<div class="col-sm-12">
 		<!-- Desktop collapseHardware -->
-        <div class="container-collapse mb-5 mt-2">
+        <div class="container-collapse mt-2">
         <div class="row">
         <div class="col">
 
@@ -1518,9 +1531,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <!-- / container for desktop collapseHardware-->
         <!-- / Desktop collapseHardware -->
-
+		</div>
+		<div class="col-sm-12">
 		<!-- Desktop collapseAccessories -->
-        <div class="container-collapse mb-5 mt-2">
+        <div class="container-collapse mt-2">
         <div class="row">
         <div class="col">
 
@@ -1565,7 +1579,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <!-- / container for desktop collapseAccessories-->
         <!-- / Desktop collapseAccessories -->	
-		
+        </div>		
         </div>
         </div>
         <!-- Container -->
@@ -1582,7 +1596,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="container py-5">
             <div class="row row-margin d-flex align-items-center view overlay">
                 <div class="col-12 col-md-9 p-advance-15">
-                    <h3 class="section-black-title text-center text-md-left my-3">MAKE YOUR STYLISTIC VISION<br/>A REALITY</h3>
+                    <h2 class="section-black-title text-center text-md-left my-3">MAKE YOUR STYLISTIC VISION<br/>A REALITY</h2>
                     <p class="section-black-text text-center text-md-left">Imagine a world of possibilities and create the perfect custom items for your interior!</p>
                 </div>
                 <div class="col-12 col-md-3 p-advance-15 d-flex justify-content-center justify-content-md-end mt-4 mt-md-0">
@@ -1755,7 +1769,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="container-fluid bg-section-black pt-5 pb-4">
 
             <div class="container pt-5 align-items-center text-center">
-                 <h3 class="section-black-title text-center pb-4">testimonials</h3>
+                 <h2 class="section-black-title text-center pb-4">testimonials</h2>
                  <img src="https://media.togas.com/media/couture/img/img-togas-lp3/quote-01-16.png" width="30" alt="quote" class="pb-3">
             </div>
 
@@ -1885,8 +1899,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="d-flex justify-content-between align-items-center py-4">
 
                 <div class="d-flex align-items-center">
-                    <span class="border-bronze"><a href="https://www.facebook.com/togastextile/" target="_blank"><img src="https://media.togas.com/media/couture/img/img-togas-lp3/fb-282.png" width="25px" alt="Facebook"></a></span>
-                    <span class="txt-line pl-3"><a href="https://www.facebook.com/togastextile/" target="_blank">Find us on Facebook</a></span>
+                    <span class="border-bronze"><a href="https://www.facebook.com/togasofficial/" target="_blank"><img src="https://media.togas.com/media/couture/img/img-togas-lp3/fb-282.png" width="25px" alt="Facebook"></a></span>
+                    <span class="txt-line pl-3"><a href="https://www.facebook.com/togasofficial/" target="_blank">Find us on Facebook</a></span>
                 </div>
 
                 <div class="d-flex align-items-center">
@@ -1894,8 +1908,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
 
                 <div class="d-flex align-items-center">
-                    <span class="border-bronze"><a href="https://www.instagram.com/togasofficialru/" target="_blank"><img src="https://media.togas.com/media/couture/img/img-togas-lp3/inst-27.svg" width="25px" alt="Instagram"></a></span>
-                    <span class="txt-line pl-3"><a href="https://www.instagram.com/togasofficialru/" target="_blank">Follow us on Instagram</a></span>
+                    <span class="border-bronze"><a href="https://www.instagram.com/togasofficial/" target="_blank"><img src="https://media.togas.com/media/couture/img/img-togas-lp3/inst-27.svg" width="25px" alt="Instagram"></a></span>
+                    <span class="txt-line pl-3"><a href="https://www.instagram.com/togasofficial/" target="_blank">Follow us on Instagram</a></span>
                 </div>
 
             </div>
@@ -1938,7 +1952,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="container py-5">
             <div class="row row-margin d-flex align-items-center view overlay">
                 <div class="col-12 col-md-9 p-advance-15">
-                        <h3 class="section-black-title text-center text-md-left">Discover the best way<br> to stand out</h3>
+                        <h2 class="section-black-title text-center text-md-left">Discover the best way<br> to stand out</h2>
                         <p class="section-black-text text-center text-md-left pt-3">The most exclusive way to find a solution for customized home decoration!</p>
                 </div>
                 <div class="col-12 col-md-3 p-advance-15 d-flex justify-content-center justify-content-md-end mt-4 mt-md-0">
@@ -1956,7 +1970,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="container justify-content-sm-center py-4">
             <div class="row row-margin my-4">
                 <div class="col-12 col-lg-6">
-                    <h1 class="section-title text-center pb-4" id="about-us">Our story</h1>
+                    <h2 class="section-title text-center pb-4" id="about-us">Our story</h2>
 
                      <div class="tab-content mb-4" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-1926" role="tabpanel" aria-labelledby="pills-1926-tab">
