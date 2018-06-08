@@ -788,7 +788,7 @@ nav {
 }
 
 .modal-bg {
-  background-image: url("https://media.togas.com/media/couture/img/img-togas-lp3/form_rus.png?v=1");
+  background-image: url("/media/couture/img/img-togas-lp3/form.png");
 }
 
 .modal-content {
@@ -1020,12 +1020,6 @@ p {
   font-size: 150%;
   color: #B49256;
   margin: 1rem;
-}
-@media screen and (max-height: 630px) {
-  .navbar .navbar-nav {
-	font-size: 0.8rem;
-	line-height: 0.8rem;
-   }
 }
 
 @media screen and (max-width: 1140px) {

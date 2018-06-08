@@ -696,11 +696,11 @@ nav {
 
 .catalog-button {
   height: 2rem;
-  padding: 1.5rem 1.5rem 2.2rem 1.6rem !important;
-
+  padding-top:0!important;
+  padding-bottom:0!important;
 }
 .catalog-button:hover{
-	color: #B49256;
+	color: #232323;
 }
 
 .txt-line {
@@ -878,7 +878,7 @@ p {
 
 .txt-under {
   font-family: 'PFRegalDisplayPro-MedItalic';
-  font-size: 1.25em;
+  font-size: 1.3em;
   line-height: 1.18em;
   color: #232323;
   letter-spacing: 0.06em;
@@ -1019,10 +1019,6 @@ p {
   font-size: 150%;
   color: #B49256;
   margin: 1rem;
-}
-@media screen and (max-width: 960px) { 
- #store-locator {
-  height: 1285px;
 }
 
 @media screen and (max-width: 1140px) {
@@ -1443,6 +1439,25 @@ top: 2px;
   padding-bottom: 1.5rem;
 }
 
+@media screen and (max-width: 1401px) {
+    .navbar-nav li:not(:last-child) a:after {
+      content: "|";
+      color: #fff;
+      font-size: 100%;
+      padding-right: 0px;
+      padding-left: 1em;
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+      padding-right: 1rem;
+      padding-left: 1rem;
+  }
+
+    .sub-title-custom {
+      font-size: 1.74em;
+  }
+}
+
 @media screen and (max-width: 1141px) {
     .navbar-nav li:not(:last-child) a:after {
       content: "|";
@@ -1461,6 +1476,26 @@ top: 2px;
       font-size: 1.74em;
   }
 }
+
+@media screen and (max-width: 910px) {
+    .navbar-nav li:not(:last-child) a:after {
+      content: "|";
+      color: #fff;
+      font-size: 100%;
+      padding-right: 0px;
+      padding-left: 1em;
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+      padding-right: 0.35rem;
+      padding-left: 0.35rem;
+  }
+
+    .sub-title-custom {
+      font-size: 1.74em;
+  }
+}
+
 
 /* MODAL FORM */
 /* MD FORM MDB */
@@ -2364,6 +2399,12 @@ transition: opacity 1s ease;
 
 .fotorama__stage {background:#000;}
 
+@media screen and (max-width: 831px) {
+	.modal-title-top {
+		font-size:2.0em;
+		padding-left:3.3em;
+	}
+}
 @media screen and (max-width: 769px) {
  .modal-bg {
    background-image:none;
