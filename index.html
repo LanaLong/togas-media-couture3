@@ -202,7 +202,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- MODAL WINDOW -->
 <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-callyou" role="document">
-    <div class="modal-content modal-bg pb-5">
+    <div class="modal-content modal-bg">
         <div class="modal-header-togas-top text-center mb-4">
             <h4 class="modal-title-top">Talk with our expert on <span style="white-space: nowrap;">+1 212 300 2876</span></h4>
 			
@@ -214,67 +214,118 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="modal-body mx-5">
             <div class="txt-pre mb-3">
-                <p class="txt-inner">- Or </br>Let us call you back!</p>
+                <p class="txt-inner">- Or let us call you back!</p>
             </div>
 
         <!-- FORM -->
-        <form name = "callback" method = "post">
+        <form name = "callback" enctype = "multipart/form-data" method = "post">
 			<div class="ajax-wrapper" id="ajax-wrapper"></div>
 			<div id = "valid"></div>
-			<div id = "fail">Something is wrong. Please, check information in the form.</div>	
-            <!-- Input text -->
-            <div class="md-form">
-                <input type="text" id="form34" name="firstname" class="form-control validate">
-                <label class="txt-inner" data-error="wrong" data-success="right" for="form34">Name Surname: </label>
-            </div>
+			<div id = "fail">Something is wrong. Please, check information in the form.</div>
 
-            <!-- Input phone -->
-            <div class="md-form">
-                <input type="tel" id="form32" name="phone" class="form-control validate">
-                <label class="txt-inner" data-error="wrong" data-success="right" for="form32">Phone: </label>
-            </div>
-            
-            <!-- Input email -->
-            <div class="md-form">
-                <input type="email" id="form29" name="email" class="form-control validate">
-                <label class="txt-inner" data-error="wrong" data-success="right" for="form29">Email: </label>
-            </div>
-			<div style = "display:none">
-				<input type="text" value = "hBouW9el5zSYrsN1E4q9" name = "key">                    
+			<div class="row">
+					<!-- Input text -->
+					<div class="col-12 col-md-6">
+						<div class="">
+							<label class="txt-inner required" data-error="wrong" data-success="right" for="name">Name</label>
+							<input type="text" id="name" name="name" class="form-control validate">
+							<label class = "required-message" id = "name-required" for="name"> </label>
+							
+						</div>
+						<div class="mt-3">
+							<label class="txt-inner required" data-error="wrong" data-success="right" for="surname">Surname</label>
+							<input type="text" id="surname" name="surname" class="form-control validate">
+							<label class = "required-message" id = "surname-required" for="surname"> </label>
+							
+						</div>
+						<!-- Input phone -->
+						<div class="mt-3">
+							<label class="txt-inner required" data-error="wrong" data-success="right" for="phone">Phone</label>
+							<input type="tel" id="phone" name="phone" class="form-control validate">  
+							<label class = "required-message"  id = "phone-required" for="phone"> </label>
+						</div>
+						
+						<!-- Input email -->
+						<div class="mt-3">
+							<label class="txt-inner required" data-error="wrong" data-success="right" for="email">Email</label>
+							<input type="text" id="email" name="email" class="form-control validate">
+							<label class = "required-message" id = "email-required" for="email"> </label>
+
+						</div>
+						<div style = "display:none">
+							<input type="text" value = "hBouW9el5zSYrsN1E4q9" name = "key">                    
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<!--Dropdown -->
+							<div class="">
+								 
+								<label class="txt-inner" for="serviceselect">Choose service</label>
+								<select name = "serviceselect" id = "serviceselect" name="service" class="form-control" >
+									<option value="Custom drapes" selected>Custom drapes</option>
+									<option value="Shades">Shades</option>
+									<option value="Upholstery">Upholstery</option>
+									<option value="Headboards">Headboards</option>
+									<option value="In-house design">In-house design</option>
+									<option value="Contract">Contract</option>
+								</select>
+							</div>
+							
+							
+							<div class="txt-pre mt-5">
+								<p><span class="txt-inner">Best time to contact you</span></p>
+							</div>
+
+							<!--Radio group-->
+							<div class="time-select">
+								<div class="form-check">
+									<input class="form-check-input" name="group100" value = "now" type="radio" id="radio100">
+									<label class="form-check-label txt-inner" for="radio100">Now</label>
+								</div>
+
+
+								<div class="form-check">
+									<input class="form-check-input" name="group100" value = "morning" type="radio" id="radio101">
+									<label class="form-check-label txt-inner" for="radio101">Morning</label>
+								</div>
+
+								<div class="form-check">
+									<input class="form-check-input" name="group100" value = "afternoon" type="radio" id="radio102">
+									<label class="form-check-label txt-inner" for="radio102">Afternoon</label>
+								</div>
+
+								<div class="form-check">
+									<input class="form-check-input" name="group100" value = "evening" type="radio" id="radio103">
+									<label class="form-check-label txt-inner" for="radio103">Evening</label>
+								</div>
+							</div>
+							<!--Radio group-->
+					</div>
 			</div>
-            <div class="txt-pre mt-4">
-                <p><span class="txt-inner">Best time to contact you</span></p>
-            </div>
+			
 
-            <!--Radio group-->
-            <div class="d-flex flex-row justify-content-start align-items-end time-select">
-                <div class="form-check">
-                    <input class="form-check-input" name="group100" value = "now" type="radio" id="radio100">
-                    <label class="form-check-label txt-inner" for="radio100">Now</label>
-                </div>
-
-
-                <div class="form-check">
-                    <input class="form-check-input" name="group100" value = "morning" type="radio" id="radio101" checked>
-                    <label class="form-check-label txt-inner" for="radio101">Morning</label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" name="group100" value = "afternoon" type="radio" id="radio102">
-                    <label class="form-check-label txt-inner" for="radio102">Afternoon</label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" name="group100" value = "evening" type="radio" id="radio103">
-                    <label class="form-check-label txt-inner" for="radio103">Evening</label>
-                </div>
-            </div>
-            <!--Radio group-->
-
-            <!--Button SEND-->
-            <div class="modal-footer-togas d-flex justify-content-center">
-                <button id ="callback-submit" type="submit" name="submit" class="btn btn-outline-bronze-color my-4">Send</button>
-            </div>
+			
+			<div class="row mt-4">
+				<div class="col-12">
+					<!--/Drowdown-->
+					<div class="">
+						<label class="txt-inner" for="usermessage">Leave a message</label>
+						<textarea name="usermessage" maxlength ="500" id ="usermessage" class="form-control" rows="10"></textarea>
+						
+						<label class="txt-inner mt-4" for="userfile">Attach file (max 10mb)</label>
+						<input name="userfile" id = "userfile" type="file" class="added-file" accept = "text/plain,image/*,.pdf"/>
+					</div>
+					
+					<div class="txt-inner small mt-4">
+						<span>(*) Mandatory Fields</span>
+					</div>
+					
+					<!--Button SEND-->
+					<div class="modal-footer-togas d-flex justify-content-center">
+						<button id ="callback-submit" type="submit" name="submit" class="btn btn-outline-bronze-color my-4">Submit</button>
+					</div>
+				</div>
+			</div>
         </form>
 
         </div>
@@ -285,7 +336,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         
     </div>
-</div>
+
 <!-- /MODAL WINDOW -->
 
 <!-- SECTION "CREATE DREAMS" -->
@@ -2271,17 +2322,34 @@ $('#fail').hide();
 }); 
 
 function sendMessage() {
-    var formData = {
-        'name'        : $('input[name=firstname]').val(),
-        'phone'       : $('input[name=phone]').val(),
-        'email'       : $('input[name=email]').val(),
-        'key'         : $('input[name=key]').val(),
-		'time'        : $('input[name=group100]:checked').val(),
-        'submit'      : 1 
-    };
+	var file_data = $('#userfile').prop('files')[0];		
+	var formData = new FormData();  
+	if (file_data) { 
+		if (file_data.size > 10485760) { 
+			alert('Max allowed filesize is 10 MB.'); 
+			return false;
+		} else {
+			formData.append('file', file_data); 
+			formData.append('hasattach', 1); 
+		}
+	}
+	formData.append('name',$('input[name=name]').val());
+	formData.append('surname',$('input[name=surname]').val());
+	formData.append('service',$('#serviceselect option:selected').text());
+	formData.append('usermessage',$('#usermessage').val());	
+	formData.append('phone',$('input[name=phone]').val());
+	formData.append('email',$('input[name=email]').val());
+	formData.append('key',$('input[name=key]').val());
+	formData.append('time',$('input[name=group100]:checked').val());
+	formData.append('submit',1);
+		
+
     $.ajax({
         type: 'post', 
         url:  'sender.php',
+		cache: false,
+        contentType: false,
+        processData: false,
         data:  formData,
         dataType: 'json',
 		beforeSend: function() {$('#ajax-wrapper').html('<img src="https://media.togas.com/media/couture/img/img-togas-lp3/ajax-loader.gif" id="loading-indicator">');$('#callback-submit').prop( "disabled", true );},
@@ -2290,14 +2358,20 @@ function sendMessage() {
 		{	
 			$('#callback-submit').prop( "disabled", false );
 			$('#ajax-wrapper').html('');
+			
 			$('#valid').show();
 			$('#valid').css("color", "red");
 			$('#valid').text(data['message']);	
 			if (data['code'] < 300) {
 				$('#valid').css("color", "green");
-				$('#form34').val('');
-				$('#form32').val('');
-				$('#form29').val('');
+				$('#name').val('');
+				$('#phone').val('');
+				$('#userfile').replaceWith($('#userfile').val('').clone(true));
+				$('#email').val('');
+				$('#surname').val('');
+				$('#usermessage').val('');
+				$('#serviceselect option:selected').prop("selected", false);
+				$('#serviceselect option:first').prop("selected", "selected");
 				dataLayer.push({'event': 'couture_form_complete'});
 			}
 				
@@ -2306,7 +2380,10 @@ function sendMessage() {
     event.preventDefault();
 }
 var validator = new FormValidator('callback', [{
-	name: 'firstname',
+	name: 'name',
+	rules: 'required'
+	},{
+	name: 'surname',
 	rules: 'required'
 	},{
 	name: 'phone',
@@ -2320,11 +2397,21 @@ var validator = new FormValidator('callback', [{
 	}],function(errors, event) {	
 	$('#valid').hide(); 	
 	$('#fail').hide();	
-    if (errors.length > 0) {
-        $('#fail').show();
-    } else {		
+	if (errors.length > 0) {
+		$('.required-error').removeClass("required-error");
+		$('.required-message').hide();		
+		for (var i = 0; i < errors.length; i++) {           
+			elementMessage = errors[i].name+"-required";
+			document.getElementById(errors[i].name).className += " required-error";
+			document.getElementById(elementMessage).innerHTML = errors[i].message
+			document.getElementById(elementMessage).style.display = "block";
+        }						
+    } else {	
+		$('.required-message').hide();	
+		$('.required-error').removeClass("required-error");
 		sendMessage();		
-		}	   
+		event.preventDefault();
+	}		   
 });
 </script>
 <script>

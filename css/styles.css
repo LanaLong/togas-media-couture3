@@ -327,20 +327,7 @@ p {
   color: #B49256;
 }*/
 
-.btn-outline-bronze-color {
-
-    font-family: 'PFBagueSansPro-Bold';
-    font-size: 0.55em;
-    text-transform: uppercase;
-    letter-spacing: 0.43em;
-    color: #B49256;
-    padding: 1rem 2rem !important;
-    -webkit-border-radius: 0rem;
-    border-radius: 0rem;
-    background-color: transparent;
-    border: 1px solid #B49256;
-
-}
+.btn-outline-bronze-color {font-family: 'PFBagueSansPro-Bold';font-size: 0.7em;text-transform: uppercase;letter-spacing: 0.43em;color: #ffffff;padding: 1rem 2rem !important;-webkit-border-radius: 0rem;border-radius: 0rem;background-color: #B49256;border: 1px solid #B49256;}
 
 /*.btn-outline-bronze .txt-button-color:hover {
   color: #B49256;
@@ -786,8 +773,9 @@ nav {
   color: #9D9D9C;
 }
 
-.modal-bg {
-  background-image: url("/media/couture/img/img-togas-lp3/form.png");
+.modal-callyou .modal-bg {
+  background-color: #f7f7f7 !important;
+  /* background-image: url("/media/couture/img/img-togas-lp3/form.png"); */
 }
 
 .modal-content {
@@ -819,33 +807,27 @@ nav {
 }
 
 .modal-header-togas-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  padding: 1rem;
+  background: #282828;
 }
 
 .txt-inner {
-  font-family: 'PFRegalDisplayPro-MedItalic';
-  font-size: 1.8em !important;
-  /*line-height: 1.5rem;*/
-  color: #565656;
+  font-family: 'PFBagueSansPro-Light';
+  font-size: 1.3em;
+  letter-spacing: 0.02em;
+  line-height: 1em;
+  color: #818181;
+}
+
+.txt-inner.small {
+  font-size: 1em;
+}
+
+.txt-inner.required:after {
+  content: "*"
 }
 
 .txt-inner.active {
-  /*font-family: 'PFRegalDisplayPro-MedItalic';*/
-  font-family: Arial;
-  font-size: .9em !important;
-  color: #565656;
+
 }
 
 .modal-title {
@@ -1223,14 +1205,21 @@ p {
 }
 
 .modal-title-top {
-    font-family: 'PFRegalDisplayPro-MedItalic';
+    font-family: 'PFRegalDisplayPro-Medium';
     font-size: 2.3em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.03em;
     color: #fff;
-    margin-top: 1.3em;
-    padding-left: 2em;
+    margin-top: 0.6em;
+    margin-bottom:0.5em;
 }
 
+.modal-header-togas-top .close {
+position: absolute;
+color: #fff;
+top:5px;
+right:0px
+
+}
 .modal-title-top span {
   letter-spacing: 0;
 }
@@ -1722,10 +1711,13 @@ top: 2px;
 
 .form-control {
     padding: 0.375rem 0.75rem;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    color: #B49256;
+    font-size: 0.5em;
+    line-height: 1;
   }
+
+textarea.form-control {
+  font-size: 1em !important;
+}
 
 /*.md-form label {
   
@@ -1920,8 +1912,8 @@ top: 2px;
 }
 
 .form-check {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* REPLACE IMAGE RADIO BUTTON */
@@ -1929,9 +1921,8 @@ input[type=radio] {
     display:none; 
  }
 
-input[type=radio]:checked + label::before {
-  content:  url(/media/couture/img/img-togas-lp3/check.png?v=3);
-  margin-left: -1rem;
+input[type=radio]:checked + label {
+  background-image: url(/media/couture/img/img-togas-lp3/select1.png);
 }
 
 <!-- SECTION :: BLACK BOX -->
@@ -2337,7 +2328,9 @@ transition: opacity 1s ease;
 .button-wrapper {
   position: relative;
 }
-
+.required-error {
+	border-color: red!important;
+}
 
 /*.bind-button2::after {
   display: none;
@@ -2355,10 +2348,11 @@ transition: opacity 1s ease;
 /*# sourceMappingURL=styles.css.map */
 
 .modal-callyou #fail {
+  font-family: 'PFBagueSansPro-Light';
   color: red;
-  margin:1rem;
+  /* margin:1rem; */
   font-weight:bold;
-  text-align:center;  
+  text-align:center;
 }
 
 .modal-callyou #valid {
@@ -2371,8 +2365,25 @@ transition: opacity 1s ease;
 	text-align:center;
 	margin:auto;
 	position: relative;
-	min-width: 50px;	
+	
 }
+
+.modal-callyou .form-control {border: 1px solid #b7b7b7;border-radius: 0;background: #f7f7f7;}
+
+.modal-callyou input {background: #f7f7f7;font-size: 1em;}
+
+.modal-callyou select.form-control {font-size:0.8em; padding: 0.2em; height: auto !important; background: #f7f7f7;}
+
+.modal-callyou label {margin-bottom:0;}
+
+.modal-callyou .time-select label {
+    background: url(/media/couture/img/img-togas-lp3/select2.png) no-repeat 0px 4px;
+    background-size: 20px;
+    padding-left: 30px;
+    line-height: 1.5em;
+}
+
+
 @media only screen  and (min-width : 770px) {
 	.modal-callyou #valid,#fail {
 		position:absolute;
@@ -2382,7 +2393,8 @@ transition: opacity 1s ease;
 	.ajax-wrapper {
 		position:absolute;
 		top:0;
-		right:3rem;
+		right:0;
+		width: 30px;
 	}
 }
 .collapse-carousel .carousel-indicators {
@@ -2396,13 +2408,16 @@ transition: opacity 1s ease;
 .collapse-carousel .carousel-indicators .active {
   background: none;
 }
+.required-message {
+	color:red;
+}
 
 .fotorama__stage {background:#000;}
 
 @media screen and (max-width: 831px) {
 	.modal-title-top {
-		font-size:2.0em;
-		padding-left:3.3em;
+		/* font-size:2.0em; */
+		/* padding-left:3.3em; */
 	}
 }
 @media screen and (max-width: 769px) {
@@ -2412,9 +2427,9 @@ transition: opacity 1s ease;
             }
 
   .modal-callyou .modal-title-top {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    color:#000;
+    /* padding-left: 1rem; */
+    /* padding-right: 1rem; */
+    /* color:#000; */
   }
 
   .modal-callyou .modal-body {
@@ -2436,6 +2451,7 @@ transition: opacity 1s ease;
   }
 
   .modal-callyou .txt-inner {
-    font-size:1.5em !important;
+    font-size: 1.2em !important;
   }
 }
+
