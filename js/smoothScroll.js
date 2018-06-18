@@ -13,7 +13,7 @@
                     $target = $(target);
 
                 $(this).on('click', function(e){
-                    e.preventDefault();
+                    //e.preventDefault();
                     if ($target.offset().top > ($(document).height() - $(window).height())) {
                         dest = $(document).height() - $(window).height();
                     } else {
