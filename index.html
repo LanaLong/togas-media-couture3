@@ -2611,45 +2611,45 @@ function drapsCollapse()
 	}
 } 
 
-function headboardsCollapse()
+function blindsCollapse()
 {
 	/*$('.bind-button').hide();		
 	$('.show-bind-button:not(#button-headboards)').html('Discover');		
-	if ($('#button-headboards').text() == 'Discover') $('#button-headboards').html('<svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg>'); else $('#button-headboards').html('Discover');*/
+	if ($('#button-headboards').text() == 'Discover') $('#button-headboards').html('<svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2	 30 L30 2 M30 30 L2 2" /></svg>'); else $('#button-headboards').html('Discover');*/
 	$('.collapse').css("transition", "none");
-	$('.collapse:not(#collapseDesktopHeadboards,#collapseMobileHeadboards)').collapse('hide');	
+	$('.collapse:not(#collapseDesktopBlinds,#collapseMobileBlinds)').collapse('hide');	
 	$('.collapse').css("transition", "height 0.35s ease");	
 	if ($(window).width() > 992 )
 	{	
-		if ($('#collapseDesktopHeadboards').is(":visible")) 
+		if ($('#collapseDesktopBlinds').is(":visible")) 
 		{
-			$('#collapseDesktopHeadboards').collapse('toggle');
+			$('#collapseDesktopBlinds').collapse('toggle');
 			$('html, body').animate({
 				scrollTop: ($(window).scrollTop() - 600) + 'px'
 			},500);	
 		}
 		else
 		{
-			$('#collapseDesktopHeadboards').collapse('toggle');
+			$('#collapseDesktopBlinds').collapse('toggle');
 			$('html, body').animate({
-				scrollTop: $('#collapseDesktopHeadboards').offset().top
+				scrollTop: $('#collapseDesktopBlinds').offset().top
 			},500);			
 		}
 	}
 	else
 	{	
-		if ($('#collapseMobileHeadboards').is(":visible")) 
+		if ($('#collapseMobileBlinds').is(":visible")) 
 		{
-			$('#collapseMobileHeadboards').collapse('toggle');
+			$('#collapseMobileBlinds').collapse('toggle');
 			$('html, body').animate({
 				scrollTop: ($(window).scrollTop() - 600) + 'px'
 			},500);		
 		}
 		else
 		{
-			$('#collapseMobileHeadboards').collapse('toggle');
+			$('#collapseMobileBlinds').collapse('toggle');
 			$('html, body').animate({
-				scrollTop: $('#collapseMobileHeadboards').offset().top
+				scrollTop: $('#collapseMobileBlinds').offset().top
 			},500);		
 		}
 	}
