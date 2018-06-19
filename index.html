@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://media.togas.com/media/couture/css/owlcarousel/owl.theme.default.css">
 
     <!-- Style for v-2 -->
-    <link href="https://media.togas.com/media/couture/css/style-togas-lp-v2.css" rel="stylesheet">
+    <link href="css/style-togas-lp-v2.css" rel="stylesheet">
 
     <!-- Your custom styles (optional) -->
     <link href="css/styles.css?v=4" rel="stylesheet">
@@ -202,7 +202,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- MODAL WINDOW -->
 <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-callyou" role="document">
-    <div class="modal-content modal-bg pb-5">
+    <div class="modal-content modal-bg">
         <div class="modal-header-togas-top text-center mb-4">
             <h4 class="modal-title-top">Talk with our expert on <span style="white-space: nowrap;">+1 212 300 2876</span></h4>
 			
@@ -214,67 +214,118 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="modal-body mx-5">
             <div class="txt-pre mb-3">
-                <p class="txt-inner">- Or </br>Let us call you back!</p>
+                <p class="txt-inner">- Or let us call you back!</p>
             </div>
 
         <!-- FORM -->
-        <form name = "callback" method = "post">
+        <form name = "callback" enctype = "multipart/form-data" method = "post">
 			<div class="ajax-wrapper" id="ajax-wrapper"></div>
 			<div id = "valid"></div>
-			<div id = "fail">Something is wrong. Please, check information in the form.</div>	
-            <!-- Input text -->
-            <div class="md-form">
-                <input type="text" id="form34" name="firstname" class="form-control validate">
-                <label class="txt-inner" data-error="wrong" data-success="right" for="form34">Name Surname: </label>
-            </div>
+			<div id = "fail">Something is wrong. Please, check information in the form.</div>
 
-            <!-- Input phone -->
-            <div class="md-form">
-                <input type="tel" id="form32" name="phone" class="form-control validate">
-                <label class="txt-inner" data-error="wrong" data-success="right" for="form32">Phone: </label>
-            </div>
-            
-            <!-- Input email -->
-            <div class="md-form">
-                <input type="email" id="form29" name="email" class="form-control validate">
-                <label class="txt-inner" data-error="wrong" data-success="right" for="form29">Email: </label>
-            </div>
-			<div style = "display:none">
-				<input type="text" value = "hBouW9el5zSYrsN1E4q9" name = "key">                    
+			<div class="row">
+					<!-- Input text -->
+					<div class="col-12 col-md-6">
+						<div class="">
+							<label class="txt-inner required" data-error="wrong" data-success="right" for="name">Name</label>
+							<input type="text" id="name" name="name" class="form-control validate">
+							<label class = "required-message" id = "name-required" for="name"> </label>
+							
+						</div>
+						<div class="mt-3">
+							<label class="txt-inner required" data-error="wrong" data-success="right" for="surname">Surname</label>
+							<input type="text" id="surname" name="surname" class="form-control validate">
+							<label class = "required-message" id = "surname-required" for="surname"> </label>
+							
+						</div>
+						<!-- Input phone -->
+						<div class="mt-3">
+							<label class="txt-inner required" data-error="wrong" data-success="right" for="phone">Phone</label>
+							<input type="tel" id="phone" name="phone" class="form-control validate">  
+							<label class = "required-message"  id = "phone-required" for="phone"> </label>
+						</div>
+						
+						<!-- Input email -->
+						<div class="mt-3">
+							<label class="txt-inner required" data-error="wrong" data-success="right" for="email">Email</label>
+							<input type="text" id="email" name="email" class="form-control validate">
+							<label class = "required-message" id = "email-required" for="email"> </label>
+
+						</div>
+						<div style = "display:none">
+							<input type="text" value = "hBouW9el5zSYrsN1E4q9" name = "key">                    
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<!--Dropdown -->
+							<div class="">
+								 
+								<label class="txt-inner" for="serviceselect">Choose service</label>
+								<select name = "serviceselect" id = "serviceselect" name="service" class="form-control" >
+									<option value="Custom drapes" selected>Custom drapes</option>
+									<option value="Shades">Shades</option>
+									<option value="Upholstery">Upholstery</option>
+									<option value="Headboards">Headboards</option>
+									<option value="In-house design">In-house design</option>
+									<option value="Contract">Contract</option>
+								</select>
+							</div>
+							
+							
+							<div class="txt-pre mt-5">
+								<p><span class="txt-inner">Best time to contact you</span></p>
+							</div>
+
+							<!--Radio group-->
+							<div class="time-select">
+								<div class="form-check">
+									<input class="form-check-input" name="group100" value = "now" type="radio" id="radio100">
+									<label class="form-check-label txt-inner" for="radio100">Now</label>
+								</div>
+
+
+								<div class="form-check">
+									<input class="form-check-input" name="group100" value = "morning" type="radio" id="radio101">
+									<label class="form-check-label txt-inner" for="radio101">Morning</label>
+								</div>
+
+								<div class="form-check">
+									<input class="form-check-input" name="group100" value = "afternoon" type="radio" id="radio102">
+									<label class="form-check-label txt-inner" for="radio102">Afternoon</label>
+								</div>
+
+								<div class="form-check">
+									<input class="form-check-input" name="group100" value = "evening" type="radio" id="radio103">
+									<label class="form-check-label txt-inner" for="radio103">Evening</label>
+								</div>
+							</div>
+							<!--Radio group-->
+					</div>
 			</div>
-            <div class="txt-pre mt-4">
-                <p><span class="txt-inner">Best time to contact you</span></p>
-            </div>
+			
 
-            <!--Radio group-->
-            <div class="d-flex flex-row justify-content-start align-items-end time-select">
-                <div class="form-check">
-                    <input class="form-check-input" name="group100" value = "now" type="radio" id="radio100">
-                    <label class="form-check-label txt-inner" for="radio100">Now</label>
-                </div>
-
-
-                <div class="form-check">
-                    <input class="form-check-input" name="group100" value = "morning" type="radio" id="radio101" checked>
-                    <label class="form-check-label txt-inner" for="radio101">Morning</label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" name="group100" value = "afternoon" type="radio" id="radio102">
-                    <label class="form-check-label txt-inner" for="radio102">Afternoon</label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" name="group100" value = "evening" type="radio" id="radio103">
-                    <label class="form-check-label txt-inner" for="radio103">Evening</label>
-                </div>
-            </div>
-            <!--Radio group-->
-
-            <!--Button SEND-->
-            <div class="modal-footer-togas d-flex justify-content-center">
-                <button id ="callback-submit" type="submit" name="submit" class="btn btn-outline-bronze-color my-4">Send</button>
-            </div>
+			
+			<div class="row mt-4">
+				<div class="col-12">
+					<!--/Drowdown-->
+					<div class="">
+						<label class="txt-inner" for="usermessage">Leave a message</label>
+						<textarea name="usermessage" maxlength ="500" id ="usermessage" class="form-control" rows="10"></textarea>
+						
+						<label class="txt-inner mt-4" for="userfile">Attach file (max 10mb)</label>
+						<input name="userfile" id = "userfile" type="file" class="added-file" accept = "text/plain,image/*,.pdf"/>
+					</div>
+					
+					<div class="txt-inner small mt-4">
+						<span>(*) Mandatory Fields</span>
+					</div>
+					
+					<!--Button SEND-->
+					<div class="modal-footer-togas d-flex justify-content-center">
+						<button id ="callback-submit" type="submit" name="submit" class="btn btn-outline-bronze-color my-4">Submit</button>
+					</div>
+				</div>
+			</div>
         </form>
 
         </div>
@@ -285,7 +336,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         
     </div>
-</div>
+
 <!-- /MODAL WINDOW -->
 
 <!-- SECTION "CREATE DREAMS" -->
@@ -355,7 +406,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">Shades</h3>
-                    <p class="txt-sub-cm">Go beyond the unexpected<br/>with our exclusive<br/>Shade collection. </p>
+                    <p class="txt-sub-cm">Austrian shades / Balloon shades /<br/>Roman shades</p>
                     <!--Button-->
 					 <div class="button-wrapper" style = "margin-top: 1.55rem;">
                         <button type="button" id = "button-shades" class="btn btn-outline-bronze-cm mt-4 waves-effect waves-light show-bind-button" data-toggle="collapse" onclick="shadesCollapse();" aria-expanded="false" aria-controls="collapseShades" data-element="#bind-button-shades">Discover</button>
@@ -430,7 +481,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 <!--Card image-->
                 <div class="view overlay">
-                    <img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades.jpg" alt="Shades" class="card-img-top-tg mx-auto img-fluid">
+                    <img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds.jpg?v=1" alt="Blinds" class="card-img-top-tg mx-auto img-fluid">
                         <a>
                             <div class="mask waves-effect waves-light rgba-white-slight" onclick="blindsCollapse();"></div>
                         </a>
@@ -440,7 +491,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">Blinds</h3>
-                    <p class="txt-sub-cm">Make a statement<br/>with our sophisticated,<br/>signature Blinds.</p>
+                    <p class="txt-sub-cm">wood blinds / vertical blinds / metal blinds /<br/>roller blinds / solar blinds /<br/>woven wood  blinds / cellular blinds</p>
                     <!--Button-->
 					 <div class="button-wrapper" style = "margin-top: 1.55rem;">
                         <button type="button" id = "button-shades" class="btn btn-outline-bronze-cm mt-4 waves-effect waves-light show-bind-button" data-toggle="collapse" onclick="blindsCollapse();" aria-expanded="false" aria-controls="collapseShades" data-element="#bind-button-blinds">Discover</button>
@@ -469,17 +520,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								
 								<div class="fotorama" data-nav="thumbs">
 									
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(5).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(1).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(2).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(3).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(4).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(5).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(6).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(7).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(8).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(9).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(10).jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-1.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-2.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-3.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-4.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-5.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-6.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-7.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-8.jpg" >											
 								</div>	
 								
                                     <div class="text-center mx-auto">
@@ -525,7 +573,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">UPHOLSTERY /<br/>REUPHOLSTERY</h3>
-                    <p class="txt-sub-cm">Tailored<br/>upholstery & reupholstery services,<br/>customized to match your décor.</p>
+                    <p class="txt-sub-cm">chairs / sofas / outdoor furniture /<br/>custom furniture / outdoor cushions /<br/>headboards / slip covers</p>
                     <!--Button-->
                     <div class="button-wrapper">
                         <button type="button" id = "button-upholstery" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "upholsteryCollapse();" aria-expanded="false" aria-controls="collapseUpholstery" data-element="#bind-button-upholstery">Discover</button>
@@ -663,11 +711,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <div class="col-12 col-md-5">
                                
 									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(1).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(2).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(3).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(4).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(5).jpg" >			
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-1.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-2.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-3.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-4.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-5.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-6.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-7.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/blinds-8.jpg" >			
 									</div>	
 
                                     <div class="text-center mx-auto">
@@ -770,7 +821,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">Custom drapes</h3>
-                    <p class="txt-sub-cm">From light sheers<br/>to glam silks, we dress<br/>your windows with custom style.</p>
+                    <p class="txt-sub-cm">ripple fold drapes / pinch pleat drapes /<br/>grommet drapes / flat panel drapes /<br/>tailored pleat drapes / goblet drapes /<br/>back tab drapes / inverted pleat drapes /<br/>rod pocjet drapes / classic tab drapes /<br/>valances</p>
                     <!--Button-->
                     <div class="button-wrapper" style = "margin-top: 1.95rem;">
                         <button type="button" id = "button-draps" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "drapsCollapse();" aria-expanded="false" aria-controls="collapseDraps" data-element="#bind-button-draps">Discover</button>
@@ -849,7 +900,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">in-house</br>design</h3>
-                    <p class="txt-sub-cm">Let our team<br/>of talented designers use their<br/>expertise to guide you.</p>
+                    <p class="txt-sub-cm">consultation / on-site measuring / estimate /<br/>installation </p>
                     
                      <!--Button-->
                     <div class="button-wrapper" style = "margin-top:0.4rem">
@@ -931,7 +982,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">Contract</h3>
-                    <p class="txt-sub-cm">To-the-trade solutions<br/>catered towards<br/>professionals. </p>
+                    <p class="txt-sub-cm">architects / designers / hospitality<br/>professionals / leisure professionals</p>
                     <!--Button-->
                     <div class="button-wrapper" style = "margin-top: 1.95rem;">
                         <button type="button" id = "button-b2b" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "b2bCollapse();" aria-expanded="false" aria-controls="collapseB2b" data-element="#bind-button-b2b">Discover</button>
@@ -1146,8 +1197,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="container py-5">	
 		<!-- Row2 ::catalog-download -->
 		<div class="row">
-			<div class = "col-xs-12 col-sm-12 col-md-8 d-flex justify-content-center "><p class = "txt-catalog">Discover the Custom-Made 2018 Togas Collection</p></div>
-			<div class = "col-xs-12 col-sm-12 col-md-4 d-flex justify-content-center " ><button type = "button" class = "btn btn-fill-bronze waves-effect waves-light catalog-button" onclick = "window.open('https://media.togas.com/media/wysiwyg/couture/COUTURE_INTERNATIONAL_2018_web.pdf')">Download Catalogue</div>
+			<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-8 d-flex justify-content-center "><p class = "txt-catalog">Discover the Custom-Made 2018 Togas Collection</p></div>
+			<div class = "col-xs-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center " style = "margin: auto;" ><button type = "button" class = "btn btn-fill-bronze waves-effect waves-light catalog-button" onclick = "window.open('https://media.togas.com/media/wysiwyg/couture/COUTURE_INTERNATIONAL_2018_web.pdf')">Download Catalogue</div>
 		</div>
 		<!-- row -->
 	</div>
@@ -1190,7 +1241,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">Fabrics</h3>
-                    <p class="txt-sub-cm">Explore our exclusive<br/>fabric collections that<br/>offer both quality and style.</p>
+                    <p class="txt-sub-cm">drapery / multi-use / high performance /<br/>outdoor / sheers / upholstery /<br/>black out / bedding / jacquards</p>
                     <!--Button-->
                     <div class="button-wrapper">
     					<button type="button" href="#collapseFabrics" id="button-fabrics" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "fabricsCollapse();" aria-expanded="false" aria-controls="collapseFabrics" data-element="#bind-button-fabrics">Discover</button>
@@ -1289,7 +1340,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">Hardware</h3>
-                    <p class="txt-sub-cm">Complete your window<br/>treatment with our<br/>stylish hardware collection.</p>
+                    <p class="txt-sub-cm">finials / poles / rods / brackets /<br/>motorized systems / tracks /<br/>ripple fold tracks </p>
                     <!--Button-->
                     <div class="button-wrapper">
                         <button type="button" id = "button-draps" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "hardwareCollapse();" aria-expanded="false" aria-controls="collapseHardware" data-element="#bind-button-draps">Discover</button>
@@ -1368,7 +1419,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">Accessories</h3>
-                    <p class="txt-sub-cm">Beauty lies in the detail:<br/>High-end trimmings<br/>and accessories!</p>
+                    <p class="txt-sub-cm">tie backs / trimmings /<br/>decorative pillows / throws</p>
                     
                      <!--Button-->
                     <div class="button-wrapper">
@@ -1659,7 +1710,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              </div>
         </div>
 
-        <!-- Container -->
+       <!-- Container -->
         <div class="container-experts">
         <div class="row d-flex justify-content-center">
 
@@ -1819,7 +1870,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
             <div class="row d-flex justify-content-center">
                 <div class="col-md-6 mt-4">
-                    <p class="text-center card-text mb-5">Togas is leading the global textile industry providing an outstanding custom service in 140 stores worldwide. Visit our exclusive boutiques across the US and discover our high-quality standards delivered with love, care and passion. </p>
+                     <p class="text-center card-text mb-5">Togas is leading the global textile industry providing an outstanding custom service in 140 stores worldwide. Visit our exclusive boutiques across the US and discover our high-quality standards delivered with love, care and passion. </p>
                 </div>
             </div>
 
@@ -2279,17 +2330,34 @@ $('#fail').hide();
 }); 
 
 function sendMessage() {
-    var formData = {
-        'name'        : $('input[name=firstname]').val(),
-        'phone'       : $('input[name=phone]').val(),
-        'email'       : $('input[name=email]').val(),
-        'key'         : $('input[name=key]').val(),
-		'time'        : $('input[name=group100]:checked').val(),
-        'submit'      : 1 
-    };
+	var file_data = $('#userfile').prop('files')[0];		
+	var formData = new FormData();  
+	if (file_data) { 
+		if (file_data.size > 10485760) { 
+			alert('Max allowed filesize is 10 MB.'); 
+			return false;
+		} else {
+			formData.append('file', file_data); 
+			formData.append('hasattach', 1); 
+		}
+	}
+	formData.append('name',$('input[name=name]').val());
+	formData.append('surname',$('input[name=surname]').val());
+	formData.append('service',$('#serviceselect option:selected').text());
+	formData.append('usermessage',$('#usermessage').val());	
+	formData.append('phone',$('input[name=phone]').val());
+	formData.append('email',$('input[name=email]').val());
+	formData.append('key',$('input[name=key]').val());
+	formData.append('time',$('input[name=group100]:checked').val());
+	formData.append('submit',1);
+		
+
     $.ajax({
         type: 'post', 
         url:  'sender.php',
+		cache: false,
+        contentType: false,
+        processData: false,
         data:  formData,
         dataType: 'json',
 		beforeSend: function() {$('#ajax-wrapper').html('<img src="https://media.togas.com/media/couture/img/img-togas-lp3/ajax-loader.gif" id="loading-indicator">');$('#callback-submit').prop( "disabled", true );},
@@ -2298,14 +2366,20 @@ function sendMessage() {
 		{	
 			$('#callback-submit').prop( "disabled", false );
 			$('#ajax-wrapper').html('');
+			
 			$('#valid').show();
 			$('#valid').css("color", "red");
 			$('#valid').text(data['message']);	
 			if (data['code'] < 300) {
 				$('#valid').css("color", "green");
-				$('#form34').val('');
-				$('#form32').val('');
-				$('#form29').val('');
+				$('#name').val('');
+				$('#phone').val('');
+				$('#userfile').replaceWith($('#userfile').val('').clone(true));
+				$('#email').val('');
+				$('#surname').val('');
+				$('#usermessage').val('');
+				$('#serviceselect option:selected').prop("selected", false);
+				$('#serviceselect option:first').prop("selected", "selected");
 				dataLayer.push({'event': 'couture_form_complete'});
 			}
 				
@@ -2314,7 +2388,10 @@ function sendMessage() {
     event.preventDefault();
 }
 var validator = new FormValidator('callback', [{
-	name: 'firstname',
+	name: 'name',
+	rules: 'required'
+	},{
+	name: 'surname',
 	rules: 'required'
 	},{
 	name: 'phone',
@@ -2328,11 +2405,21 @@ var validator = new FormValidator('callback', [{
 	}],function(errors, event) {	
 	$('#valid').hide(); 	
 	$('#fail').hide();	
-    if (errors.length > 0) {
-        $('#fail').show();
-    } else {		
+	if (errors.length > 0) {
+		$('.required-error').removeClass("required-error");
+		$('.required-message').hide();		
+		for (var i = 0; i < errors.length; i++) {           
+			elementMessage = errors[i].name+"-required";
+			document.getElementById(errors[i].name).className += " required-error";
+			document.getElementById(elementMessage).innerHTML = errors[i].message
+			document.getElementById(elementMessage).style.display = "block";
+        }						
+    } else {	
+		$('.required-message').hide();	
+		$('.required-error').removeClass("required-error");
 		sendMessage();		
-		}	   
+		event.preventDefault();
+	}		   
 });
 </script>
 <script>
