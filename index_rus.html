@@ -24,6 +24,7 @@
     <link href="css/style-togas-lp-v2.css" rel="stylesheet">
 
     <!-- Your custom styles (optional) -->
+	<link href="css/styles.css" rel="stylesheet">
     <link href="css/styles_rus.css?v=3" rel="stylesheet">
 
 	<!-- fotorama.css & fotorama.js. -->
@@ -47,7 +48,95 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PSZKS4');</script>
-	 
+   <script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+			  $FillMode: 1,            
+              $SlideshowOptions: {				 
+              $Class: $JssorSlideshowRunner$,
+                
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Rows: 1,
+                $SpacingX: 14,
+                $SpacingY: 12,
+                $Orientation: 2,
+                $Align: 156,
+				$Scale: false
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+		
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 960;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+	</script>
+	    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider arrow skin 093 css*/
+        .jssora093 {display:block;position:absolute;cursor:pointer;}
+        .jssora093 .c {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+        .jssora093 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+        .jssora093:hover {opacity:.8;}
+        .jssora093.jssora093dn {opacity:.6;}
+        .jssora093.jssora093ds {opacity:.3;pointer-events:none;}
+
+        /*jssor slider thumbnail skin 101 css*/
+        .jssort101 .p {position: absolute;top:0;left:0;box-sizing:border-box;}
+        .jssort101 .p .cv {position:relative;top:0;left:0;width:100%;height:100%;border:2px solid #000;box-sizing:border-box;z-index:1;}
+        .jssort101 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;visibility:hidden;}
+        .jssort101 .p:hover .cv, .jssort101 .p.pdn .cv {border:none;border-color:transparent;}
+        .jssort101 .p:hover{padding:2px;}
+        .jssort101 .p:hover .cv {opacity:.35;}
+        .jssort101 .p:hover.pdn{padding:0;}
+        .jssort101 .p:hover.pdn .cv {border:2px solid #fff;background:none;opacity:.35;}
+        .jssort101 .pav .cv {border-color:#fff;opacity:.35;}
+        .jssort101 .pav .a, .jssort101 .p:hover .a {visibility:visible;}
+        .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:auto;border:none;opacity:.6;}
+        .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
+    </style>
 <header id="top-slider" class="mb-5">
 
     <div class="header-block">
@@ -148,6 +237,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-example-1" data-slide-to="1"></li>
           <li data-target="#carousel-example-1" data-slide-to="2"></li>
+		  <li data-target="#carousel-example-1" data-slide-to="3"></li>
         </ol>
         <!--/.Indicators-->
 
@@ -186,7 +276,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <!--/.Mask-->
           </div>
           <!--/.Third slide-->
-
+          <!--Forth slide-->
+          <div class="carousel-item">
+            <!--Mask-->
+            <div class="view">
+              <div class="full-bg-img flex-center white-text">
+              </div>
+            </div>
+            <!--/.Mask-->
+          </div>
+          <!--/.Forth slide-->
         </div>
 		 <!-- Left and right controls -->
 
@@ -200,11 +299,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- /HEADER -->
 
 <!-- MODAL WINDOW -->
-<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-callyou" role="document">
-    <div class="modal-content modal-bg pb-5">
+    <div class="modal-content modal-bg">
         <div class="modal-header-togas-top text-center mb-4">
-            <h4 class="modal-title-top">Свяжитесь с нашими экспертами: <span style="white-space: nowrap;">8-800-555-87-80</span></h4>
+            <h4 class="modal-title-top">Свяжитесь с нашими дизайнерами: <span style="white-space: nowrap;">8-800-555-87-80</span></h4>
 			
 			<button type="button" class="close mr-3 mt-1" data-toggle="collapse" data-target="#modalContactForm" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
@@ -214,67 +313,118 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="modal-body mx-5">
             <div class="txt-pre mb-3">
-                <p class="txt-inner">- или </br>Отавьте заявку и мы вам перезвоним!</p>
+                <p class="txt-inner">- или оставьте заявку и мы вам перезвоним!</li>
             </div>
 
         <!-- FORM -->
-        <form name = "callback" method = "post">
+        <form name = "callback" enctype = "multipart/form-data" method = "post">
 			<div class="ajax-wrapper" id="ajax-wrapper"></div>
 			<div id = "valid"></div>
-			<div id = "fail">Ошибка. Пожалуйста, проверьте введенные данные.</div>	
-            <!-- Input text -->
-            <div class="md-form">
-                <input type="text" id="form34" name="firstname" class="form-control validate">
-                <label class="txt-inner" data-error="wrong" data-success="right" for="form34">Имя, фамилия: </label>
-            </div>
+			<div id = "fail">Ошибка. Пожалуйста, проверьте введенные данные.</div>
 
-            <!-- Input phone -->
-            <div class="md-form">
-                <input type="tel" id="form32" name="phone" class="form-control validate">
-                <label class="txt-inner" data-error="wrong" data-success="right" for="form32">Телефон: </label>
-            </div>
-            
-            <!-- Input email -->
-            <div class="md-form">
-                <input type="email" id="form29" name="email" class="form-control validate">
-                <label class="txt-inner" data-error="wrong" data-success="right" for="form29">Email: </label>
-            </div>
-			<div style = "display:none">
-				<input type="text" value = "hBouW9el5zSYrsN1E4q9" name = "key">                    
+			<div class="row">
+					<!-- Input text -->
+					<div class="col-12 col-md-6">
+						<div class="">
+							<label class="txt-inner required" data-error="wrong" data-success="right" for="name">Имя</label>
+							<input type="text" id="name" name="name" class="form-control validate">
+							<label class = "required-message" id = "name-required" for="name"> </label>
+							
+						</div>
+						<div class="mt-3">
+							<label class="txt-inner required" data-error="wrong" data-success="right" for="surname">Фамилия</label>
+							<input type="text" id="surname" name="surname" class="form-control validate">
+							<label class = "required-message" id = "surname-required" for="surname"> </label>
+							
+						</div>
+						<!-- Input phone -->
+						<div class="mt-3">
+							<label class="txt-inner required" data-error="wrong" data-success="right" for="phone">Телефон</label>
+							<input type="tel" id="phone" name="phone" class="form-control validate">  
+							<label class = "required-message"  id = "phone-required" for="phone"> </label>
+						</div>
+						
+						<!-- Input email -->
+						<div class="mt-3">
+							<label class="txt-inner required" data-error="wrong" data-success="right" for="email">Email</label>
+							<input type="text" id="email" name="email" class="form-control validate">
+							<label class = "required-message" id = "email-required" for="email"> </label>
+
+						</div>
+						<div style = "display:none">
+							<input type="text" value = "hBouW9el5zSYrsN1E4q9" name = "key">                    
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<!--Dropdown -->
+							<div class="">
+								 
+								<label class="txt-inner" for="serviceselect">Услуга</label>
+								<select name = "serviceselect" id = "serviceselect" name="service" class="form-control" >
+									<option value="Custom drapes" selected>Пошив штор</option>
+									<option value="Shades">Покрывала</option>
+									<option value="Upholstery">Изголовья</option>
+									<option value="Headboards">Дизайн</option>
+									<option value="In-house design">Ткани</option>
+									<option value="Contract">B2B</option>
+								</select>
+							</div>
+							
+							
+							<div class="txt-pre mt-5">
+								<p><span class="txt-inner">Удобное время для связи</span></li>
+							</div>
+
+							<!--Radio group-->
+							<div class="time-select">
+								<div class="form-check">
+									<input class="form-check-input" name="group100" value = "В ближайшее время" type="radio" id="radio100">
+									<label class="form-check-label txt-inner" for="radio100">В ближайшее время</label>
+								</div>
+
+
+								<div class="form-check">
+									<input class="form-check-input" name="group100" value = "Утром" type="radio" id="radio101">
+									<label class="form-check-label txt-inner" for="radio101">Утром</label>
+								</div>
+
+								<div class="form-check">
+									<input class="form-check-input" name="group100" value = "Днем" type="radio" id="radio102">
+									<label class="form-check-label txt-inner" for="radio102">Днем</label>
+								</div>
+
+								<div class="form-check">
+									<input class="form-check-input" name="group100" value = "Вечером" type="radio" id="radio103">
+									<label class="form-check-label txt-inner" for="radio103">Вечером</label>
+								</div>
+							</div>
+							<!--Radio group-->
+					</div>
 			</div>
-            <div class="txt-pre mt-4">
-                <p><span class="txt-inner">Когда с вами связаться</span></p>
-            </div>
+			
 
-            <!--Radio group-->
-            <div class="d-flex flex-row justify-content-start align-items-end time-select">
-                <div class="form-check">
-                    <input class="form-check-input" name="group100" value = "сейчас" type="radio" id="radio100">
-                    <label class="form-check-label txt-inner" for="radio100">Сейчас</label>
-                </div>
-
-
-                <div class="form-check">
-                    <input class="form-check-input" name="group100" value = "утром" type="radio" id="radio101" checked>
-                    <label class="form-check-label txt-inner" for="radio101">Утром</label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" name="group100" value = "днем" type="radio" id="radio102">
-                    <label class="form-check-label txt-inner" for="radio102">Днем</label>
-                </div>
-
-                <div class="form-check">
-                    <input class="form-check-input" name="group100" value = "вечером" type="radio" id="radio103">
-                    <label class="form-check-label txt-inner" for="radio103">Вечером</label>
-                </div>
-            </div>
-            <!--Radio group-->
-
-            <!--Button SEND-->
-            <div class="modal-footer-togas d-flex justify-content-center">
-                <button id ="callback-submit" type="submit" name="submit" class="btn btn-outline-bronze-color my-4">Отправить</button>
-            </div>
+			
+			<div class="row mt-4">
+				<div class="col-12">
+					<!--/Drowdown-->
+					<div class="">
+						<label class="txt-inner" for="usermessage">Сообщение</label>
+						<textarea name="usermessage" maxlength ="500" id ="usermessage" class="form-control" rows="10"></textarea>
+						
+						<label class="txt-inner mt-4" for="userfile">Файлы (max 10mb)</label>
+						<input name="userfile" id = "userfile" type="file" class="added-file" accept = "text/plain,image/*,.pdf"/>
+					</div>
+					
+					<div class="txt-inner small mt-4">
+						<span>(*) Обязательные поля</span>
+					</div>
+					
+					<!--Button SEND-->
+					<div class="modal-footer-togas d-flex justify-content-center">
+						<button id ="callback-submit" type="submit" name="submit" class="btn btn-outline-bronze-color my-4">Отправить</button>
+					</div>
+				</div>
+			</div>
         </form>
 
         </div>
@@ -285,7 +435,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         
     </div>
-</div>
+
 <!-- /MODAL WINDOW -->
 
 <!-- SECTION "CREATE DREAMS" -->
@@ -298,21 +448,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <h2 class="section-title">СОЗДАВАЯ ИНТЕРЬЕР ВАШЕЙ МЕЧТЫ</h2>
             <h6 class="subscript-one pt-4 pb-2">Совершенный текстильный декор&nbsp;&nbsp;<span><img src="https://media.togas.com/media/couture/img/img-togas-lp3/line-02-right-09.svg" width="150" alt=""></span></h6>
                 <img src="https://media.togas.com/media/couture/img/img-togas-lp3/create2.jpg" alt="Custom-made" class="img-fluid d-block d-md-none w-50 my-4 float-left float-md-none pr-3 pr-sm-5">
-                <p class="text-justify txt-p py-4">Интерьерные решения от Togas Couture – это роскошь, безупречный стиль и индивидуальный подход к каждому клиенту. Мы создаем уникальные изделия, помогаем найти идеальный дизайн при декорировании интерьеров текстилем.</p> 
-                <p class="text-justify txt-p bullets">Почти 100-летний опыт работы с эксклюзивными тканями.</p>
-				<p class="text-justify txt-p bullets">Европейские традиции качества и технологии.</p>
-				<p class="text-justify txt-p bullets">Более 25 лет на российском рынке домашнего текстиля.</p>
-				<p class="text-justify txt-p bullets">Эксклюзивные дизайны и уникальные ткани, несколько тысяч в наличии на складе.</p>
-				<p class="text-justify txt-p bullets">Изысканные аксессуары и предметы декора.</p>
-				<p class="text-justify txt-p bullets">Более 100 бутиков по всей России.</p>
-                <p class="text-justify txt-p pb-4">Мы активно сотрудничаем с архитекторами и дизайнерами, поставляем высококачественный текстиль в лучшие европейские отели и рестораны. С помощью тканей и аксессуаров от Togas Couture были оформлены тысячи интерьеров и разработаны сотни оригинальных авторских проектов.</p>
+                <p class="text-justify txt-p pt-4">Интерьерные решения от Togas Couture – это роскошь, безупречный стиль и индивидуальный подход к каждому клиенту. Мы создаем уникальные изделия, помогаем найти идеальный дизайн при декорировании интерьеров текстилем.</p> 
+				<ul class = "text-justify txt-p">
+					<li class = "bullets">Почти 100-летний опыт работы с эксклюзивными тканями.</li>
+					<li class = "bullets">Европейские традиции качества и технологии.</li>
+					<li class = "bullets">Более 25 лет на российском рынке домашнего текстиля.</li>
+					<li class = "bullets">Эксклюзивные дизайны и уникальные ткани, несколько тысяч в наличии на складе.</li>
+					<li class = "bullets">Изысканные аксессуары и предметы декора.</li>
+					<li class = "bullets">Более 100 бутиков по всей России.</li>
+				</ul>	
+				<p class="text-justify txt-p">Мы активно сотрудничаем с архитекторами и дизайнерами, поставляем высококачественный текстиль в лучшие европейские отели и рестораны. С помощью тканей и аксессуаров от Togas Couture были оформлены тысячи интерьеров и разработаны сотни оригинальных авторских проектов.</p>
+			
         </div>
         <div class="col-md-4 flex-column align-items-end mt-5 pl-5 pl-sm-3">
         <div class="view zoom">
             <img src="https://media.togas.com/media/couture/img/img-togas-lp3/create.png" alt="Create the home of your dreams" class="img-fluid d-none d-md-block pl-md-4 ">
         </div>
         <div class="py-md-5 pl-sm-0 pl-md-4 mt-lg-4">
-            <p class="text-left txt-under">Талантливые дизайнеры студии Togas Couture Interiors преобразят ваш дом, оформив его роскошным текстилем. Используя эксклюзивную коллекцию тканей, искусные мастера создадут продуманный до мельчайших деталей, гармоничный интерьерный образ, подчеркнут ваш уникальный стиль, неповторимую индивидуальность вашей личности.</p>
+            <p class="text-left txt-under">Используя эксклюзивную коллекцию тканей, искусные мастера Togas Couture создадут продуманный до мельчайших деталей, гармоничный интерьерный образ, подчеркнут неповторимую индивидуальность вашей личности.</p>
         </div>
             
     </div>
@@ -400,16 +553,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                                 </div>
                                 <div class="col-12 col-md-6">
-                                     <p class="card-text"  style = "padding:1rem;">Обладая богатым опытом в текстильном дизайне, мы предлагаем своим клиентам персональный подход и безупречное оформление окон прекрасными шторами из изысканных тканей высокого качества, от воздушных легких тюлей до эффектного шелка, комфортного льна и роскошного тяжелого бархата.</p>											 
-									 <p class="card-text bullets">Различные виды штор: классические портьеры, гардины, римские и рулонные шторы, австрийские и английские модели, шторы на люверсах </p>	
-									 <p class="card-text bullets">Все актуальные модели солнцезащитных систем: рулонные шторы и плиссе, горизонтальные и вертикальные жалюзи</p>
-									 <p class="card-text bullets">Разнообразие отделок: классика и современный дизайн, плиссе, гофре и кринкл, ручные драпировки и многое другое</p>	
-									 <p class="card-text bullets">Эксклюзивные расцветки и орнаменты – более 2000 дизайнов в наличии</p>	
-									 <p class="card-text bullets">Около 30 000 видов тканей на заказ из Италии, Франции, Америки и Турции</p>	
-									 <p class="card-text bullets">Аксессуары под различные интерьерные стили</p>	
-									 <p class="card-text bullets">Бесплатный выезд дизайнера</p>		
-									 <p class="card-text bullets">Создание проектов любой сложности</p>	
-									 <p class="card-text bullets">Возможность экспресс-заказа</p>
+                                     <p class="card-text"  style = "padding:1rem;">Обладая богатым опытом в текстильном дизайне, мы предлагаем своим клиентам персональный подход и безупречное оформление окон прекрасными шторами из изысканных тканей высокого качества, от воздушных легких тюлей до эффектного шелка, комфортного льна и роскошного тяжелого бархата.</p>		
+									 <ul class = "card-text">
+										 <li class = "bullets">Различные виды штор: классические портьеры, гардины, римские и рулонные шторы, австрийские и английские модели, шторы на люверсах </li>	
+										 <li class = "bullets">Все актуальные модели солнцезащитных систем: рулонные шторы и плиссе, горизонтальные и вертикальные жалюзи</li>
+										 <li class = "bullets">Разнообразие отделок: классика и современный дизайн, плиссе, гофре и кринкл, ручные драпировки и многое другое</li>	
+										 <li class = "bullets">Эксклюзивные расцветки и орнаменты – более 2000 дизайнов в наличии</li>	
+										 <li class = "bullets">Около 30 000 видов тканей на заказ из Италии, Франции, Америки и Турции</li>	
+										 <li class = "bullets">Аксессуары под различные интерьерные стили</li>	
+										 <li class = "bullets">Бесплатный выезд дизайнера</li>		
+										 <li class = "bullets">Создание проектов любой сложности</li>	
+										 <li class = "bullets">Возможность экспресс-заказа</li>
+									 </ul>
 									 <p class = "card-text">
 									 Дизайнеры Togas Couture объединяют современные решения с эффектными орнаментами ар-деко, дополняют актуальный дизайн легкими винтажными нотками. Что бы вы ни выбрали из современных трендов в текстильном оформлении окон – римские шторы, жалюзи, «невидимый» тюль, портьеры в классическом или современном исполнении – мы сделаем так, чтобы шторы идеально вписались в интерьер вашего дома. </p>
 									 <div class="text-center mx-auto" style = "margin-bottom:2rem"><button type="button" onclick = "drapsCollapse();" class = "btn btn-outline-bronze-cm mt-4"  aria-label="Close"><svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="23" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg></button>
@@ -429,17 +584,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- / container for mobile collapseDraps-->
 		</div>
         <!-- / mobile collapseDraps -->  
-        <!-- Column Shades-->
+        <!-- Column Bedcovers-->
         <div class="col-sm-12 col-md-12 col-lg-4 my-3 d-flex align-items-stretch">
 
-            <!--Card Shades-->
+            <!--Card Bedcovers-->
             <div class="cards-center text-center">
 
-                <!--Card image-->
+                <!--Card Bedcovers-->
                 <div class="view overlay">
-                    <img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades.jpg" alt="Shades" class="card-img-top-tg mx-auto img-fluid">
+                    <img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-main.jpg" alt="Bedcover" class="card-img-top-tg mx-auto img-fluid">
                         <a>
-                            <div class="mask waves-effect waves-light rgba-white-slight" onclick="shadesCollapse();"></div>
+                            <div class="mask waves-effect waves-light rgba-white-slight" onclick="bedcoversCollapse();"></div>
                         </a>
                 </div>
 
@@ -447,21 +602,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">Покрывала</h3>
-                    <p class="txt-sub-cm">Оформление окон римскими шторами – <br>симбиоз практичности, комфорта<br/>и тонкой эстетики</p>
+                    <p class="txt-sub-cm"> Стильное покрывало, созданное<br/>специально для вас, – это комфорт,<br/>практичность и красота вашей спальни.</p>
                     <!--Button-->
-					 <div class="button-wrapper" style = "margin-top:0.55rem;">
-                        <button type="button" id = "button-shades" class="btn btn-outline-bronze-cm mt-4 waves-effect waves-light show-bind-button" data-toggle="collapse" onclick="shadesCollapse();" aria-expanded="false" aria-controls="collapseShades" data-element="#bind-button-shades">Подробнее</button>
-                        <!--<div class = "bind-button" id="bind-button-shades"></div>-->
+					 <div class="button-wrapper" style = "margin-top:0.65rem;">
+                        <button type="button" id = "button-bedcovers" class="btn btn-outline-bronze-cm mt-4 waves-effect waves-light show-bind-button" data-toggle="collapse" onclick="bedcoversCollapse();" aria-expanded="false" aria-controls="collapseBedcovers" data-element="#bind-button-bedcovers">Подробнее</button>
+                        <!--<div class = "bind-button" id="bind-button-bedcovers"></div>-->
                     </div>
                 </div>
 
             </div>
             <!--/.Card-->
         </div>
-        <!-- /Column Shades-->
+        <!-- /Column Bedcovers-->
 
-        <!-- Mobile collapseShades -->
-        <div class="collapse" id="collapseMobileShades">
+        <!-- Mobile collapseBedcovers -->
+        <div class="collapse" id="collapseMobileBedcovers">
         <div class="container-collapse mb-5 ml-4 mt-2">
         <div class="row" style = "max-width:100%">
         <div class="col" style = "padding:0">
@@ -476,17 +631,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								
 								<div class="fotorama" data-nav="thumbs">
 									
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(5).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(1).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(2).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(3).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(4).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(5).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(6).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(7).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(8).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(9).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(10).jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-1.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-2.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-3.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-4.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-5.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-6.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-7.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-8.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-9.jpg" >
+											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-10.jpg" >											
 								</div>	
 								
                                     <div class="text-center mx-auto">
@@ -495,8 +649,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                                 </div>
                                 <div class="col-12 col-md-6">
-                                     <p class="card-text" style = "padding:1rem;">Каждый человек хотел бы не только гармонии и равновесия в своей жизни, но и красоты окружающей его обстановки. Стремясь создать совершенное пространство, Togas предлагает изготовление прекрасных римских штор по индивидуальным проектам. Такие модели преобразят интерьер, станут дополнительным элементом декора, создадут особую атмосферу в комнате. Для римских штор мы используем текстиль премиального качества от лучших европейских предприятий, тщательно отбирающих сырье для его производства. Внимание к малейшим деталям и искусная работа профессионалов приводят к превосходным результатам: благодаря особым технологиям производства мы получаем уникальные ткани с авторским дизайном, которые задают модные тренды на рынке домашнего текстиля. Римские шторы от Togas создаются для различных интерьерных стилей и направлений. Разнообразные орнаменты и широкая палитра оттенков позволяют нашим клиентам воплотить в жизнь все свои мечты и пожелания, изготовить шторы под любой дизайн интерьера.</p>
-									 <div class="text-center mx-auto" style = "margin-bottom:2rem"><button type="button" onclick = "shadesCollapse();" class = "btn btn-outline-bronze-cm mt-4" aria-label="Close"><svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="23" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg></button>
+                                     <p class="card-text" style = "padding:1rem;">Покрывало на кровати в спальне – это практичность и эстетика. Этот предмет текстиля может изменить интерьерный стиль комнаты, украсить ее, cоздать определенную атмосферу. Коллекция эксклюзивных тканей Togas Couture дает возможность нашим дизайнерам изготовить именно то покрывало, о котором вы мечтали.</p>
+									 <ul class = "card-text">
+										<li class = "bullets">Разнообразные материалы, натуральные и искусственные: хлопок, лен, шелк, полиэстер</li>
+										<li class = "bullets">Оригинальные орнаменты и расцветки – более 2000 дизайнов в наличии</li>
+										<li class = "bullets">Около 30 000 видов тканей на заказ из Италии, Франции, Америки и Турции</li> 
+										<li class = "bullets">Бесплатный выезд дизайнера</li>
+										<li class = "bullets">Возможность экспресс-заказа</li>
+									 </ul>
+									 <p class = "card-text">Дизайнеры Togas Couture предложат вам оригинальные и стильные решения для спальни с учетом последних трендов в сфере текстильного дизайна. Привлекательная палитра оттенков и высокое качество используемых тканей позволяют создать покрывало как для традиционного, классического, так и для современного интерьера. Сделайте спальню любимой комнатой в вашем доме!</p>
+									 <div class="text-center mx-auto" style = "margin-bottom:2rem"><button type="button" onclick = "bedcoversCollapse();" class = "btn btn-outline-bronze-cm mt-4" aria-label="Close"><svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="23" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg></button>
                                 </div>
                                 </div>
                             </div>
@@ -534,7 +696,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <p class="txt-sub-cm">Мягкие изголовья<br/>по индивидуальному заказу<br/>из роскошной коллекции тканей Togas</p>
                     
                      <!--Button-->
-                     <div class="button-wrapper" style = "margin-top:0.55rem">
+                     <div class="button-wrapper" style = "margin-top:1.55rem">
                         <button type="button" id = "button-headboards" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "headboardsCollapse();" aria-expanded="false" aria-controls="collapseHeadboards" data-element="#bind-button-headboards">Подробнее</button>
                         <!--<div class = "bind-button" id="bind-button-headboards"></div>-->
                     </div> 
@@ -573,10 +735,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             
                                 <div class="col-12 col-md-6">
                                      <p class="card-text" style = "padding:1rem;">Мягкие изголовья представляют особый интерес для дизайнеров, открывают простор для творчества и для украшения интерьера вашей спальни. Красивые ткани, эффектные оттенки и орнаменты – те эстетические инструменты, с помощью которых можно достичь изумительных результатов. Изголовья от Togas Couture – это:</p>
-									 <p class = "card-text bullets" style = "margin-top:1rem">Коллекция роскошных тканей </p>
-									 <p class = "card-text bullets">Разнообразие дизайнов и оттенков текстиля </p>
-									 <p class = "card-text bullets">Индивидуальный подбор фурнитуры и декора: каретная стяжка, декоративный кант, мягкие панели, латунные гвоздики «под старину» и многое другое</p>
-									 <p class = "card-text bullets">Продуманный выбор стилистических решений: от классики и романтизма до утонченного ар-деко</p>
+									 <ul class = "card-text">
+										 <li class = "bullets">Коллекция роскошных тканей </li>
+										 <li class = "bullets">Разнообразие дизайнов и оттенков текстиля </li>
+										 <li class = "bullets">Индивидуальный подбор фурнитуры и декора: каретная стяжка, декоративный кант, мягкие панели, латунные гвоздики «под старину» и многое другое</li>
+										 <li class = "bullets">Продуманный выбор стилистических решений: от классики и романтизма до утонченного ар-деко</li>
+									 </ul>
 									 <p class = "card-text">Команда талантливых дизайнеров поможет выбрать наилучшую модель мягкого изголовья для вашей спальни, ориентируясь на ваши предпочтения и пожелания. Создавая свои шедевры, мастера Togas умело сочетают почти вековой опыт в сфере производства домашнего текстиля и высокотехнологичные решения. </p>
 									 <div class="text-center mx-auto" style = "margin-bottom:2rem"><button type="button" onclick = "headboardsCollapse();" class = "btn btn-outline-bronze-cm mt-4" aria-label="Close"><svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="23" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg></button>
                                 </div>
@@ -627,16 +791,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                                 </div>
                                 <div class="col-12 col-md-6 pl-3 ml-3">
-                                     <p class="card-text">Обладая богатым опытом в текстильном дизайне, мы предлагаем своим клиентам персональный подход и безупречное оформление окон прекрасными шторами из изысканных тканей высокого качества, от воздушных легких тюлей до эффектного шелка, комфортного льна и роскошного тяжелого бархата.</p>									 
-									 <p class = "card-text bullets" style = "margin-top:1rem;">Различные виды штор: классические портьеры, гардины, римские и рулонные шторы, австрийские и английские модели, шторы на люверсах </p>
-									 <p class = "card-text bullets">Разнообразие отделок: классика и современный дизайн, плиссе, гофре и кринкл, ручные драпировки и многое другое</p>
-									 <p class ="card-text bullets">Все актуальные модели солнцезащитных систем: рулонные шторы и плиссе, горизонтальные и вертикальные жалюзи</p>
-									 <p class = "card-text bullets">Эксклюзивные расцветки и орнаменты – более 2000 дизайнов в наличии</p>
-									 <p class = "card-text bullets">Около 30 000 видов тканей на заказ из Италии, Франции, Америки и Турции</p>	
-									 <p class = "card-text bullets">Аксессуары под различные интерьерные стили</p>
-									 <p class = "card-text bullets">Бесплатный выезд дизайнера</p>
-									 <p class = "card-text bullets">Создание проектов любой сложности</p>	
-									 <p class = "card-text bullets">Возможность экспресс-заказа</p>	
+                                     <p class="card-text">Обладая богатым опытом в текстильном дизайне, мы предлагаем своим клиентам персональный подход и безупречное оформление окон прекрасными шторами из изысканных тканей высокого качества, от воздушных легких тюлей до эффектного шелка, комфортного льна и роскошного тяжелого бархата.</p>									 									 
+									 <ul class = "card-text">
+									     <li class = "bullets">Различные виды штор: классические портьеры, гардины, римские и рулонные шторы, австрийские и английские модели, шторы на люверсах</li>
+										 <li class = "bullets">Разнообразие отделок: классика и современный дизайн, плиссе, гофре и кринкл, ручные драпировки и многое другое</li>
+										 <li class = "bullets">Все актуальные модели солнцезащитных систем: рулонные шторы и плиссе, горизонтальные и вертикальные жалюзи</li>
+										 <li class = "bullets">Эксклюзивные расцветки и орнаменты – более 2000 дизайнов в наличии</li>
+										 <li class = "bullets">Около 30 000 видов тканей на заказ из Италии, Франции, Америки и Турции</li>	
+										 <li class = "bullets">Аксессуары под различные интерьерные стили</li>
+										 <li class = "bullets">Бесплатный выезд дизайнера</li>
+										 <li class = "bullets">Создание проектов любой сложности</li>	
+										 <li class = "bullets">Возможность экспресс-заказа</li>	
+									 </ul>
 									 <p class = "card-text">
 									 Дизайнеры Togas Couture объединяют современные решения с эффектными орнаментами ар-деко, дополняют актуальный дизайн легкими винтажными нотками. Что бы вы ни выбрали из современных трендов в текстильном оформлении окон – римские шторы, жалюзи, «невидимый» тюль, портьеры в классическом или современном исполнении – мы сделаем так, чтобы шторы идеально вписались в интерьер вашего дома. </p>
                                </div>
@@ -656,45 +822,113 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- / Desktop collapseDraps -->
         </div>		
 		<div class="col-sm-12">		
-        <!-- Desktop collapseShades -->
+        <!-- Desktop collapseBedcovers -->
         <div class="container-collapse mt-2">
         <div class="row">
             <div class="col">
                 <div id="#bind2" class="bind-absolute"></div>
 
-        <div class="collapse" id="collapseDesktopShades">
+        <div class="collapse" id="collapseDesktopBedcovers">
           <div class="card-tg card-body-tg">
                 <div class="modal-content-tg">
                       <div class="modal-body-tg">
                         <div class="container-modal">
-							<button type="button" class="close" data-toggle="collapse" onclick = "shadesCollapse();" data-dismiss="modal" aria-label="Close">
+							<button type="button" class="close" data-toggle="collapse" onclick = "bedcoversCollapse();" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span></button>
                             <div class="row">
-                                <div class="col-12 col-md-5">
+                                <div class="col-12">
 								
-								<div class="fotorama" data-nav="thumbs">
-									
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(5).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(1).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(2).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(3).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(4).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(5).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(6).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(7).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(8).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(9).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/shades%20(10).jpg" >
-								</div>	
-								
-                                    <div class="text-center mx-auto">
+								<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;">
+								   <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;">
+										<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+									</div>
+									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-1.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-1.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-2.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-2.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-3.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-3.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-4.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-4.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-5.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-5.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-6.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-6.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-7.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-7.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-8.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-8.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-9.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-9.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-10.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-10.jpg" />
+										</div>
+									</div>
+									<!-- Thumbnail Navigator -->
+									<div data-u="thumbnavigator" class="jssort101" style="position:absolute;right:-15px;top:0px;width:240px;height:480px;" data-autocenter="2" data-scale-left="0.75">
+										<div data-u="slides">
+											<div data-u="prototype" class="p" style="width:99px;height:66px;">
+												<div data-u="thumbnailtemplate" class="t"></div>
+												
+											</div>
+										</div>
+									</div>
+									<!-- Arrow Navigator -->
+									<div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:20px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+											<line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+										</svg>
+									</div>
+									<div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:280px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+										</svg>
+									</div>
+								</div>
+								<script type="text/javascript">jssor_1_slider_init();</script>	
+								</div>
+								</div>
+								<div class = "row pt-4">
+                                <div class="col-9">
+                                     <p class="card-text">Покрывало на кровати в спальне – это практичность и эстетика. Этот предмет текстиля может изменить интерьерный стиль комнаты, украсить ее, cоздать определенную атмосферу. Коллекция эксклюзивных тканей Togas Couture дает возможность нашим дизайнерам изготовить именно то покрывало, о котором вы мечтали.</p>
+									 <ul class = "card-text">
+										<li class = "bullets">Разнообразные материалы, натуральные и искусственные: хлопок, лен, шелк, полиэстер </li>
+										<li class = "bullets">Оригинальные орнаменты и расцветки – более 2000 дизайнов в наличии</li>
+										<li class = "bullets">Около 30 000 видов тканей на заказ из Италии, Франции, Америки и Турции </li>
+										<li class = "bullets">Бесплатный выезд дизайнера </li>
+										<li class = "bullets">Возможность экспресс-заказа</li>
+									 </ul>									 
+									 <p class = "card-text">Дизайнеры Togas Couture предложат вам оригинальные и стильные решения для спальни с учетом последних трендов в сфере текстильного дизайна. Привлекательная палитра оттенков и высокое качество используемых тканей позволяют создать покрывало как для традиционного, классического, так и для современного интерьера. Сделайте спальню любимой комнатой в вашем доме!</p>
+                                </div>
+								<div class = "col-3">                                    
+								<div class="text-center mx-auto" style="position: absolute;bottom: 0;">
                                         <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">Связаться с дизайнером</button> 
                                     </div> 
-
-                                </div>
-                                <div class="col-12 col-md-6 pl-3 ml-3">
-                                     <p class="card-text">Каждый человек хотел бы не только гармонии и равновесия в своей жизни, но и красоты окружающей его обстановки. Стремясь создать совершенное пространство, Togas предлагает изготовление прекрасных римских штор по индивидуальным проектам. Такие модели преобразят интерьер, станут дополнительным элементом декора, создадут особую атмосферу в комнате. Для римских штор мы используем текстиль премиального качества от лучших европейских предприятий, тщательно отбирающих сырье для его производства. Внимание к малейшим деталям и искусная работа профессионалов приводят к превосходным результатам: благодаря особым технологиям производства мы получаем уникальные ткани с авторским дизайном, которые задают модные тренды на рынке домашнего текстиля. Римские шторы от Togas создаются для различных интерьерных стилей и направлений. Разнообразные орнаменты и широкая палитра оттенков позволяют нашим клиентам воплотить в жизнь все свои мечты и пожелания, изготовить шторы под любой дизайн интерьера. </p>
-                                </div>
+								</div>
                             </div>
                         </div>
                     </div>
@@ -707,7 +941,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <!-- / row -->
         </div>
-        <!-- / container for desktop collapseShades-->
+        <!-- / container for desktop collapsebedcover-->
         <!-- / Desktop collapseShades -->
 		</div>
 		<div class="col-sm-12">
@@ -740,11 +974,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             
                                 <div class="col-12 col-md-6 pl-3 ml-3">
                                      <p class="card-text">Мягкие изголовья представляют особый интерес для дизайнеров, открывают простор для творчества и для украшения интерьера вашей спальни. Красивые ткани, эффектные оттенки и орнаменты – те эстетические инструменты, с помощью которых можно достичь изумительных результатов. Изголовья от Togas Couture – это:</p>
-									 <p class = "card-text bullets" style = "margin-top:1rem">Коллекция роскошных тканей </p>
-									 <p class = "card-text bullets">Разнообразие дизайнов и оттенков текстиля </p>
-									 <p class = "card-text bullets">Индивидуальный подбор фурнитуры и декора: каретная стяжка, декоративный кант, мягкие панели, латунные гвоздики «под старину» и многое другое</p>
-									 <p class = "card-text bullets">Продуманный выбор стилистических решений: от классики и романтизма до утонченного ар-деко</p>
-									 <p class = "card-text">Команда талантливых дизайнеров поможет выбрать наилучшую модель мягкого изголовья для вашей спальни, ориентируясь на ваши предпочтения и пожелания. Создавая свои шедевры, мастера Togas умело сочетают почти вековой опыт в сфере производства домашнего текстиля и высокотехнологичные решения. </p></p>
+									 <ul class = "card-text">
+										 <li class = "bullets">Коллекция роскошных тканей </li>
+										 <li class = "bullets">Разнообразие дизайнов и оттенков текстиля </li>
+										 <li class = "bullets">Индивидуальный подбор фурнитуры и декора: каретная стяжка, декоративный кант, мягкие панели, латунные гвоздики «под старину» и многое другое</li>
+										 <li class = "bullets">Продуманный выбор стилистических решений: от классики и романтизма до утонченного ар-деко</li>
+									 </ul>
+									 <p class = "card-text">Команда талантливых дизайнеров поможет выбрать наилучшую модель мягкого изголовья для вашей спальни, ориентируясь на ваши предпочтения и пожелания. Создавая свои шедевры, мастера Togas умело сочетают почти вековой опыт в сфере производства домашнего текстиля и высокотехнологичные решения. </p>
                                 </div>
                             </div>
                         </div>
@@ -836,9 +1072,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                            
                                 <div class="col-12 col-md-6">
                                      <p class="card-text" style = "padding:1rem;">Togas предлагает специальный сервис: разработку профессиональными дизайнерами эксклюзивных проектов текстильного оформления интерьера, являющихся не только воплощением вашего уникального видения мира, но и вашей индивидуальности. Симбиоз непревзойденной коллекции тканей, аксессуаров и мастерства профессионалов рождает роскошные произведения, созданные для украшения вашего дома. Мы предлагаем:</p>
-									 <p class = "card-text bullets">Бесплатный выезд дизайнера и расчет стоимости вашего проекта</p>
-									 <p class = "card-text bullets">Создание проектов любой сложности для различных интерьеров</p>
-									 <p class = "card-text bullets">Установка карнизов и навеска штор специалистами службы сервиса</p>
+									 <ul class = "card-text">
+										 <li class = "bullets">Бесплатный выезд дизайнера и расчет стоимости вашего проекта</li>
+										 <li class = "bullets">Создание проектов любой сложности для различных интерьеров</li>
+										 <li class = "bullets">Установка карнизов и навеска штор специалистами службы сервиса</li>
+									 </ul>
 									 <p class="card-text">Творческие возможности мастеров Togas помогут найти лучшее дизайн-решение для создания дома вашей мечты, достичь идеальных результатов при декорировании интерьера текстилем. Стремясь воплотить в жизнь ваше видение прекрасного, Togas дарит безграничную свободу в создании собственного неповторимого пространства для жизни.</p>
 									 <div class="text-center mx-auto" style = "margin-bottom:2rem"><button type="button" onclick = "inHouseDesignersCollapse();" class = "btn btn-outline-bronze-cm mt-4"  aria-label="Close"><svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="23" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg></button>
                                 </div>
@@ -921,11 +1159,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </div>
                                 <div class="col-12 col-md-6">
                                      <p class="card-text" style = "padding:1rem;">Коллекция великолепных обивочных тканей от Togas привнесет в интерьер нотки роскоши и индивидуального стиля. Выбор той или иной обивочной материи – это отражение внутреннего «Я», вкусов и личных предпочтений человека. Разрабатывая эксклюзивную коллекцию тканей, дизайнеры Togas выбрали именно такой персонифицированный подход к текстилю для обивки мебели.</p>
-									 <p class = "card-text bullets" style = "margin-top:1rem">Более 2000 дизайнов эксклюзивного текстиля от Togas </p>
-									 <p class = "card-text bullets">Тонкая ручная работа и авторские принты</p>
-									 <p class = "card-text bullets">Возможность подбора ткани под любой интерьерный стиль </p>
-									 <p class = "card-text bullets">Бесплатный выезд дизайнера </p>		
-									 <p class = "card-text bullets">Создание проектов любой сложности</p>	
+									 <ul class = "card-text">
+										 <li class = "bullets">Более 2000 дизайнов эксклюзивного текстиля от Togas </li>
+										 <li class = "bullets">Тонкая ручная работа и авторские принты</li>
+										 <li class = "bullets">Возможность подбора ткани под любой интерьерный стиль </li>
+										 <li class = "bullets">Бесплатный выезд дизайнера </li>		
+										 <li class = "bullets">Создание проектов любой сложности</li>	
+									 </ul>
 									 <p class = "card-text">Мебель с роскошной текстильной обивкой, мягкие изголовья для кроватей, комплекты мягкой мебели для веранд и патио – все модели создаются настоящими профессионалами, лучшими мастерами своего дела.</p>
 									 <p class = "card-text">Наши обивочные ткани, изготавливаемые на заказ, уникальны.  Каждый экземпляр коллекции отличается превосходным качеством и авторским дизайном, который сформировался под влиянием различных направлений в искусстве и декорировании.</p>
 									 <div class="text-center mx-auto" style = "margin-bottom:2rem"><button type="button" onclick = "upholsteryCollapse();" class = "btn btn-outline-bronze-cm mt-4"  aria-label="Close"><svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="23" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg></button>
@@ -1005,9 +1245,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                                 </div>
                                 <div class="col-12 col-md-6">
-                                     <p class="card-text"  style = "padding:1rem;">Приглашаем к сотрудничеству дизайнеров интерьеров, архитекторов и декораторов, а также профессионалов в области гостиничного бизнеса!</p>
-						 			 <p class = "card-text">С нами вы создадите потрясающие интерьерные образы и воплотите в жизнь самые смелые творческие мечты. Вы легко найдете то, что вам нужно, в роскошной коллекции тканей высокого качества от Togas, отвечающей последним трендам в текстильном декоре. Комбинируя материалы разной фактуры, смешивая орнаменты, стили и варианты отделки, вы сможете разработать необычные проекты, оригинальный дизайн, отвечающий самым высоким требованиям клиентов.</p>
-									 <p class = "card-text">Мы предлагаем специальную программу лояльности для архитекторов, декораторов или дизайнеров интерьеров. Свяжитесь с нами и узнайте о преимуществах и возможностях сотрудничества с Togas.</p>
+                                     <p class="card-text"  style = "padding:1rem;">Приглашаем к сотрудничеству дизайнеров интерьеров, архитекторов и декораторов, а также профессионалов в области гостиничного бизнеса! С нами вы создадите потрясающие интерьерные образы и воплотите в жизнь самые смелые творческие мечты.</p>
+									 <ul class = "card-text">
+										<li class = "bullets">Роскошная коллекция тканей от Togas Couture отвечает последним трендам в текстильном декоре</li>
+										<li class = "bullets">Эксклюзивные расцветки и орнаменты – более 2000 дизайнов в наличии</li>
+										<li class = "bullets">Программа лояльности для архитекторов, декораторов и дизайнеров интерьеров</li>
+										<li class = "bullets">Текстиль, специально разработанный для отелей и ресторанов</li>
+									 </ul>
+									 <p class = "card-text">Свяжитесь с нами и узнайте о преимуществах и возможностях сотрудничества с Togas.</p>
 									 <div class="text-center mx-auto" style = "margin-bottom:2rem"><button type="button" onclick = "b2bCollapse();" class = "btn btn-outline-bronze-cm mt-4"  aria-label="Close"><svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="23" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg></button>
                                </div>
                             </div>
@@ -1060,9 +1305,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                            
                                 <div class="col-12 col-md-6 pl-3 ml-3">
                                      <p class="card-text">Togas предлагает специальный сервис: разработку профессиональными дизайнерами эксклюзивных проектов текстильного оформления интерьера, являющихся не только воплощением вашего уникального видения мира, но и вашей индивидуальности. Симбиоз непревзойденной коллекции тканей, аксессуаров и мастерства профессионалов рождает роскошные произведения, созданные для украшения вашего дома. Мы предлагаем:</p>
-									 <p class = "card-text bullets" style = "margin-top:1rem;">Бесплатный выезд дизайнера и расчет стоимости вашего проекта</p>
-									 <p class = "card-text bullets">Создание проектов любой сложности для различных интерьеров</p>
-									 <p class = "card-text bullets">Установка карнизов и навеска штор специалистами службы сервиса</p>
+									 <ul class = "card-text">
+										 <li class = "bullets">Бесплатный выезд дизайнера и расчет стоимости вашего проекта</li>
+										 <li class = "bullets">Создание проектов любой сложности для различных интерьеров</li>
+										 <li class = "bullets">Установка карнизов и навеска штор специалистами службы сервиса</li>
+									 </ul>
 									 <p class = "card-text">Творческие возможности мастеров Togas помогут найти лучшее дизайн-решение для создания дома вашей мечты, достичь идеальных результатов при декорировании интерьера текстилем. Стремясь воплотить в жизнь ваше видение прекрасного, Togas дарит безграничную свободу в создании собственного неповторимого пространства для жизни.</p>
                                 </div>
                             </div>
@@ -1113,11 +1360,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </div>
                                 <div class="col-12 col-md-6 pl-3 ml-3">
 									 <p class="card-text">Коллекция великолепных обивочных тканей от Togas привнесет в интерьер нотки роскоши и индивидуального стиля. Выбор той или иной обивочной материи – это отражение внутреннего «Я», вкусов и личных предпочтений человека. Разрабатывая эксклюзивную коллекцию тканей, дизайнеры Togas выбрали именно такой персонифицированный подход к текстилю для обивки мебели.</p>
-									 <p class = "card-text bullets" style = "margin-top:1rem">Более 2000 дизайнов эксклюзивного текстиля от Togas </p>
-									 <p class = "card-text bullets">Тонкая ручная работа и авторские принты</p>
-									 <p class = "card-text bullets">Возможность подбора ткани под любой интерьерный стиль </p>
-									 <p class = "card-text bullets">Бесплатный выезд дизайнера </p>		
-									 <p class = "card-text bullets">Создание проектов любой сложности</p>	
+									 <ul class = "card-text">
+										 <li class = "bullets">Более 2000 дизайнов эксклюзивного текстиля от Togas </li>
+										 <li class = "bullets">Тонкая ручная работа и авторские принты</li>
+										 <li class = "bullets">Возможность подбора ткани под любой интерьерный стиль </li>
+										 <li class = "bullets">Бесплатный выезд дизайнера </li>		
+										 <li class = "bullets">Создание проектов любой сложности</li>	
+									 </ul>
 									 <p class = "card-text">Мебель с роскошной текстильной обивкой, мягкие изголовья для кроватей, комплекты мягкой мебели для веранд и патио – все модели создаются настоящими профессионалами, лучшими мастерами своего дела.</p>
 									 <p class = "card-text">Наши обивочные ткани, изготавливаемые на заказ, уникальны.  Каждый экземпляр коллекции отличается превосходным качеством и авторским дизайном, который сформировался под влиянием различных направлений в искусстве и декорировании.</p>
                                 </div>
@@ -1166,9 +1415,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                                 </div>
                                 <div class="col-12 col-md-6 pl-3 ml-3">
-                                     <p class="card-text">Приглашаем к сотрудничеству дизайнеров интерьеров, архитекторов и декораторов, а также профессионалов в области гостиничного бизнеса!</p>
-						 			 <p class = "card-text">С нами вы создадите потрясающие интерьерные образы и воплотите в жизнь самые смелые творческие мечты. Вы легко найдете то, что вам нужно, в роскошной коллекции тканей высокого качества от Togas, отвечающей последним трендам в текстильном декоре. Комбинируя материалы разной фактуры, смешивая орнаменты, стили и варианты отделки, вы сможете разработать необычные проекты, оригинальный дизайн, отвечающий самым высоким требованиям клиентов.</p>
-									 <p class = "card-text">Мы предлагаем специальную программу лояльности для архитекторов, декораторов или дизайнеров интерьеров. Свяжитесь с нами и узнайте о преимуществах и возможностях сотрудничества с Togas.</p>
+                                     <p class="card-text">Приглашаем к сотрудничеству дизайнеров интерьеров, архитекторов и декораторов, а также профессионалов в области гостиничного бизнеса! С нами вы создадите потрясающие интерьерные образы и воплотите в жизнь самые смелые творческие мечты.</p>
+									 <ul class = "card-text">
+										<li class = "bullets">Роскошная коллекция тканей от Togas Couture отвечает последним трендам в текстильном декоре</li>
+										<li class = "bullets">Эксклюзивные расцветки и орнаменты – более 2000 дизайнов в наличии</li>
+										<li class = "bullets">Программа лояльности для архитекторов, декораторов и дизайнеров интерьеров</li>
+										<li class = "bullets">Текстиль, специально разработанный для отелей и ресторанов</li>
+									 </ul>
+									 <p class = "card-text">Свяжитесь с нами и узнайте о преимуществах и возможностях сотрудничества с Togas.</p>
                                </div>
                             </div>
                         </div>
@@ -1299,10 +1553,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <div class="col-12 col-md-6">
                                      <p class="card-text" style = "padding:1rem;">Коллекция тканей от Togas – это изысканная эклектика: гармоничное сочетание различных орнаментов и разнородных стилевых элементов, комбинирование традиционных решений с современными трендами в текстильном дизайне. Роскошный бархат, фактурный жаккард, струящийся шелк, лен, обработанный по специальной технологии «стирка с камнями», воздушные тюли… разнообразие наших тканей позволит создать безупречное пространство для жизни.</p>
 									 <p class ="card-text">Мы предлагаем:</p>
-									 <p class ="card-text bullets" style = "margin-top:1rem">Различные виды тканей класса люкс для оформления окон, обивки мебели и создания уникального текстильного декора – всего более 2000 дизайнов в наличии</p>
-									 <p class ="card-text bullets">Все ткани производятся на лучших фабриках с использованием тонкой ручной работы и сложной декоративной отделки</p>
-									 <p class ="card-text bullets">30 000 различных видов материи из Италии, Франции, Испании, Америки и Турции на заказ, под любые проекты</p>
-									 <p class ="card-text bullets">Образцы тканей представлены во всех бутиках Togas Couture</p>
+									 <ul class = "card-text">
+										 <li class = "bullets">Различные виды тканей класса люкс для оформления окон, обивки мебели и создания уникального текстильного декора – всего более 2000 дизайнов в наличии</li>
+										 <li class = "bullets">Все ткани производятся на лучших фабриках с использованием тонкой ручной работы и сложной декоративной отделки</li>
+										 <li class = "bullets">30 000 различных видов материи из Италии, Франции, Испании, Америки и Турции на заказ, под любые проекты</li>										 
+										 <li class = "bullets">Образцы тканей представлены во всех бутиках Togas Couture</li>
+									 </ul>
 									 <p class = "card-text">Благодаря высочайшему уровню исполнения, разнообразным стилистическим решениям, а также огромному опыту и вниманию к мельчайшим деталям возможности дизайнеров Togas Couture по декорированию интерьеров становятся практически безграничными.</p>									 
 									 <div style = "display:none" class="text-center mx-auto"><button type="button" onclick = "window.open('https://www.togas.com/ru/poshiv-na-zakaz/fabrics/')" class = "btn btn-fill-bronze-collapse mt-4">Каталог тканей</button></div>
 									 <div class="text-center mx-auto" style = "margin-bottom:2rem"><button type="button" onclick = "fabricsCollapse();" class = "btn btn-outline-bronze-cm mt-4"  aria-label="Close"><svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="23" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg></button></div>
@@ -1384,10 +1640,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </div>
                                 <div class="col-12 col-md-6">
                                      <p class="card-text"  style = "padding:1rem;">В коллекции Togas есть традиционные изделия и аксессуары в современном исполнении: разнообразные карнизы из пластика, дерева или металла, оригинальные наконечники к ним, кольца и кронштейны различных оттенков и дизайнов. Карнизы могут быть как нерегулируемыми, так и раздвижными, крепиться к стене, потолку или устанавливаться в оконный проем. Дизайнеры Togas Couture создают для клиентов сложные и оригинальные конструкции для эркеров, мансардных и арочных окон.</p>
-									 <p class ="card-text bullets" style = "margin-top:1rem">Более 10 различных дизайнов карнизов: витые или рифленые, с фактурными узорами, имитацией бронзы и отделкой под старину</p>
-									 <p class ="card-text bullets">Около 150 наименований продукции в каталоге</p>
-									 <p class ="card-text bullets">Электрические карнизы </p>
-									 <p class ="card-text bullets">Возможность заказа эксклюзивных моделей от Houlès, CasaValentina, Mandelli</p>
+									 <ul class = "card-text">
+										 <li class = "bullets">Более 10 различных дизайнов карнизов: витые или рифленые, с фактурными узорами, имитацией бронзы и отделкой под старину</li>
+										 <li class = "bullets">Около 150 наименований продукции в каталоге</li>
+										 <li class = "bullets">Электрические карнизы </li>
+										 <li class = "bullets">Возможность заказа эксклюзивных моделей от Houlès, CasaValentina, Mandelli</li>
+									 </ul>
 									 <p class = "card-text">Красивый карниз может стать самостоятельным декоративным элементом, привлекающим внимание своим стилем и оригинальностью, завершающим аккордом в оформлении окон текстилем.</p>
 									 <div style = "display:none" class="text-center mx-auto"><button type="button" onclick = "window.open('https://about.togas.com/ru/carnnizes-couture-interiors/')" class = "btn btn-fill-bronze-collapse mt-4">Каталог карнизов</button></div>
 									 <div class="text-center mx-auto" style = "margin-bottom:2rem"><button type="button" onclick = "hardwareCollapse();" class = "btn btn-outline-bronze-cm mt-4"  aria-label="Close"><svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="23" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg></button>
@@ -1473,11 +1731,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                            
                                 <div class="col-12 col-md-6">
                                      <p class="card-text" style = "padding:1rem;">Небольшие предметы декора подчеркивают нюансы оформления и зачастую правят бал в декорировании помещения. Создавая интерьерный образ, дизайнеры Togas Couture стремятся учесть каждую деталь, поэтому специально разработали прекрасную коллекцию аксессуаров из текстиля.</p>
-									 <p class ="card-text bullets" style ="margin-top:1rem">Более 100 наименований аксессуаров: кисти, бахрома, подхваты и держатели для штор, тесьма</p>
-									 <p class ="card-text bullets">Широкая гамма оттенков и разнообразие фактур</p>
-									 <p class ="card-text bullets">Тонкая ручная работа и роскошная отделка </p>
-									 <p class ="card-text bullets">Различные варианты изделий для проектов любой сложности</p>
-									 <p class ="card-text bullets">Возможен индивидуальный заказ эксклюзивных аксессуаров от ведущих европейских производителей</p>
+									 <ul class = "card-text">
+										 <li class = "bullets">Более 100 наименований аксессуаров: кисти, бахрома, подхваты и держатели для штор, тесьма</li>
+										 <li class = "bullets">Широкая гамма оттенков и разнообразие фактур</li>
+										 <li class = "bullets">Тонкая ручная работа и роскошная отделка </li>
+										 <li class = "bullets">Различные варианты изделий для проектов любой сложности</li>
+										 <li class = "bullets">Возможен индивидуальный заказ эксклюзивных аксессуаров от ведущих европейских производителей</li>
+									 </ul>
 									 <p class ="card-text">Аксессуары от Togas Couture превратят шторы в прекрасный, единственный в своем роде элемент дизайна. Они привлекут внимание к необычно оформленному окну, произведут впечатление оригинальностью цветовых сочетаний и великолепной отделкой ткани.</p>
 									 <div style = "display:none" class="text-center mx-auto"><button type="button" onclick = "window.open('https://www.togas.com/ru/poshiv-na-zakaz/accessories/')" class = "btn btn-fill-bronze-collapse mt-4">Каталог аксессуаров</button></div>
 									 <div class="text-center mx-auto" style = "margin-bottom:2rem"><button type="button" onclick = "accessoriesCollapse();" class = "btn btn-outline-bronze-cm mt-4"  aria-label="Close"><svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="23" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg></button>
@@ -1544,10 +1804,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <div class="col-12 col-md-6 pl-3 ml-3">
                                     <p class="card-text">Коллекция тканей от Togas – это изысканная эклектика: гармоничное сочетание различных орнаментов и разнородных стилевых элементов, комбинирование традиционных решений с современными трендами в текстильном дизайне. Роскошный бархат, фактурный жаккард, струящийся шелк, лен, обработанный по специальной технологии «стирка с камнями», воздушные тюли… разнообразие наших тканей позволит создать безупречное пространство для жизни.</p>
 									 <p class ="card-text">Мы предлагаем:</p>
-									 <p class ="card-text bullets" style = "margin-top:1rem">Различные виды тканей класса люкс для оформления окон, обивки мебели и создания уникального текстильного декора – всего более 2000 дизайнов в наличии</p>
-									 <p class ="card-text bullets">Все ткани производятся на лучших фабриках с использованием тонкой ручной работы и сложной декоративной отделки</p>
-									 <p class ="card-text bullets">30 000 различных видов материи из Италии, Франции, Испании, Америки и Турции на заказ, под любые проекты</p>
-									 <p class ="card-text bullets">Образцы тканей представлены во всех бутиках Togas Couture</p>
+									 <ul class = "card-text">
+										 <li class = "bullets">Различные виды тканей класса люкс для оформления окон, обивки мебели и создания уникального текстильного декора – всего более 2000 дизайнов в наличии</li>
+										 <li class = "bullets">Все ткани производятся на лучших фабриках с использованием тонкой ручной работы и сложной декоративной отделки</li>
+										 <li class = "bullets">30 000 различных видов материи из Италии, Франции, Испании, Америки и Турции на заказ, под любые проекты</li>
+										 <li class = "bullets">Образцы тканей представлены во всех бутиках Togas Couture</li>
+									 </ul>
 									 <p class = "card-text">Благодаря высочайшему уровню исполнения, разнообразным стилистическим решениям, а также огромному опыту и вниманию к мельчайшим деталям возможности дизайнеров Togas Couture по декорированию интерьеров становятся практически безграничными.</p>
 									 <div style = "display:none" class="mx-auto"><button type="button" onclick = "window.open('https://www.togas.com/ru/poshiv-na-zakaz/fabrics/')" class = "btn btn-fill-bronze-collapse mt-4" style = "margin-left:0">Каталог тканей</button></div>	
 			
@@ -1597,10 +1859,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             
                                 <div class="col-12 col-md-6 pl-3 ml-3">
                                      <p class="card-text">В коллекции Togas есть традиционные изделия и аксессуары в современном исполнении: разнообразные карнизы из пластика, дерева или металла, оригинальные наконечники к ним, кольца и кронштейны различных оттенков и дизайнов. Карнизы могут быть как нерегулируемыми, так и раздвижными, крепиться к стене, потолку или устанавливаться в оконный проем. Дизайнеры Togas Couture создают для клиентов сложные и оригинальные конструкции для эркеров, мансардных и арочных окон.</p>
-									 <p class ="card-text bullets" style = "margin-top:1rem">Более 10 различных дизайнов карнизов: витые или рифленые, с фактурными узорами, имитацией бронзы и отделкой под старину</p>
-									 <p class ="card-text bullets">Около 150 наименований продукции в каталоге</p>
-									 <p class ="card-text bullets">Электрические карнизы </p>
-									 <p class ="card-text bullets">Возможность заказа эксклюзивных моделей от Houlès, CasaValentina, Mandelli</p>
+									 <ul class = "card-text">
+										 <li class = "bullets">Более 10 различных дизайнов карнизов: витые или рифленые, с фактурными узорами, имитацией бронзы и отделкой под старину</li>
+										 <li class = "bullets">Около 150 наименований продукции в каталоге</li>
+										 <li class = "bullets">Электрические карнизы </li>
+										 <li class = "bullets">Возможность заказа эксклюзивных моделей от Houlès, CasaValentina, Mandelli</li>
+									 </ul>
 									 <p class = "card-text">Красивый карниз может стать самостоятельным декоративным элементом, привлекающим внимание своим стилем и оригинальностью, завершающим аккордом в оформлении окон текстилем.</p>
 									 <div style = "display:none" class="mx-auto"><button type="button"  onclick = "window.open('https://about.togas.com/ru/carnnizes-couture-interiors/')" class = "btn btn-fill-bronze-collapse mt-4" style = "margin-left:0">Каталог карнизов</button></div>									 
                                 </div>
@@ -1651,11 +1915,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                            
                                 <div class="col-12 col-md-6 pl-3 ml-3">
                                      <p class="card-text">Небольшие предметы декора подчеркивают нюансы оформления и зачастую правят бал в декорировании помещения. Создавая интерьерный образ, дизайнеры Togas Couture стремятся учесть каждую деталь, поэтому специально разработали прекрасную коллекцию аксессуаров из текстиля.</p>
-									 <p class ="card-text bullets" style ="margin-top:1rem">Более 100 наименований аксессуаров: кисти, бахрома, подхваты и держатели для штор, тесьма</p>
-									 <p class ="card-text bullets">Широкая гамма оттенков и разнообразие фактур</p>
-									 <p class ="card-text bullets">Тонкая ручная работа и роскошная отделка </p>
-									 <p class ="card-text bullets">Различные варианты изделий для проектов любой сложности</p>
-									 <p class ="card-text bullets">Возможен индивидуальный заказ эксклюзивных аксессуаров от ведущих европейских производителей</p>
+									 <ul class = "card-text">
+										 <li class = "bullets">Более 100 наименований аксессуаров: кисти, бахрома, подхваты и держатели для штор, тесьма</li>
+										 <li class = "bullets">Широкая гамма оттенков и разнообразие фактур</li>
+										 <li class = "bullets">Тонкая ручная работа и роскошная отделка </li>
+										 <li class = "bullets">Различные варианты изделий для проектов любой сложности</li>
+										 <li class = "bullets">Возможен индивидуальный заказ эксклюзивных аксессуаров от ведущих европейских производителей</li>
+									 </ul>
 									 <p class ="card-text">Аксессуары от Togas Couture превратят шторы в прекрасный, единственный в своем роде элемент дизайна. Они привлекут внимание к необычно оформленному окну, произведут впечатление оригинальностью цветовых сочетаний и великолепной отделкой ткани.</p>
 									 <div style = "display:none" class="mx-auto"><button type="button" onclick = "window.open('https://www.togas.com/ru/poshiv-na-zakaz/accessories/')" class = "btn btn-fill-bronze-collapse mt-4" style = "margin-left:0">Каталог аксессуаров</button></div>
                                 </div>
@@ -1721,7 +1987,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="row">
             <div class="col-12">
-                <img src="https://media.togas.com/media/couture/img/img-togas-lp3/vendors-1200.jpg" class="img-fluid" alt="Our selected vendors" width="">
+                <img src="https://media.togas.com/media/couture/img/img-togas-lp3/vendors-1200-rus.jpg" class="img-fluid" alt="Our selected vendors" width="">
             </div>
         </div>
 
@@ -2290,17 +2556,34 @@ $('#fail').hide();
 }); 
 
 function sendMessage() {
-    var formData = {
-        'name'        : $('input[name=firstname]').val(),
-        'phone'       : $('input[name=phone]').val(),
-        'email'       : $('input[name=email]').val(),
-        'key'         : $('input[name=key]').val(),
-		'time'        : $('input[name=group100]:checked').val(),
-        'submit'      : 1 
-    };
+	var file_data = $('#userfile').prop('files')[0];		
+	var formData = new FormData();  
+	if (file_data) { 
+		if (file_data.size > 10485760) { 
+			alert('Max allowed filesize is 10 MB.'); 
+			return false;
+		} else {
+			formData.append('file', file_data); 
+			formData.append('hasattach', 1); 
+		}
+	}
+	formData.append('name',$('input[name=name]').val());
+	formData.append('surname',$('input[name=surname]').val());
+	formData.append('service',$('#serviceselect option:selected').text());
+	formData.append('usermessage',$('#usermessage').val());	
+	formData.append('phone',$('input[name=phone]').val());
+	formData.append('email',$('input[name=email]').val());
+	formData.append('key',$('input[name=key]').val());
+	formData.append('time',$('input[name=group100]:checked').val());
+	formData.append('submit',1);
+		
+
     $.ajax({
         type: 'post', 
         url:  'sender_rus.php',
+		cache: false,
+        contentType: false,
+        processData: false,
         data:  formData,
         dataType: 'json',
 		beforeSend: function() {$('#ajax-wrapper').html('<img src="https://media.togas.com/media/couture/img/img-togas-lp3/ajax-loader.gif" id="loading-indicator">');$('#callback-submit').prop( "disabled", true );},
@@ -2309,14 +2592,20 @@ function sendMessage() {
 		{	
 			$('#callback-submit').prop( "disabled", false );
 			$('#ajax-wrapper').html('');
+			
 			$('#valid').show();
 			$('#valid').css("color", "red");
 			$('#valid').text(data['message']);	
 			if (data['code'] < 300) {
 				$('#valid').css("color", "green");
-				$('#form34').val('');
-				$('#form32').val('');
-				$('#form29').val('');
+				$('#name').val('');
+				$('#phone').val('');
+				$('#userfile').replaceWith($('#userfile').val('').clone(true));
+				$('#email').val('');
+				$('#surname').val('');
+				$('#usermessage').val('');
+				$('#serviceselect option:selected').prop("selected", false);
+				$('#serviceselect option:first').prop("selected", "selected");
 				dataLayer.push({'event': 'couture_form_complete'});
 			}
 				
@@ -2325,7 +2614,10 @@ function sendMessage() {
     event.preventDefault();
 }
 var validator = new FormValidator('callback', [{
-	name: 'firstname',
+	name: 'name',
+	rules: 'required'
+	},{
+	name: 'surname',
 	rules: 'required'
 	},{
 	name: 'phone',
@@ -2339,12 +2631,26 @@ var validator = new FormValidator('callback', [{
 	}],function(errors, event) {	
 	$('#valid').hide(); 	
 	$('#fail').hide();	
-    if (errors.length > 0) {
-        $('#fail').show();
-    } else {		
+	if (errors.length > 0) {
+		$('.required-error').removeClass("required-error");
+		$('.required-message').hide();		
+		for (var i = 0; i < errors.length; i++) {           
+			elementMessage = errors[i].name+"-required";
+			document.getElementById(errors[i].name).className += " required-error";
+			document.getElementById(elementMessage).innerHTML = errors[i].message
+			document.getElementById(elementMessage).style.display = "block";
+        }						
+    } else {	
+		$('.required-message').hide();	
+		$('.required-error').removeClass("required-error");
 		sendMessage();		
-		}	   
+		event.preventDefault();
+	}		   
 });
+	validator.setMessage('required', 'Это обязательное поле');
+	validator.setMessage('min_length','Это поле должно содержать не менее 5 символов');
+	validator.setMessage('max_length','Это поле должно содержать не более 15 символов');
+	validator.setMessage('valid_email','Это поле должно содержать действительный email адрес');
 </script>
 <script>
 $(window).resize(function() {
@@ -2401,46 +2707,46 @@ function fabricsCollapse()
 	}
 } 
 
-function shadesCollapse()
+function bedcoversCollapse()
 {	
 	/*$('.bind-button').hide();		
 	$('.show-bind-button:not(#button-shades)').html('Discover');		
 	if ($('#button-shades').text() == 'Discover') $('#button-shades').html('<svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg>'); else $('#button-shades').html('Discover');*/
 	$('.collapse').css("transition", "none");
-	$('.collapse:not(#collapseDesktopShades,#collapseMobileShades)').collapse('hide');	
+	$('.collapse:not(#collapseDesktopBedcovers,#collapseMobileBedcovers)').collapse('hide');	
 	$('.collapse').css("transition", "height 0.35s ease");	
 	
 	if ($(window).width() > 992 )
 	{	
-		if ($('#collapseDesktopShades').is(":visible")) 
+		if ($('#collapseDesktopBedcovers').is(":visible")) 
 		{
-			$('#collapseDesktopShades').collapse('toggle');
+			$('#collapseDesktopBedcovers').collapse('toggle');
 			$('html, body').animate({
 				scrollTop: ($(window).scrollTop() - 600) + 'px'
 			},500);	
 		}
 		else
 		{
-			$('#collapseDesktopShades').collapse('toggle');
+			$('#collapseDesktopBedcovers').collapse('toggle');
 			$('html, body').animate({
-				scrollTop: $('#collapseDesktopShades').offset().top
+				scrollTop: $('#collapseDesktopBedcovers').offset().top
 			},500);			
 		}
 	}
 	else
 	{	
-		if ($('#collapseMobileShades').is(":visible")) 
+		if ($('#collapseMobileBedcovers').is(":visible")) 
 		{
-			$('#collapseMobileShades').collapse('toggle');
+			$('#collapseMobileBedcovers').collapse('toggle');
 			$('html, body').animate({
 				scrollTop: ($(window).scrollTop() - 600) + 'px'
 			},500);		
 		}
 		else
 		{
-			$('#collapseMobileShades').collapse('toggle');
+			$('#collapseMobileBedcovers').collapse('toggle');
 			$('html, body').animate({
-				scrollTop: $('#collapseMobileShades').offset().top
+				scrollTop: $('#collapseMobileBedcovers').offset().top
 			},500);		
 		}
 	}

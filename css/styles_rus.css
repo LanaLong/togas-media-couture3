@@ -22,3 +22,35 @@
       font-size: 1.74em;
   }
 }
+.bullets {
+	margin-bottom:1rem!important;
+	list-style: disc;
+	margin-left: 2em;
+}
+.bullets:first-child {
+	padding-top:1rem;	
+}
+	.carousel-item:nth-child(1) {
+      background-image: url("https://media.togas.com/media/couture/img/img-togas-lp3/slider1-sh-rus.jpg?v=2");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .carousel-item:nth-child(2) {
+      background-image: url("https://media1.togas.com/media/couture/img/img-togas-lp3/slider1-sh.jpg?v=2");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .carousel-item:nth-child(3) {
+      background-image: url("https://media1.togas.com/media/couture/img/img-togas-lp3/slider2-sh.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .carousel-item:nth-child(4) {
+      background-image: url("https://media1.togas.com/media/couture/img/img-togas-lp3/slider3-sh.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
