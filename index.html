@@ -65,7 +65,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 $SpacingX: 14,
                 $SpacingY: 12,
                 $Orientation: 2,
-                $Align: 156
+                $Align: 156,
+				$Scale: false
               }
             };
 
@@ -458,7 +459,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               }
             };
 
-            var jssor_9_slider = new $JssorSlider$("jssor_9", jssor_1_options);
+            var jssor_9_slider = new $JssorSlider$("jssor_9", jssor_9_options);
 		
             /*#region responsive code begin*/
 
@@ -520,7 +521,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .jssort101 .p:hover.pdn .cv {border:2px solid #fff;background:none;opacity:.35;}
         .jssort101 .pav .cv {border-color:#fff;opacity:.35;}
         .jssort101 .pav .a, .jssort101 .p:hover .a {visibility:visible;}
-        .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;}
+        .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:auto;border:none;opacity:.6;}
         .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
     </style>
 
@@ -1805,26 +1806,74 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<button type="button" class="close" data-toggle="collapse" onclick = "inHouseDesignersCollapse();" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span></button>
                             <div class="row">
-                                <div class="col-12 col-md-5">
+                                <div class="col-12">
 								
-									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-1.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-3.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-4.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-5.jpg" >
-									</div>	
+								<div id="jssor_5" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;">
+								   <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;">
+										<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+									</div>
+									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000;">
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2-1.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2-1.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2-2.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2-2.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2-3.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2-3.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2-4.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2-4.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2-5.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2-5.jpg" />
+										</div>
+									</div>
+									<!-- Thumbnail Navigator -->
+									<div data-u="thumbnavigator" class="jssort101" style="position:absolute;right:-15px;top:0px;width:240px;height:480px;" data-autocenter="2" data-scale-left="0.75">
+										<div data-u="slides">
+											<div data-u="prototype" class="p" style="width:99px;height:66px;">
+												<div data-u="thumbnailtemplate" class="t"></div>
+												
+											</div>
+										</div>
+									</div>
+									<!-- Arrow Navigator -->
+									<div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:20px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+											<line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+										</svg>
+									</div>
+									<div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:280px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;" >
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+										</svg>
+									</div>
+								</div>
+								<script type="text/javascript">jssor_5_slider_init();</script>	
+								
 
-                                    <div class="text-center mx-auto">
-                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">get a quote</button> 
-                                    </div> 
 
                                 </div>
-								<!-- /col -->
-                           
-                                <div class="col-12 col-md-6 pl-3 ml-3">
+								</div>
+								<div class = "row pt-4">
+                                <div class="col-9">
                                      <p class="card-text">Togas offers an exclusive service of professional consulting, provided by a team of highly skilled in-house designers. Those professionals have the ability to propose a vast selection of textiles and home accessories while adjusting them to your own personality. Apart from consultation, we offer free on-site measuring as well as free estimate, whereas we provide installation service where requested. Our objective is simple: help you create the home of your dreams.</p>
                                 </div>
+								<div class = "col-3">
+                                    <div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">get a quote</button> 
+                                </div> 
+								</div>
                             </div>
                         </div>
                     </div>
@@ -1854,24 +1903,74 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<button type="button" class="close" data-toggle="collapse" onclick = "b2bCollapse();" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span></button>
                             <div class="row">
-                                <div class="col-12 col-md-5">
-                               
-									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-2.jpg" >									
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-1.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-3.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-4.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-5.jpg" >			
+                                <div class="col-12">
+								
+								<div id="jssor_6" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;">
+								   <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;">
+										<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
 									</div>
+									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000;">
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/contract-2-1.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/contract-2-1.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/contract-2-2.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/contract-2-2.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/contract-2-3.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/contract-2-3.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/contract-2-4.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/contract-2-4.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/contract-2-5.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/contract-2-5.jpg" />
+										</div>
+									</div>
+									<!-- Thumbnail Navigator -->
+									<div data-u="thumbnavigator" class="jssort101" style="position:absolute;right:-15px;top:0px;width:240px;height:480px;" data-autocenter="2" data-scale-left="0.75">
+										<div data-u="slides">
+											<div data-u="prototype" class="p" style="width:99px;height:66px;">
+												<div data-u="thumbnailtemplate" class="t"></div>
+												
+											</div>
+										</div>
+									</div>
+									<!-- Arrow Navigator -->
+									<div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:20px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+											<line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+										</svg>
+									</div>
+									<div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:280px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;" >
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+										</svg>
+									</div>
+								</div>
+								<script type="text/javascript">jssor_6_slider_init();</script>	
+								
 
-                                    <div class="text-center mx-auto">
-                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">get a quote</button> 
-                                    </div> 
 
                                 </div>
-                                <div class="col-12 col-md-6 pl-3 ml-3">
+								</div>
+								<div class = "row pt-4">
+                                <div class="col-9">
                                      <p class="card-text">Togas invites interior designers, architects as well as leisure and hospitality professionals to boost their creativity even further! You can now select material from our vast collection and fuse it together with today’s trends or living standards. You can create your own exclusive beautiful combinations, while quality and elegance will remain solid and sound. If you are a professional, contact us to find out your unlimited options.</p>
                                </div>
+							   	<div class = "col-3">
+                                    <div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">get a quote</button> 
+                                </div> 
+								</div>
                             </div>
                         </div>
                     </div>
@@ -2400,25 +2499,71 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<button type="button" class="close" data-toggle="collapse" onclick = "accessoriesCollapse();" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span></button>
                             <div class="row">
-                                <div class="col-12 col-md-5">
+                                <div class="col-12">
 								
-									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-1.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-2.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-3.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-4.jpg" >
+								<div id="jssor_9" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;">
+								   <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;">
+										<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
 									</div>
+									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000;">
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-2-1.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-2-1.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-2-2.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-2-2.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-2-3.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-2-3.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-2-4.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-2-4.jpg" />
+										</div>
+										
+									</div>
+									<!-- Thumbnail Navigator -->
+									<div data-u="thumbnavigator" class="jssort101" style="position:absolute;right:-15px;top:0px;width:240px;height:480px;" data-autocenter="2" data-scale-left="0.75">
+										<div data-u="slides">
+											<div data-u="prototype" class="p" style="width:99px;height:66px;">
+												<div data-u="thumbnailtemplate" class="t"></div>
+												
+											</div>
+										</div>
+									</div>
+									<!-- Arrow Navigator -->
+									<div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:20px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+											<line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+										</svg>
+									</div>
+									<div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:280px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;" >
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+										</svg>
+									</div>
+								</div>
+								<script type="text/javascript">jssor_9_slider_init();</script>	
+								
 
-                                    <div class="text-center mx-auto">
-                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">get a quote</button> 
-                                    </div> 
 
                                 </div>
-								<!-- /col -->
-                           
-                                <div class="col-12 col-md-6 pl-3 ml-3">
+								</div>
+								<div class = "row pt-4">
+                                <div class="col-9">
                                      <p class="card-text">Decorative pillows are the best way to brighten up a room! We create an extensive range of textured, embellished and patterned designs, all made from our fabrics collection. Hidden zipper enclosures, flanged or piped edges can be used to balance the most extravagant vibes. In the same way, our throws are a perfect way to cozy up in style! Don’t forget to go through our tassels and tie backs to bring an added personal touch to your home.</p>
                                 </div>
+								<div class = "col-3">
+								    <div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">get a quote</button> 
+                                    </div>
+								</div>									
                             </div>
                         </div>
                     </div>
@@ -2481,7 +2626,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="row">
             <div class="col-12">
-                <img src="https://media.togas.com/media/couture/img/img-togas-lp3/vendors-1200.jpg" class="img-fluid" alt="Our selected vendors" width="">
+                <img src="https://media.togas.com/media/couture/img/img-togas-lp3/vendors-1200.jpg?ver=22" class="img-fluid" alt="Our selected vendors" width="">
             </div>
         </div>
 
@@ -3748,7 +3893,7 @@ function accessoriesCollapse()
 		var greenwich = {lat: 41.032314192154594, lng: -73.62600445747375};
         var map1 = new google.maps.Map(document.getElementById('map1'), {
           center: fifthAve, 
-          zoom: 16,
+          zoom: 17,
           mapTypeControlOptions: {
           mapTypeIds: ['togas_map']
           }
@@ -3764,7 +3909,7 @@ function accessoriesCollapse()
         map1.setMapTypeId('togas_map');
         var map2 = new google.maps.Map(document.getElementById('map2'), {
           center: greenwich, 
-          zoom: 16,
+          zoom: 17,
           mapTypeControlOptions: {
           mapTypeIds: ['togas_map']
           }
@@ -3780,7 +3925,7 @@ function accessoriesCollapse()
         map2.setMapTypeId('togas_map');
         var map3 = new google.maps.Map(document.getElementById('map3'), {
           center: rousevelt, 
-          zoom: 16,
+          zoom: 17,
           mapTypeControlOptions: {
           mapTypeIds: ['togas_map']
           }
