@@ -54,3 +54,23 @@
       background-size: cover;
       background-position: center center;
     }
+.modal-first-line {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+.modal-second-line {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+.modal-third-line {
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 4rem;
+}
+.video-screenshot {
+	border-radius:5px; 
+	padding: 5px; 
+	margin: 20px; 
+	border: 2px solid #a58650;
+}

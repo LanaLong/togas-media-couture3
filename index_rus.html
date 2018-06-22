@@ -24,7 +24,7 @@
     <link href="css/style-togas-lp-v2.css" rel="stylesheet">
 
     <!-- Your custom styles (optional) -->
-	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/styles.css?v=3" rel="stylesheet">
     <link href="css/styles_rus.css?v=3" rel="stylesheet">
 
 	<!-- fotorama.css & fotorama.js. -->
@@ -100,6 +100,58 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
             /*#endregion responsive code end*/
         };
+
+	jssor_tv1_slider_init = function() {
+
+            var jssor_tv1_options = {
+			  $FillMode: 1,            
+              $SlideshowOptions: {				 
+              $Class: $JssorSlideshowRunner$,
+                
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Rows: 1,
+                $SpacingX: 14,
+                $SpacingY: 12,
+                $Orientation: 2,
+                $Align: 156,
+				$Scale: false
+              }
+            };
+
+            var jssor_tv1_slider = new $JssorSlider$("jssor_tv1", jssor_tv1_options);
+		
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 960;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_tv1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+	
 	</script>
 	    <style>
         /*jssor slider loading skin spin css*/
@@ -299,7 +351,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- /HEADER -->
 
 <!-- MODAL WINDOW -->
-<<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-callyou" role="document">
     <div class="modal-content modal-bg">
         <div class="modal-header-togas-top text-center mb-4">
@@ -2121,35 +2173,220 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- /SECTIONS "EXPERTS" -->
 
 
-<!-- SECTION "TESTEMONIALS" -->
-  <!---  <section id="testemonials">
+<!-- SECTION "TV" -->
+    <section id="tv">
         <div class="container-fluid bg-section-black pt-5 pb-4">
 
             <div class="container pt-5 align-items-center text-center">
-                 <h2 class="section-black-title text-center pb-4">Отзывы</h2>
-                 <img src="https://media.togas.com/media/couture/img/img-togas-lp3/quote-01-16.png" width="30" alt="quote" class="pb-3">
-            </div>
+				<h2 class="section-black-title text-center pb-4">Мы на ТВ</h2>                 
+				<!-- Container -->
+				<div class="container-videos">
+					<div class="row d-flex justify-content-center"> 
+						<div id = "videos-slider" class="owl-carousel owl-theme owl-loaded owl-drag">
+							<a data-toggle="modal" data-target="#modalShot1" href="#">
+							<div class="video-slide" >
+								<div class = "video-screenshot">
+									<img src = "https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/1.jpg" />						
+								</div>
+								<p style = "line-height:1rem"><span class="subscript-name">Идеальный ремонт<br/>Выпуск 26.05.2018</span></p>
+							</div>
+							</a>
+							
+							<a data-toggle="modal" data-target="#modalShot2" href="#">
+							<div class="video-slide">
+								<div class = "video-screenshot"  style = "border-radius:5px; padding: 5px; margin: 20px; border: 2px solid #a58650;">
+									<img src = "https://media.togas.com/media/couture/img/img-togas-lp3/tv/2/2.jpg" />								
+								</div>
+								<p style = "line-height:1rem"><span class="subscript-name">Идеальный ремонт<br/>Выпуск 30.09.2017</span></p>
+							</div>
+							</a>
 
-            <div id="testemonials-slider" class="owl-carousel owl-theme">
-                <div class="item-t text-center">
-                    <p class="text-center txt-quote my-3">Quality comes first in decoration! Well I can assure you that my new custom pillows are a top-quality stylish accent to my living room!</p>
-                    <p><span class="subscript-name">M. Brown</span></p>
-                </div>
+							<a data-toggle="modal" data-target="#modalShot3" href="#">
+							<div class="video-slide">
+								<div class = "video-screenshot"  style = "border-radius:5px; padding: 5px; margin: 20px; border: 2px solid #a58650;">
+									<img src = "https://media.togas.com/media/couture/img/img-togas-lp3/tv/3/6.jpg" />										
+								</div>
+								<p style = "line-height:1rem"><span class="subscript-name">Идеальный ремонт<br/>Выпуск 19.08.2017</span></p>
+							</div>
+							</a>
 
-                <div class="item-t text-center">
-                    <p class="text-center txt-quote my-3">I love drapes cause I like to play with the light and the colors! Togas gave me a wide range of options and helped me express my mood!</p>
-                    <p><span class="subscript-name">S. James</span></p>
-                </div>
-
-                <div class="item-t text-center">
-                    <p class="text-center txt-quote my-3">I always wanted to sleep in a fancy bed! At Togas, I found the expertise to get a signature customized headboard and feel like a proper star! </p>
-                    <p><span class="subscript-name">K. Brooks</span></p>
-                </div>
-            </div>
-        </div>
+							<a data-toggle="modal" data-target="#modalShot4" href="#">
+							<div class="video-slide">
+								<div class = "video-screenshot"  style = "border-radius:5px; padding: 5px; margin: 20px; border: 2px solid #a58650;">
+									<img src = "https://media.togas.com/media/couture/img/img-togas-lp3/tv/4/2.jpg" />								
+								</div>
+								<p style = "line-height:1rem"><span class="subscript-name">Идеальный ремонт<br/>Выпуск 02.09.2017</span></p>
+							</div>
+							</a>
+							<a data-toggle="modal" data-target="#modalShot5" href="#">
+							<div class="video-slide">
+								<div class = "video-screenshot"  style = "border-radius:5px; padding: 5px; margin: 20px; border: 2px solid #a58650;">
+									<img src = "https://media.togas.com/media/couture/img/img-togas-lp3/tv/5/3.jpg" />								
+								</div>
+								<p style = "line-height:1rem"><span class="subscript-name">Идеальный ремонт<br/>Выпуск 08.01.2016</span></p>
+							</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
         <!-- /container-fluid bg-section-black -->
-    <!--</section>-->
-<!-- /SECTION "TESTEMONIALS" -->
+    </section>
+<!-- MODAL WINDOW TV 1-->
+				<div class="modal fade" id="modalShot1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-callyou" role="document" style = "max-width:1100px;">
+					<div class="modal-content modal-bg">
+
+						<div class="modal-header-togas-top text-center mb-4">
+							<p class="modal-title-top" style = "line-height:2rem"><span class = "modal-first-line">Идеальный ремонт</span><br/><span class = "modal-second-line">Сергей Юрский</span></br><span class = "modal-third-line">Первый канал, 26.05.2018</span></p>							
+							<button type="button" class="close mr-3 mt-1" data-toggle="collapse" data-target="#modalShot1" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>										
+						</div>
+
+						<div class="modal-body" style = "margin:2vw">
+							<div class="fotorama" data-nav="thumbs">
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/1.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/2.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/4.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/5.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/6.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/7.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/8.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/9.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/10.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/12.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/13.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/14.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/15.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/16.jpg" />
+							</div>
+						</div>
+						
+						<!-- /modal-body -->			
+										
+					</div>
+				</div>					
+				</div>
+<!-- /MODAL WINDOW TV 1-->
+<!-- MODAL WINDOW TV 2-->
+				<div class="modal fade" id="modalShot2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-callyou" role="document" style = "max-width:1100px;">
+					<div class="modal-content modal-bg">
+
+						<div class="modal-header-togas-top text-center mb-4">
+							<p class="modal-title-top" style = "line-height:2rem"><span class = "modal-first-line">Идеальный ремонт</span><br/><span class = "modal-second-line">Дмитрий Шепелев</span></br><span class = "modal-third-line">Первый канал, 19.08.2017</span></p>							
+							<button type="button" class="close mr-3 mt-1" data-toggle="collapse" data-target="#modalShot2" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>										
+						</div>
+
+						<div class="modal-body" style = "margin:2vw">
+							<div class="fotorama" data-nav="thumbs">
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/2/1.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/2/2.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/2/4.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/2/6.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/2/31.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/2/32.jpg" />								
+							</div>
+						</div>
+						
+						<!-- /modal-body -->			
+										
+					</div>
+				</div>					
+				</div>
+<!-- /MODAL WINDOW TV 2-->
+<!-- MODAL WINDOW TV 3-->
+				<div class="modal fade" id="modalShot3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-callyou" role="document" style = "max-width:1100px;">
+					<div class="modal-content modal-bg">
+
+						<div class="modal-header-togas-top text-center mb-4">
+							<p class="modal-title-top" style = "line-height:2rem"><span class = "modal-first-line">Идеальный ремонт</span><br/><span class = "modal-second-line">Стас Костюшкин</span></br><span class = "modal-third-line">Первый канал, 30.09.2017</span></p>							
+							<button type="button" class="close mr-3 mt-1" data-toggle="collapse" data-target="#modalShot3" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>										
+						</div>
+
+						<div class="modal-body" style = "margin:2vw">
+							<div class="fotorama" data-nav="thumbs">
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/3/1.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/3/2.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/3/3.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/3/4.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/3/5.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/3/6.jpg" />								
+							</div>
+						</div>
+						
+						<!-- /modal-body -->			
+										
+					</div>
+				</div>					
+				</div>
+<!-- /MODAL WINDOW TV 3-->
+<!-- MODAL WINDOW TV 4-->
+				<div class="modal fade" id="modalShot4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-callyou" role="document" style = "max-width:1100px;">
+					<div class="modal-content modal-bg">
+
+						<div class="modal-header-togas-top text-center mb-4">
+							<p class="modal-title-top" style = "line-height:2rem"><span class = "modal-first-line">Идеальный ремонт</span><br/><span class = "modal-second-line">Михаил Шуфутинский</span></br><span class = "modal-third-line">Первый канал, 02.09.2017</span></p>							
+							<button type="button" class="close mr-3 mt-1" data-toggle="collapse" data-target="#modalShot4" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>										
+						</div>
+
+						<div class="modal-body" style = "margin:2vw">
+							<div class="fotorama" data-nav="thumbs">
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/4/1.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/4/2.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/4/3.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/4/4.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/4/5.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/4/6.jpg" />								
+							</div>
+						</div>
+						
+						<!-- /modal-body -->			
+										
+					</div>
+				</div>					
+				</div>
+<!-- /MODAL WINDOW TV 4-->
+<!-- MODAL WINDOW TV 5-->
+				<div class="modal fade" id="modalShot5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-callyou" role="document" style = "max-width:1100px;">
+					<div class="modal-content modal-bg">
+
+						<div class="modal-header-togas-top text-center mb-4">
+							<p class="modal-title-top" style = "line-height:2rem"><span class = "modal-first-line">Идеальный ремонт</span><br/><span class = "modal-second-line">Полина Гагарина</span></br><span class = "modal-third-line">Первый канал, 08.01.2016</span></p>							
+							<button type="button" class="close mr-3 mt-1" data-toggle="collapse" data-target="#modalShot5" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>										
+						</div>
+
+						<div class="modal-body" style = "margin:2vw">
+							<div class="fotorama" data-nav="thumbs">
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/5/1.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/5/2.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/5/3.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/5/4.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/5/5.jpg" />
+								<img src="https://media.togas.com/media/couture/img/img-togas-lp3/tv/5/6.jpg" />								
+							</div>
+						</div>
+						
+						<!-- /modal-body -->			
+										
+					</div>
+				</div>					
+				</div>
+<!-- /MODAL WINDOW TV 5-->
+<!-- /SECTION "TV" -->
 
 <!-- SECTION CONTACT INFO -->
     <section id="contact-info">
@@ -2547,6 +2784,27 @@ $("#carousel-thumb .left").click(function(){
 });
 
 }); 
+$(document).ready(function(){
+  $("#videos-slider").owlCarousel({
+  nav : true,
+  pagination : true,
+  responsive:{ //Адаптация в зависимости от разрешения экрана
+			0:{
+				items:1
+			},
+			500:{
+				items:2
+			},
+			600:{
+				items:3
+			},
+			1000:{
+				items:4
+			}
+		}
+});
+
+});
 </script>
 
 <script>
