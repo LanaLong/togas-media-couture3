@@ -41,7 +41,7 @@
       background-position: center center;
     }
     .carousel-item:nth-child(2) {
-      background-image: url("https://media1.togas.com/media/couture/img/img-togas-lp3/slider1-sh.jpg?v=2");
+      background-image: url("https://media1.togas.com/media/couture/img/img-togas-lp3/slider1-sh.jpg?v=3");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -84,3 +84,4 @@ ul.txt-p { margin:1em 0 2em 0;}
 .txt-sub-cm {color: #424242;font-size: 0.9em !important;}
 
 .card-text {color: #424242;}
+
