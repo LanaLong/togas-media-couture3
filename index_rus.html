@@ -49,7 +49,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PSZKS4');</script>
    <script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
+<script type="text/javascript">
         jssor_1_slider_init = function() {
 
             var jssor_1_options = {
@@ -100,10 +100,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
             /*#endregion responsive code end*/
         };
+        jssor_2_slider_init = function() {
 
-	jssor_tv1_slider_init = function() {
-
-            var jssor_tv1_options = {
+            var jssor_1_options = {
 			  $FillMode: 1,            
               $SlideshowOptions: {				 
               $Class: $JssorSlideshowRunner$,
@@ -118,26 +117,365 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 $SpacingX: 14,
                 $SpacingY: 12,
                 $Orientation: 2,
-                $Align: 156,
-				$Scale: false
+                $Align: 156
               }
             };
 
-            var jssor_tv1_slider = new $JssorSlider$("jssor_tv1", jssor_tv1_options);
+            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_1_options);
 		
             /*#region responsive code begin*/
 
             var MAX_WIDTH = 960;
 
             function ScaleSlider() {
-                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerElement = jssor_2_slider.$Elmt.parentNode;
                 var containerWidth = containerElement.clientWidth;
 
                 if (containerWidth) {
 
                     var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
 
-                    jssor_tv1_slider.$ScaleWidth(expectedWidth);
+                    jssor_2_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };        
+		jssor_3_slider_init = function() {
+
+            var jssor_1_options = {
+			  $FillMode: 1,            
+              $SlideshowOptions: {				 
+              $Class: $JssorSlideshowRunner$,
+                
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Rows: 1,
+                $SpacingX: 14,
+                $SpacingY: 12,
+                $Orientation: 2,
+                $Align: 156
+              }
+            };
+
+            var jssor_3_slider = new $JssorSlider$("jssor_3", jssor_1_options);
+		
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 960;
+
+            function ScaleSlider() {
+                var containerElement = jssor_3_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_3_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };        
+		jssor_4_slider_init = function() {
+
+            var jssor_1_options = {
+			  $FillMode: 1,            
+              $SlideshowOptions: {				 
+              $Class: $JssorSlideshowRunner$,
+                
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Rows: 1,
+                $SpacingX: 14,
+                $SpacingY: 12,
+                $Orientation: 2,
+                $Align: 156
+              }
+            };
+
+            var jssor_4_slider = new $JssorSlider$("jssor_4", jssor_1_options);
+		
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 960;
+
+            function ScaleSlider() {
+                var containerElement = jssor_4_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_4_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };        
+		jssor_5_slider_init = function() {
+
+            var jssor_1_options = {
+			  $FillMode: 1,            
+              $SlideshowOptions: {				 
+              $Class: $JssorSlideshowRunner$,
+                
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Rows: 1,
+                $SpacingX: 14,
+                $SpacingY: 12,
+                $Orientation: 2,
+                $Align: 156
+              }
+            };
+
+            var jssor_5_slider = new $JssorSlider$("jssor_5", jssor_1_options);
+		
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 960;
+
+            function ScaleSlider() {
+                var containerElement = jssor_5_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_5_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };        
+			jssor_6_slider_init = function() {
+
+            var jssor_1_options = {
+			  $FillMode: 1,            
+              $SlideshowOptions: {				 
+              $Class: $JssorSlideshowRunner$,
+                
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Rows: 1,
+                $SpacingX: 14,
+                $SpacingY: 12,
+                $Orientation: 2,
+                $Align: 156
+              }
+            };
+
+            var jssor_6_slider = new $JssorSlider$("jssor_6", jssor_1_options);
+		
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 960;
+
+            function ScaleSlider() {
+                var containerElement = jssor_6_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_6_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };        jssor_7_slider_init = function() {
+
+            var jssor_7_options = {
+			  $FillMode: 1,            
+              $SlideshowOptions: {				 
+              $Class: $JssorSlideshowRunner$,
+                
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Rows: 1,
+                $SpacingX: 14,
+                $SpacingY: 12,
+                $Orientation: 2,
+                $Align: 156
+              }
+            };
+
+            var jssor_7_slider = new $JssorSlider$("jssor_7", jssor_7_options);
+		
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 960;
+
+            function ScaleSlider() {
+                var containerElement = jssor_7_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_7_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };        jssor_8_slider_init = function() {
+
+            var jssor_8_options = {
+			  $FillMode: 1,            
+              $SlideshowOptions: {				 
+              $Class: $JssorSlideshowRunner$,
+                
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Rows: 1,
+                $SpacingX: 14,
+                $SpacingY: 12,
+                $Orientation: 2,
+                $Align: 156
+              }
+            };
+
+            var jssor_8_slider = new $JssorSlider$("jssor_8", jssor_8_options);
+		
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 960;
+
+            function ScaleSlider() {
+                var containerElement = jssor_8_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_8_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };        jssor_9_slider_init = function() {
+
+            var jssor_9_options = {
+			  $FillMode: 1,            
+              $SlideshowOptions: {				 
+              $Class: $JssorSlideshowRunner$,
+                
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Rows: 1,
+                $SpacingX: 14,
+                $SpacingY: 12,
+                $Orientation: 2,
+                $Align: 156
+              }
+            };
+
+            var jssor_9_slider = new $JssorSlider$("jssor_9", jssor_9_options);
+		
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 960;
+
+            function ScaleSlider() {
+                var containerElement = jssor_9_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_9_slider.$ScaleWidth(expectedWidth);
                 }
                 else {
                     window.setTimeout(ScaleSlider, 30);
@@ -151,8 +489,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
             /*#endregion responsive code end*/
         };
-	
-	</script>
+    </script>
 	    <style>
         /*jssor slider loading skin spin css*/
         .jssorl-009-spin img {
@@ -826,23 +1163,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="container-modal">
 							<button type="button" class="close" data-toggle="collapse" onclick = "drapsCollapse();" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span></button>
-                            <div class="row">
-                                <div class="col-12 col-md-5">
-                               
-									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(1).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(2).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(3).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(4).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(5).jpg" >			
-									</div>	
-
-                                    <div class="text-center mx-auto">
-                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">Связаться с дизайнером</button> 
-                                    </div> 
-
-                                </div>
-                                <div class="col-12 col-md-6 pl-3 ml-3">
+								<div class="row">
+                                <div class="col-12">
+								
+								<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;">
+								   <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;">
+										<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+									</div>
+									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(1).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(1).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(2).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(2).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(3).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(3).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(4).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(4).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(5).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(5).jpg" />
+										</div>
+									</div>
+									<!-- Thumbnail Navigator -->
+									<div data-u="thumbnavigator" class="jssort101" style="position:absolute;right:-15px;top:0px;width:240px;height:480px;" data-autocenter="2" data-scale-left="0.75">
+										<div data-u="slides">
+											<div data-u="prototype" class="p" style="width:99px;height:66px;">
+												<div data-u="thumbnailtemplate" class="t"></div>
+												
+											</div>
+										</div>
+									</div>
+									<!-- Arrow Navigator -->
+									<div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:20px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+											<line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+										</svg>
+									</div>
+									<div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:280px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+										</svg>
+									</div>
+								</div>
+								<script type="text/javascript">jssor_1_slider_init();</script>	
+								</div>
+								</div>
+								<div class = "row pt-4">
+                                <div class="col-9">
                                      <p class="card-text">Обладая богатым опытом в текстильном дизайне, мы предлагаем своим клиентам персональный подход и безупречное оформление окон прекрасными шторами из изысканных тканей высокого качества, от воздушных легких тюлей до эффектного шелка, комфортного льна и роскошного тяжелого бархата.</p>									 									 
 									 <ul class = "card-text">
 									     <li class = "bullets">Различные виды штор: классические портьеры, гардины, римские и рулонные шторы, австрийские и английские модели, шторы на люверсах</li>
@@ -858,6 +1237,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									 <p class = "card-text">
 									 Дизайнеры Togas Couture объединяют современные решения с эффектными орнаментами ар-деко, дополняют актуальный дизайн легкими винтажными нотками. Что бы вы ни выбрали из современных трендов в текстильном оформлении окон – римские шторы, жалюзи, «невидимый» тюль, портьеры в классическом или современном исполнении – мы сделаем так, чтобы шторы идеально вписались в интерьер вашего дома. </p>
                                </div>
+								<div class = "col-3">                                    
+									<div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse" data-toggle="modal" data-target="#modalContactForm" href="#">Связаться с дизайнером</button> 
+                                    </div> 
+								</div>							   
                             </div>
                         </div>
                     </div>
@@ -890,7 +1274,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <div class="row">
                                 <div class="col-12">
 								
-								<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;">
+								<div id="jssor_2" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;">
 								   <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;">
 										<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
 									</div>
@@ -961,7 +1345,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										</svg>
 									</div>
 								</div>
-								<script type="text/javascript">jssor_1_slider_init();</script>	
+								<script type="text/javascript">jssor_2_slider_init();</script>	
 								</div>
 								</div>
 								<div class = "row pt-4">
@@ -977,8 +1361,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									 <p class = "card-text">Дизайнеры Togas Couture предложат вам оригинальные и стильные решения для спальни с учетом последних трендов в сфере текстильного дизайна. Привлекательная палитра оттенков и высокое качество используемых тканей позволяют создать покрывало как для традиционного, классического, так и для современного интерьера. Сделайте спальню любимой комнатой в вашем доме!</p>
                                 </div>
 								<div class = "col-3">                                    
-								<div class="text-center mx-auto" style="position: absolute;bottom: 0;">
-                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">Связаться с дизайнером</button> 
+									<div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse" data-toggle="modal" data-target="#modalContactForm" href="#">Связаться с дизайнером</button> 
                                     </div> 
 								</div>
                             </div>
@@ -1009,22 +1393,57 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="container-modal">
 							<button type="button" class="close" data-toggle="collapse" onclick = "headboardsCollapse();" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span></button>
-                            <div class="row">
-                                <div class="col-12 col-md-5">
+								<div class="row">
+                                <div class="col-12">
 								
-									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(3).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(1).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(2).jpg" >
-									</div>	
-
-                                    <div class="text-center mx-auto">
-                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">Связаться с дизайнером</button> 
-                                    </div> 
-
-                                </div>
-                            
-                                <div class="col-12 col-md-6 pl-3 ml-3">
+								<div id="jssor_3" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;">
+								   <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;">
+										<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+									</div>
+									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(3).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(3).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(1).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(1).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(2).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(2).jpg" />
+										</div>
+									</div>
+									<!-- Thumbnail Navigator -->
+									<div data-u="thumbnavigator" class="jssort101" style="position:absolute;right:-15px;top:0px;width:240px;height:480px;" data-autocenter="2" data-scale-left="0.75">
+										<div data-u="slides">
+											<div data-u="prototype" class="p" style="width:99px;height:66px;">
+												<div data-u="thumbnailtemplate" class="t"></div>
+												
+											</div>
+										</div>
+									</div>
+									<!-- Arrow Navigator -->
+									<div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:20px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+											<line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+										</svg>
+									</div>
+									<div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:280px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+										</svg>
+									</div>
+								</div>
+								<script type="text/javascript">jssor_3_slider_init();</script>	
+								</div>
+								</div>
+								<div class = "row pt-4">
+                                <div class="col-9">
                                      <p class="card-text">Мягкие изголовья представляют особый интерес для дизайнеров, открывают простор для творчества и для украшения интерьера вашей спальни. Красивые ткани, эффектные оттенки и орнаменты – те эстетические инструменты, с помощью которых можно достичь изумительных результатов. Изголовья от Togas Couture – это:</p>
 									 <ul class = "card-text">
 										 <li class = "bullets">Коллекция роскошных тканей </li>
@@ -1034,6 +1453,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									 </ul>
 									 <p class = "card-text">Команда талантливых дизайнеров поможет выбрать наилучшую модель мягкого изголовья для вашей спальни, ориентируясь на ваши предпочтения и пожелания. Создавая свои шедевры, мастера Togas умело сочетают почти вековой опыт в сфере производства домашнего текстиля и высокотехнологичные решения. </p>
                                 </div>
+								<div class = "col-3">                                    
+									<div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse" data-toggle="modal" data-target="#modalContactForm" href="#">Связаться с дизайнером</button> 
+                                    </div> 
+								</div>								
                             </div>
                         </div>
                     </div>
@@ -1337,25 +1761,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="container-modal">
 							<button type="button" class="close" data-toggle="collapse" onclick = "inHouseDesignersCollapse();" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span></button>
-                            <div class="row">
-                                <div class="col-12 col-md-5">
+								<div class="row">
+                                <div class="col-12">
 								
-									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-1.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-3.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-4.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-5.jpg" >
-									</div>	
-
-                                    <div class="text-center mx-auto">
-                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">Связаться с дизайнером</button> 
-                                    </div> 
-
-                                </div>
-								<!-- /col -->
-                           
-                                <div class="col-12 col-md-6 pl-3 ml-3">
+								<div id="jssor_4" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;">
+								   <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;">
+										<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+									</div>
+									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-1.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-1.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-3.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-3.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-4.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-4.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-5.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-5.jpg" />
+										</div>										
+									</div>
+									<!-- Thumbnail Navigator -->
+									<div data-u="thumbnavigator" class="jssort101" style="position:absolute;right:-15px;top:0px;width:240px;height:480px;" data-autocenter="2" data-scale-left="0.75">
+										<div data-u="slides">
+											<div data-u="prototype" class="p" style="width:99px;height:66px;">
+												<div data-u="thumbnailtemplate" class="t"></div>
+												
+											</div>
+										</div>
+									</div>
+									<!-- Arrow Navigator -->
+									<div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:20px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+											<line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+										</svg>
+									</div>
+									<div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:280px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+										</svg>
+									</div>
+								</div>
+								<script type="text/javascript">jssor_4_slider_init();</script>	
+								</div>
+								</div>
+								<div class = "row pt-4">
+                                <div class="col-9">
                                      <p class="card-text">Togas предлагает специальный сервис: разработку профессиональными дизайнерами эксклюзивных проектов текстильного оформления интерьера, являющихся не только воплощением вашего уникального видения мира, но и вашей индивидуальности. Симбиоз непревзойденной коллекции тканей, аксессуаров и мастерства профессионалов рождает роскошные произведения, созданные для украшения вашего дома. Мы предлагаем:</p>
 									 <ul class = "card-text">
 										 <li class = "bullets">Бесплатный выезд дизайнера и расчет стоимости вашего проекта</li>
@@ -1364,6 +1828,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									 </ul>
 									 <p class = "card-text">Творческие возможности мастеров Togas помогут найти лучшее дизайн-решение для создания дома вашей мечты, достичь идеальных результатов при декорировании интерьера текстилем. Стремясь воплотить в жизнь ваше видение прекрасного, Togas дарит безграничную свободу в создании собственного неповторимого пространства для жизни.</p>
                                 </div>
+								<div class = "col-3">                                    
+									<div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse" data-toggle="modal" data-target="#modalContactForm" href="#">Связаться с дизайнером</button> 
+                                    </div> 
+								</div>									
                             </div>
                         </div>
                     </div>
@@ -1392,25 +1861,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="container-modal">
 							<button type="button" class="close" data-toggle="collapse" onclick = "upholsteryCollapse();" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span></button>
-                            <div class="row">
-                                <div class="col-12 col-md-5">
+								<div class="row">
+                                <div class="col-12">
 								
-								<div class="fotorama" data-nav="thumbs">
-									
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(1).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(2).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(3).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(4).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(5).jpg" >
-											
-								</div>	
-								
-                                    <div class="text-center mx-auto">
-                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">Связаться с дизайнером</button> 
-                                    </div> 
-
-                                </div>
-                                <div class="col-12 col-md-6 pl-3 ml-3">
+								<div id="jssor_5" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;">
+								   <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;">
+										<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+									</div>
+									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(1).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(1).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(2).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(2).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(3).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(3).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(4).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(4).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(5).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(5).jpg" />
+										</div>										
+									</div>
+									<!-- Thumbnail Navigator -->
+									<div data-u="thumbnavigator" class="jssort101" style="position:absolute;right:-15px;top:0px;width:240px;height:480px;" data-autocenter="2" data-scale-left="0.75">
+										<div data-u="slides">
+											<div data-u="prototype" class="p" style="width:99px;height:66px;">
+												<div data-u="thumbnailtemplate" class="t"></div>
+												
+											</div>
+										</div>
+									</div>
+									<!-- Arrow Navigator -->
+									<div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:20px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+											<line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+										</svg>
+									</div>
+									<div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:280px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+										</svg>
+									</div>
+								</div>
+								<script type="text/javascript">jssor_5_slider_init();</script>	
+								</div>
+								</div>
+								<div class = "row pt-4">
+                                <div class="col-9">
 									 <p class="card-text">Коллекция великолепных обивочных тканей от Togas привнесет в интерьер нотки роскоши и индивидуального стиля. Выбор той или иной обивочной материи – это отражение внутреннего «Я», вкусов и личных предпочтений человека. Разрабатывая эксклюзивную коллекцию тканей, дизайнеры Togas выбрали именно такой персонифицированный подход к текстилю для обивки мебели.</p>
 									 <ul class = "card-text">
 										 <li class = "bullets">Более 2000 дизайнов эксклюзивного текстиля от Togas </li>
@@ -1422,6 +1931,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									 <p class = "card-text">Мебель с роскошной текстильной обивкой, мягкие изголовья для кроватей, комплекты мягкой мебели для веранд и патио – все модели создаются настоящими профессионалами, лучшими мастерами своего дела.</p>
 									 <p class = "card-text">Наши обивочные ткани, изготавливаемые на заказ, уникальны.  Каждый экземпляр коллекции отличается превосходным качеством и авторским дизайном, который сформировался под влиянием различных направлений в искусстве и декорировании.</p>
                                 </div>
+								<div class = "col-3">                                    
+									<div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse" data-toggle="modal" data-target="#modalContactForm" href="#">Связаться с дизайнером</button> 
+                                    </div> 
+								</div>									
                             </div>
                         </div>
                     </div>
@@ -1450,24 +1964,66 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="container-modal">
 							<button type="button" class="close" data-toggle="collapse" onclick = "b2bCollapse();" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span></button>
-                            <div class="row">
-                                <div class="col-12 col-md-5">
-                               
-									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-2.jpg" >									
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-1.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-3.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-4.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-5.jpg" >			
+								<div class="row">
+                                <div class="col-12">
+								
+								<div id="jssor_6" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;">
+								   <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;">
+										<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
 									</div>
-
-                                    <div class="text-center mx-auto">
-                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">Отправить заявку</button> 
-                                    </div> 
-
-                                </div>
-                                <div class="col-12 col-md-6 pl-3 ml-3">
-                                     <p class="card-text">Приглашаем к сотрудничеству дизайнеров интерьеров, архитекторов и декораторов, а также профессионалов в области гостиничного бизнеса! С нами вы создадите потрясающие интерьерные образы и воплотите в жизнь самые смелые творческие мечты.</p>
+									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(1).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(1).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(2).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(2).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(3).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(3).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(4).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(4).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(5).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(5).jpg" />
+										</div>										
+									</div>
+									<!-- Thumbnail Navigator -->
+									<div data-u="thumbnavigator" class="jssort101" style="position:absolute;right:-15px;top:0px;width:240px;height:480px;" data-autocenter="2" data-scale-left="0.75">
+										<div data-u="slides">
+											<div data-u="prototype" class="p" style="width:99px;height:66px;">
+												<div data-u="thumbnailtemplate" class="t"></div>
+												
+											</div>
+										</div>
+									</div>
+									<!-- Arrow Navigator -->
+									<div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:20px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+											<line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+										</svg>
+									</div>
+									<div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:280px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+										</svg>
+									</div>
+								</div>
+								<script type="text/javascript">jssor_6_slider_init();</script>	
+								</div>
+								</div>
+								<div class = "row pt-4">
+                                <div class="col-9">
+                                <p class="card-text">Приглашаем к сотрудничеству дизайнеров интерьеров, архитекторов и декораторов, а также профессионалов в области гостиничного бизнеса! С нами вы создадите потрясающие интерьерные образы и воплотите в жизнь самые смелые творческие мечты.</p>
 									 <ul class = "card-text">
 										<li class = "bullets">Роскошная коллекция тканей от Togas Couture отвечает последним трендам в текстильном декоре</li>
 										<li class = "bullets">Эксклюзивные расцветки и орнаменты – более 2000 дизайнов в наличии</li>
@@ -1475,7 +2031,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										<li class = "bullets">Текстиль, специально разработанный для отелей и ресторанов</li>
 									 </ul>
 									 <p class = "card-text">Свяжитесь с нами и узнайте о преимуществах и возможностях сотрудничества с Togas.</p>
-                               </div>
+								</div>
+								<div class = "col-3">                                    
+									<div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse" data-toggle="modal" data-target="#modalContactForm" href="#">Связаться с дизайнером</button> 
+                                    </div> 
+								</div>							   
                             </div>
                         </div>
                     </div>
@@ -1825,35 +2386,74 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="container-modal">
 							<button type="button" class="close" data-toggle="collapse" onclick = "fabricsCollapse();" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span></button>					
-                            <div class="row">
-                                <div class="col-12 col-md-5">
+							<div class="row">
+                                <div class="col-12">
 								
-							
-								<div class="fotorama" data-nav="thumbs">
-									
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(6).jpg" >
-										
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(1).jpg" >
-										
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(2).jpg" >
-										
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(5).jpg" >
-										
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(7).jpg" >
-										
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(8).jpg" >
-										
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(9).jpg" >
-								</div>	
-									
-								
-                                    <div class="text-center mx-auto">
-                                    <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">Оставить заявку</button> 
-                                    </div>                          
+								<div id="jssor_7" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;">
+								   <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;">
+										<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+									</div>
+									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(6).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(6).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(1).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(1).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(2).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(2).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(5).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(5).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(7).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(7).jpg" />
+										</div>		
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(8).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(8).jpg" />
+										</div>	
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(9).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(9).jpg" />
+										</div>											
+									</div>
+									<!-- Thumbnail Navigator -->
+									<div data-u="thumbnavigator" class="jssort101" style="position:absolute;right:-15px;top:0px;width:240px;height:480px;" data-autocenter="2" data-scale-left="0.75">
+										<div data-u="slides">
+											<div data-u="prototype" class="p" style="width:99px;height:66px;">
+												<div data-u="thumbnailtemplate" class="t"></div>
+												
+											</div>
+										</div>
+									</div>
+									<!-- Arrow Navigator -->
+									<div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:20px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+											<line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+										</svg>
+									</div>
+									<div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:280px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+										</svg>
+									</div>
+								</div>
+								<script type="text/javascript">jssor_7_slider_init();</script>	
+								</div>
+							</div>
 
-                                </div>
-
-                                <div class="col-12 col-md-6 pl-3 ml-3">
+                            <div class = "row pt-4">
+                                <div class="col-9">
                                     <p class="card-text">Коллекция тканей от Togas – это изысканная эклектика: гармоничное сочетание различных орнаментов и разнородных стилевых элементов, комбинирование традиционных решений с современными трендами в текстильном дизайне. Роскошный бархат, фактурный жаккард, струящийся шелк, лен, обработанный по специальной технологии «стирка с камнями», воздушные тюли… разнообразие наших тканей позволит создать безупречное пространство для жизни.</p>
 									 <p class ="card-text">Мы предлагаем:</p>
 									 <ul class = "card-text">
@@ -1863,9 +2463,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										 <li class = "bullets">Образцы тканей представлены во всех бутиках Togas Couture</li>
 									 </ul>
 									 <p class = "card-text">Благодаря высочайшему уровню исполнения, разнообразным стилистическим решениям, а также огромному опыту и вниманию к мельчайшим деталям возможности дизайнеров Togas Couture по декорированию интерьеров становятся практически безграничными.</p>
-									 <div style = "display:none" class="mx-auto"><button type="button" onclick = "window.open('https://www.togas.com/ru/poshiv-na-zakaz/fabrics/')" class = "btn btn-fill-bronze-collapse mt-4" style = "margin-left:0">Каталог тканей</button></div>	
-			
+									 <div style = "display:none" class="mx-auto"><button type="button" onclick = "window.open('https://www.togas.com/ru/poshiv-na-zakaz/fabrics/')" class = "btn btn-fill-bronze-collapse mt-4" style = "margin-left:0">Каталог тканей</button></div>				
                                 </div>
+								<div class = "col-3">                                    
+									<div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse" data-toggle="modal" data-target="#modalContactForm" href="#">Связаться с дизайнером</button> 
+                                    </div> 
+								</div>									
                             </div>
                         </div>
                     </div>
@@ -1894,22 +2498,58 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="container-modal">
 							<button type="button" class="close" data-toggle="collapse" onclick = "hardwareCollapse();" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span></button>
-                            <div class="row">
-                                <div class="col-12 col-md-5">
+							<div class="row">
+                                <div class="col-12">
 								
-									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(1).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(3).jpg" >
-									</div>	
+								<div id="jssor_8" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;">
+								   <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;">
+										<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+									</div>
+									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(1).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(1).jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(3).jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(3).jpg" />
+										</div>											
+									</div>
+									<!-- Thumbnail Navigator -->
+									<div data-u="thumbnavigator" class="jssort101" style="position:absolute;right:-15px;top:0px;width:240px;height:480px;" data-autocenter="2" data-scale-left="0.75">
+										<div data-u="slides">
+											<div data-u="prototype" class="p" style="width:99px;height:66px;">
+												<div data-u="thumbnailtemplate" class="t"></div>
+												
+											</div>
+										</div>
+									</div>
+									<!-- Arrow Navigator -->
+									<div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:20px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+											<line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+										</svg>
+									</div>
+									<div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:280px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+										</svg>
+									</div>
+								</div>
+								<script type="text/javascript">jssor_8_slider_init();</script>	
+								</div>
+							</div>
 
-                                    <div class="text-center mx-auto">
-                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">Оставить заявку</button> 
-                                    </div> 
-
-                                </div>
-                            
-                                <div class="col-12 col-md-6 pl-3 ml-3">
+                            <div class = "row pt-4">
+                                <div class="col-9">
                                      <p class="card-text">В коллекции Togas есть традиционные изделия и аксессуары в современном исполнении: разнообразные карнизы из пластика, дерева или металла, оригинальные наконечники к ним, кольца и кронштейны различных оттенков и дизайнов. Карнизы могут быть как нерегулируемыми, так и раздвижными, крепиться к стене, потолку или устанавливаться в оконный проем. Дизайнеры Togas Couture создают для клиентов сложные и оригинальные конструкции для эркеров, мансардных и арочных окон.</p>
 									 <ul class = "card-text">
 										 <li class = "bullets">Более 10 различных дизайнов карнизов: витые или рифленые, с фактурными узорами, имитацией бронзы и отделкой под старину</li>
@@ -1920,6 +2560,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									 <p class = "card-text">Красивый карниз может стать самостоятельным декоративным элементом, привлекающим внимание своим стилем и оригинальностью, завершающим аккордом в оформлении окон текстилем.</p>
 									 <div style = "display:none" class="mx-auto"><button type="button"  onclick = "window.open('https://about.togas.com/ru/carnnizes-couture-interiors/')" class = "btn btn-fill-bronze-collapse mt-4" style = "margin-left:0">Каталог карнизов</button></div>									 
                                 </div>
+								<div class = "col-3">                                    
+									<div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse" data-toggle="modal" data-target="#modalContactForm" href="#">Связаться с дизайнером</button> 
+                                    </div> 
+								</div>								
                             </div>
                         </div>
                     </div>
@@ -1948,24 +2593,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="container-modal">
 							<button type="button" class="close" data-toggle="collapse" onclick = "accessoriesCollapse();" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span></button>
-                            <div class="row">
-                                <div class="col-12 col-md-5">
+							<div class="row">
+                                <div class="col-12">
 								
-									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-1.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-2.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-3.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-4.jpg" >
+								<div id="jssor_9" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;">
+								   <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;">
+										<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
 									</div>
+									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-1.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-1.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-2.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-2.jpg" />
+										</div>
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-3.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-3.jpg" />
+										</div>											
+										<div data-p="150.00">
+											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-4.jpg" />
+											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-4.jpg" />
+										</div>																					
+									</div>
+									<!-- Thumbnail Navigator -->
+									<div data-u="thumbnavigator" class="jssort101" style="position:absolute;right:-15px;top:0px;width:240px;height:480px;" data-autocenter="2" data-scale-left="0.75">
+										<div data-u="slides">
+											<div data-u="prototype" class="p" style="width:99px;height:66px;">
+												<div data-u="thumbnailtemplate" class="t"></div>
+												
+											</div>
+										</div>
+									</div>
+									<!-- Arrow Navigator -->
+									<div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:20px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+											<line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+										</svg>
+									</div>
+									<div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:280px;" data-autocenter="2">
+										<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+											<circle class="c" cx="8000" cy="8000" r="5920"></circle>
+											<polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+										</svg>
+									</div>
+								</div>
+								<script type="text/javascript">jssor_9_slider_init();</script>	
+								</div>
+							</div>
 
-                                    <div class="text-center mx-auto">
-                                        <button type="button" class="btn btn-fill-bronze-collapse mt-5" data-toggle="modal" data-target="#modalContactForm" href="#">Оставить заявку</button> 
-                                    </div> 
-
-                                </div>
-								<!-- /col -->
-                           
-                                <div class="col-12 col-md-6 pl-3 ml-3">
+                            <div class = "row pt-4">
+                                <div class="col-9">
                                      <p class="card-text">Небольшие предметы декора подчеркивают нюансы оформления и зачастую правят бал в декорировании помещения. Создавая интерьерный образ, дизайнеры Togas Couture стремятся учесть каждую деталь, поэтому специально разработали прекрасную коллекцию аксессуаров из текстиля.</p>
 									 <ul class = "card-text">
 										 <li class = "bullets">Более 100 наименований аксессуаров: кисти, бахрома, подхваты и держатели для штор, тесьма</li>
@@ -1977,6 +2660,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									 <p class ="card-text">Аксессуары от Togas Couture превратят шторы в прекрасный, единственный в своем роде элемент дизайна. Они привлекут внимание к необычно оформленному окну, произведут впечатление оригинальностью цветовых сочетаний и великолепной отделкой ткани.</p>
 									 <div style = "display:none" class="mx-auto"><button type="button" onclick = "window.open('https://www.togas.com/ru/poshiv-na-zakaz/accessories/')" class = "btn btn-fill-bronze-collapse mt-4" style = "margin-left:0">Каталог аксессуаров</button></div>
                                 </div>
+								<div class = "col-3">                                    
+									<div class="text-center mx-auto">
+                                        <button type="button" class="btn btn-fill-bronze-collapse" data-toggle="modal" data-target="#modalContactForm" href="#">Связаться с дизайнером</button> 
+                                    </div> 
+								</div>								
                             </div>
                         </div>
                     </div>
