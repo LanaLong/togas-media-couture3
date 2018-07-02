@@ -771,7 +771,8 @@ nav {
   font-size: 1em !important;
   line-height: 1.4em !important;
   letter-spacing: 0.025em;
-  color: #9D9D9C;
+  color: #424242;
+  /* text-align: left !important; */
 }
 
 .modal-callyou .modal-bg {

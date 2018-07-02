@@ -23,9 +23,13 @@
   }
 }
 .bullets {
-	margin-bottom:1rem!important;
+
+	margin-bottom: 1em !important;
 	list-style: disc;
-	margin-left: 2em;
+	margin-left: 4em;
+	/* color: #171717; */
+	/* font-weight: bold; */
+	/* font-size: 1.2em; */
 }
 .bullets:first-child {
 	padding-top:1rem;	
@@ -74,3 +78,9 @@
 	margin: 20px; 
 	border: 2px solid #a58650;
 }
+
+ul.txt-p { margin:1em 0 2em 0;}
+
+.txt-sub-cm {color: #424242;font-size: 0.9em !important;}
+
+.card-text {color: #424242;}
