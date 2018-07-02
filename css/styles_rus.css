@@ -23,25 +23,21 @@
   }
 }
 .bullets {
-
-	margin-bottom: 1em !important;
+	margin-bottom:1rem!important;
 	list-style: disc;
-	margin-left: 4em;
-	/* color: #171717; */
-	/* font-weight: bold; */
-	/* font-size: 1.2em; */
+	margin-left: 2em;
 }
 .bullets:first-child {
 	padding-top:1rem;	
 }
 	.carousel-item:nth-child(1) {
-      background-image: url("https://media.togas.com/media/couture/img/img-togas-lp3/slider1-sh-rus.jpg?v=2");
+      background-image: url("https://media.togas.com/media/couture/img/img-togas-lp3/slider1-sh-rus.jpg?v=5");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
     }
     .carousel-item:nth-child(2) {
-      background-image: url("https://media1.togas.com/media/couture/img/img-togas-lp3/slider1-sh.jpg?v=3");
+      background-image: url("https://media1.togas.com/media/couture/img/img-togas-lp3/slider1-sh.jpg?v=2");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -78,10 +74,3 @@
 	margin: 20px; 
 	border: 2px solid #a58650;
 }
-
-ul.txt-p { margin:1em 0 2em 0;}
-
-.txt-sub-cm {color: #424242;font-size: 0.9em !important;}
-
-.card-text {color: #424242;}
-
