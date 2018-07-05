@@ -53,8 +53,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         jssor_1_slider_init = function() {
 
             var jssor_1_options = {
-			  $FillMode: 1,            
-              $SlideshowOptions: {				 
+			  $FillMode: 1,  
+			  $SlideshowOptions: {				 
               $Class: $JssorSlideshowRunner$,
                 
               },
@@ -151,7 +151,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         };        
 		jssor_3_slider_init = function() {
 
-            var jssor_1_options = {
+            var jssor_1_options = {			  
 			  $FillMode: 1,            
               $SlideshowOptions: {				 
               $Class: $JssorSlideshowRunner$,
@@ -890,7 +890,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 <!--Card image-->
                 <div class="view overlay">
-                    <img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(2).jpg" alt="Custom draparies" class="card-img-top-tg mx-auto img-fluid">
+                    <img class = "lazyload" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(2).jpg" style = "max-width:306px;" alt="Custom draparies" class="card-img-top-tg mx-auto img-fluid">
                         <a>
                             <div class="mask waves-effect waves-light rgba-white-slight" onclick = "drapsCollapse();"></div>
                         </a>
@@ -900,7 +900,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">Шторы<br/>на заказ</h3>
-                    <p class="txt-sub-cm">Классические портьеры и тюли / римские и австрийские шторы / модели на люверсах / рулонные шторы / горизонтальные и вертикальные жалюзи</p>
+                    <p class="txt-sub-cm">Классические портьеры и тюли / римские<br/>и австрийские шторы / модели на<br/>люверсах / рулонные шторы /<br/>горизонтальные и вертикальные жалюзи</p>
                     <!--Button-->
                     <div class="button-wrapper">
                         <button type="button" id = "button-draps" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "drapsCollapse();" aria-expanded="false" aria-controls="collapseDraps" data-element="#bind-button-draps">Подробнее</button>
@@ -929,11 +929,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <div class="col-12 col-md-5">
                                
 									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(1).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(2).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(3).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(4).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(5).jpg" >			
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(1).jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(2).jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(3).jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(4).jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(5).jpg" ></a>	
 									</div>	
 
                                     <div class="text-center mx-auto">
@@ -981,7 +981,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 <!--Card Bedcovers-->
                 <div class="view overlay">
-                    <img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-main.jpg" alt="Bedcover" class="card-img-top-tg mx-auto img-fluid">
+                    <img class = "lazyload" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-main.jpg" style = "max-width:306px;" alt="Bedcover" class="card-img-top-tg mx-auto img-fluid">
                         <a>
                             <div class="mask waves-effect waves-light rgba-white-slight" onclick="bedcoversCollapse();"></div>
                         </a>
@@ -991,7 +991,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">Покрывала</h3>
-                    <p class="txt-sub-cm">Покрывала и комплекты покрывал с подушками / натуральные и искусственные ткани / разнообразные орнаменты / любые виды отделки и драпировки</p>
+                    <p class="txt-sub-cm">Покрывала и комплекты покрывал с<br/>подушками / натуральные и<br/>искусственные ткани / разнообразные<br/>орнаменты / любые виды отделки<br/>и драпировки</p>
                     <!--Button-->
 					 <div class="button-wrapper" style = "margin-top:0.65rem;">
                         <button type="button" id = "button-bedcovers" class="btn btn-outline-bronze-cm mt-4 waves-effect waves-light show-bind-button" data-toggle="collapse" onclick="bedcoversCollapse();" aria-expanded="false" aria-controls="collapseBedcovers" data-element="#bind-button-bedcovers">Подробнее</button>
@@ -1018,18 +1018,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <div class="row">
                                 <div class="col-12 col-md-5">
 								
-								<div class="fotorama" data-nav="thumbs">
-									
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-1.jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-2.jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-3.jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-4.jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-5.jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-6.jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-7.jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-8.jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-9.jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-10.jpg" >											
+								<div class="fotorama" data-nav="thumbs">									
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-1.jpg" ></a>
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-2.jpg" ></a>
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-3.jpg" ></a>
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-4.jpg" ></a>
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-5.jpg" ></a>
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-6.jpg" ></a>
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-7.jpg" ></a>
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-8.jpg" ></a>
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-9.jpg" ></a>
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-m-10.jpg" ></a>										
 								</div>	
 								
                                     <div class="text-center mx-auto">
@@ -1072,7 +1071,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 <!--Card image-->
                 <div class="view overlay">
-                    <img src="https://media.togas.com/media/couture/img/img-togas-lp3/headboard.jpg" alt="Headboards" class="card-img-top-tg mx-auto img-fluid">
+                    <img class = "lazyload" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/headboard.jpg" alt="Headboards" class="card-img-top-tg mx-auto img-fluid">
                         <a>
                             <div class="mask waves-effect waves-light rgba-white-slight" onclick = "headboardsCollapse();"></div>
                         </a>
@@ -1082,7 +1081,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">ИЗГОЛОВЬЯ</h3>
-                    <p class="txt-sub-cm">Персональный подход / тонкая ручная работа / индивидуальный подбор фурнитуры и декора</p>
+                    <p class="txt-sub-cm">Персональный подход / тонкая ручная<br/>работа / индивидуальный подбор<br/>фурнитуры и декора</p>
                     
                      <!--Button-->
                      <div class="button-wrapper" style = "margin-top:1.55rem">
@@ -1111,9 +1110,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <div class="col-12 col-md-5">
 								
 									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(3).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(1).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(2).jpg" >
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(3).jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(1).jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(2).jpg" ></a>
 									</div>	
 
                                     <div class="text-center mx-auto">
@@ -1172,24 +1171,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									</div>
 									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(1).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(1).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(1).jpg" />
+										    
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(2).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(2).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(2).jpg" />
+											
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(3).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(3).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(3).jpg" />
+											
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(4).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(4).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(4).jpg" />
+										
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(5).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(5).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/custom-drapes%20(5).jpg" />
+											
 										</div>
 									</div>
 									<!-- Thumbnail Navigator -->
@@ -1216,8 +1215,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
 										</svg>
 									</div>
-								</div>
-								<script type="text/javascript">jssor_1_slider_init();</script>	
+								</div>								
 								</div>
 								</div>
 								<div class = "row pt-4">
@@ -1280,44 +1278,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									</div>
 									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-1.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-1.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-1.jpg" />											
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-2.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-2.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-2.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-3.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-3.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-3.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-4.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-4.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-4.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-5.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-5.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-5.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-6.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-6.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-6.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-7.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-7.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-7.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-8.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-8.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-8.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-9.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-9.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-9.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-10.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-10.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/bedcover-10.jpg" />
 										</div>
 									</div>
 									<!-- Thumbnail Navigator -->
@@ -1345,7 +1333,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										</svg>
 									</div>
 								</div>
-								<script type="text/javascript">jssor_2_slider_init();</script>	
 								</div>
 								</div>
 								<div class = "row pt-4">
@@ -1402,16 +1389,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									</div>
 									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(3).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(3).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(3).jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(1).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(1).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(1).jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(2).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(2).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/headboards%20(2).jpg" />
 										</div>
 									</div>
 									<!-- Thumbnail Navigator -->
@@ -1439,7 +1423,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										</svg>
 									</div>
 								</div>
-								<script type="text/javascript">jssor_3_slider_init();</script>	
 								</div>
 								</div>
 								<div class = "row pt-4">
@@ -1492,7 +1475,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 <!--Card image-->
                 <div class="view overlay">
-                    <img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse.jpg" alt="In-house Design" class="card-img-top-tg mx-auto img-fluid">
+                    <img class = "lazyload" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse.jpg" alt="In-house Design" class="card-img-top-tg mx-auto img-fluid">
                         <a>
                             <div class="mask waves-effect waves-light rgba-white-slight" onclick = "inHouseDesignersCollapse();"></div>
                         </a>
@@ -1502,7 +1485,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">НАШИ ДИЗАЙНЕРЫ</h3>
-                    <p class="txt-sub-cm">Профессиональные консультации / бесплатный выезд дизайнера / создание проектов любой сложности</p>
+                    <p class="txt-sub-cm">Профессиональные консультации /<br/>бесплатный выезд дизайнера / создание<br/>проектов любой сложности</p>
                     
                      <!--Button-->
                     <div class="button-wrapper" style = "margin-top:0.4rem">
@@ -1532,11 +1515,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <div class="col-12 col-md-5">
 								
 									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-1.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-3.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-4.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-5.jpg" >
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-1.jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2.jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-3.jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-4.jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-5.jpg" ></a>
 									</div>	
 
                                     <div class="text-center mx-auto">
@@ -1579,7 +1562,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 <!--Card image-->
                 <div class="view overlay">
-                    <img src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(5).jpg" alt="Upholstery" class="card-img-top-tg mx-auto img-fluid">
+                    <img class = "lazyload" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(5).jpg" alt="Upholstery" class="card-img-top-tg mx-auto img-fluid">
                         <a>
                             <div class="mask waves-effect waves-light rgba-white-slight" onclick = "upholsteryCollapse();"></div>
                         </a>
@@ -1589,7 +1572,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">ОБИВОЧНЫЕ ТКАНИ</h3>
-                    <p class="txt-sub-cm">Для всех типов мягкой мебели / дополнительные чехлы и подушки для диванов и кресел / текстильные изголовья / комплекты мягкой мебели для веранд и патио</p>
+                    <p class="txt-sub-cm">Для всех типов мягкой мебели /<br/>дополнительные чехлы и подушки для<br/>диванов и кресел / текстильные<br/>изголовья / комплекты мягкой мебели<br/>для веранд и патио</p>
                     <!--Button-->
                     <div class="button-wrapper">
                         <button type="button" id = "button-upholstery" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "upholsteryCollapse();" aria-expanded="false" aria-controls="collapseUpholstery" data-element="#bind-button-upholstery">Подробнее</button>
@@ -1618,13 +1601,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <div class="row">
                                 <div class="col-12 col-md-5">
 								
-								<div class="fotorama" data-nav="thumbs">
-									
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(1).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(2).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(3).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(4).jpg" >
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(5).jpg" >
+								<div class="fotorama" data-nav="thumbs">									
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(1).jpg" ></a>
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(2).jpg" ></a>
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(3).jpg" ></a>
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(4).jpg" ></a>
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(5).jpg" ></a>
 											
 								</div>	
 								
@@ -1669,7 +1651,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 <!--Card image-->
                 <div class="view overlay">
-                    <img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-4.jpg" alt="b2b" class="card-img-top-tg mx-auto img-fluid">
+                    <img class = "lazyload" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-4.jpg" alt="b2b" class="card-img-top-tg mx-auto img-fluid">
                         <a>
                             <div class="mask waves-effect waves-light rgba-white-slight" onclick = "b2bCollapse();"></div>
                         </a>
@@ -1679,7 +1661,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="card-body">
                     <!--Title-->
                     <h3 class="card-title service-title py-3">B2B</h3>
-                    <p class="txt-sub-cm">Архитекторам и дизайнерам / профессионалам в области гостиничного и ресторанного бизнеса / текстиль для отелей и ресторанов / программа лояльности</p>
+                    <p class="txt-sub-cm">Архитекторам и дизайнерам /<br/>профессионалам в области гостиничного<br/>и ресторанного бизнеса / текстиль для<br/>отелей и ресторанов / программа<br/>лояльности</p>
                     <!--Button-->
                     <div class="button-wrapper" style = "margin-top:0.5rem">
                         <button type="button" id = "button-b2b" class="btn btn-outline-bronze-cm mt-4 show-bind-button" data-toggle="collapse" onclick = "b2bCollapse();" aria-expanded="false" aria-controls="collapseB2b" data-element="#bind-button-b2b">Подробнее</button>
@@ -1708,11 +1690,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <div class="col-12 col-md-5">
                                
 									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-2.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-1.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-3.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-4.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-5.jpg" >			
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-2.jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-1.jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-3.jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-4.jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-5.jpg" >	</a>		
 									</div>	
 
                                     <div class="text-center mx-auto">
@@ -1770,24 +1752,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									</div>
 									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-1.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-1.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-1.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-2.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-3.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-3.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-3.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-4.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-4.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-4.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-5.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-5.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/inhouse-5.jpg" />
 										</div>										
 									</div>
 									<!-- Thumbnail Navigator -->
@@ -1814,8 +1791,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
 										</svg>
 									</div>
-								</div>
-								<script type="text/javascript">jssor_4_slider_init();</script>	
+								</div>								
 								</div>
 								</div>
 								<div class = "row pt-4">
@@ -1870,24 +1846,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									</div>
 									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(1).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(1).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(1).jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(2).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(2).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(2).jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(3).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(3).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(3).jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(4).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(4).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(4).jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(5).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(5).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(5).jpg" />
 										</div>										
 									</div>
 									<!-- Thumbnail Navigator -->
@@ -1914,8 +1885,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
 										</svg>
 									</div>
-								</div>
-								<script type="text/javascript">jssor_5_slider_init();</script>	
+								</div>								
 								</div>
 								</div>
 								<div class = "row pt-4">
@@ -1973,24 +1943,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									</div>
 									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(1).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(1).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-2.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(2).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(2).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-1.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(3).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(3).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-3.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(4).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(4).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-4.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(5).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/upholstery%20(5).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/b2b-5.jpg" />
 										</div>										
 									</div>
 									<!-- Thumbnail Navigator -->
@@ -2018,7 +1983,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										</svg>
 									</div>
 								</div>
-								<script type="text/javascript">jssor_6_slider_init();</script>	
 								</div>
 								</div>
 								<div class = "row pt-4">
@@ -2094,7 +2058,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 <!--Card image-->
                 <div class="view overlay">
-                    <img src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics.jpg" alt="Fabrics" class="card-img-top-tg mx-auto img-fluid">
+                    <img class = "lazyload" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics.jpg" alt="Fabrics" class="card-img-top-tg mx-auto img-fluid">
                         <a>
                             <div class="mask waves-effect waves-light rgba-white-slight" onclick = "fabricsCollapse();"></div>
                         </a>
@@ -2141,19 +2105,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							
 								<div class="fotorama" data-nav="thumbs">
 									
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(6).jpg" >
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(6).jpg" ></a>
 										
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(1).jpg" >
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(1).jpg" ></a>
 										
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(2).jpg" >
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(2).jpg" ></a>
 										
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(5).jpg" >
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(5).jpg" ></a>
 										
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(7).jpg" >
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(7).jpg" ></a>
 										
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(8).jpg" >
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(8).jpg" ></a>
 										
-											<img src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(9).jpg" >
+											<a href="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(9).jpg" ></a>
 								</div>	
 									
 								
@@ -2202,7 +2166,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 <!--Card image-->
                 <div class="view overlay">
-                    <img src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware-vertical.jpg" alt="hardware" class="card-img-top-tg mx-auto img-fluid">
+                    <img class = "lazyload" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware-vertical.jpg" alt="hardware" class="card-img-top-tg mx-auto img-fluid">
                         <a>
                             <div class="mask waves-effect waves-light rgba-white-slight" onclick = "hardwareCollapse();"></div>
                         </a>
@@ -2241,9 +2205,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <div class="col-12 col-md-5">
                                
 									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(1).jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(3).jpg" >
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/hardware.jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(1).jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(3).jpg" ></a>
 									</div>
 
                                     <div class="text-center mx-auto">
@@ -2289,7 +2253,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 <!--Card image-->
                 <div class="view overlay">
-                    <img src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-3.jpg" alt="Accessories" class="card-img-top-tg mx-auto img-fluid">
+                    <img class = "lazyload" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-3.jpg" alt="Accessories" class="card-img-top-tg mx-auto img-fluid">
                         <a>
                             <div class="mask waves-effect waves-light rgba-white-slight" onclick = "accessoriesCollapse();"></div>
                         </a>
@@ -2329,10 +2293,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <div class="col-12 col-md-5">
 								
 									<div class="fotorama" data-nav="thumbs">
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-1.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-2.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-3.jpg" >
-												<img src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-4.jpg" >
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-1.jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-2.jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-3.jpg" ></a>
+												<a href="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-4.jpg" ></a>
 									</div>	
 
                                     <div class="text-center mx-auto">
@@ -2395,32 +2359,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									</div>
 									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(6).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(6).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(6).jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(1).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(1).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(1).jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(2).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(2).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(2).jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(5).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(5).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(5).jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(7).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(7).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(7).jpg" />
 										</div>		
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(8).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(8).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(8).jpg" />
 										</div>	
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(9).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(9).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/fabrics%20(9).jpg" />
 										</div>											
 									</div>
 									<!-- Thumbnail Navigator -->
@@ -2447,8 +2404,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 											<line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
 										</svg>
 									</div>
-								</div>
-								<script type="text/javascript">jssor_7_slider_init();</script>	
+								</div>								
 								</div>
 							</div>
 
@@ -2507,16 +2463,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									</div>
 									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/hardware.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(1).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(1).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(1).jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(3).jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(3).jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/hardware%20(3).jpg" />
 										</div>											
 									</div>
 									<!-- Thumbnail Navigator -->
@@ -2544,7 +2497,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										</svg>
 									</div>
 								</div>
-								<script type="text/javascript">jssor_8_slider_init();</script>	
 								</div>
 							</div>
 
@@ -2602,20 +2554,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 									</div>
 									<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0;width:720px;height:480px;overflow:hidden;background-color:#000">
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-1.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-1.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-1.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-2.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-2.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-2.jpg" />
 										</div>
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-3.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-3.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-3.jpg" />
 										</div>											
 										<div data-p="150.00">
-											<img data-u="image" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-4.jpg" />
-											<img data-u="thumb" src="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-4.jpg" />
+											<img data-u="image" data-src2="https://media.togas.com/media/couture/img/img-togas-lp3/accessories-new-4.jpg" />
 										</div>																					
 									</div>
 									<!-- Thumbnail Navigator -->
@@ -2643,7 +2591,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										</svg>
 									</div>
 								</div>
-								<script type="text/javascript">jssor_9_slider_init();</script>	
 								</div>
 							</div>
 
@@ -2727,7 +2674,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div class="row">
             <div class="col-12">
-                <img src="https://media.togas.com/media/couture/img/img-togas-lp3/vendors-1200-rus.jpg" class="img-fluid" alt="Our selected vendors" width="">
+                <img class = "lazyload" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/vendors-1200-rus.jpg" class="img-fluid" alt="Our selected vendors" width="">
             </div>
         </div>
 
@@ -2763,7 +2710,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!--Card image-->
         <div class="expert-item text-center">
             <div class="view overlay">
-                <img src="https://media.togas.com/media/couture/img/img-togas-lp3/experts%20(5).jpg" alt="Anna Zezyulya" class="card-img-top-tg img-fluid rounded-circle">
+                <img class = "lazyload card-img-top-tg img-fluid rounded-circle" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/experts%20(5).jpg" alt="Anna Zezyulya">
                 <a>
                     <div class="mask flex-center rgba-stylish-slight rounded-circle">
                         <p class="white-text">Анна<br>Зезюля</p>
@@ -2785,7 +2732,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!--Card image-->
         <div class="expert-item text-center">
             <div class="view overlay">
-                <img src="https://media.togas.com/media/couture/img/img-togas-lp3/experts (3).jpg" alt="Victoria Ivanova" class="card-img-top-tg img-fluid rounded-circle">
+                <img class = "lazyload card-img-top-tg img-fluid rounded-circle" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/experts (3).jpg" alt="Victoria Ivanova">
                 <a>
                     <div class="mask flex-center rgba-stylish-slight rounded-circle">
                         <p class="white-text">Виктория<br>Иванова</p>
@@ -2807,7 +2754,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!--Card image-->
         <div class="expert-item text-center">
             <div class="view overlay">
-                <img src="https://media.togas.com/media/couture/img/img-togas-lp3/experts (4).jpg" alt="Anna Korobko" class="card-img-top-tg img-fluid rounded-circle">
+                <img class="lazyload card-img-top-tg img-fluid rounded-circle" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/experts (4).jpg" alt="Anna Korobko">
                 <a>
                     <div class="mask flex-center rgba-stylish-slight rounded-circle">
                         <p class="white-text">Анна<br>Коробко</p>
@@ -2829,7 +2776,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!--Card image-->
         <div class="expert-item text-center">
             <div class="view overlay">
-                <img src="https://media.togas.com/media/couture/img/img-togas-lp3/experts (2).jpg" alt="Lilia Khayrova" class="card-img-top-tg img-fluid rounded-circle">
+                <img class="lazyload card-img-top-tg img-fluid rounded-circle" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/experts (2).jpg" alt="Lilia Khayrova">
                 <a>
                     <div class="mask flex-center rgba-stylish-slight rounded-circle">
                         <p class="white-text">Лилия<br>Хайрова</p>
@@ -2870,11 +2817,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<!-- Container -->
 				<div class="container-videos">
 					<div class="row d-flex justify-content-center"> 
-						<div id = "videos-slider" class="owl-carousel owl-theme owl-loaded owl-drag">
+						<div id = "videos-slider" class="owl-carousel owl-theme">
 							<a data-toggle="modal" data-target="#modalShot1" href="#">
 							<div class="video-slide" >
 								<div class = "video-screenshot">
-									<img src = "https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/1.jpg" />						
+									<img class = "lazyload" data-src = "https://media.togas.com/media/couture/img/img-togas-lp3/tv/1/1.jpg" />						
 								</div>
 								<p style = "line-height:1rem"><span class="subscript-name">Идеальный ремонт<br/>Выпуск 26.05.2018</span></p>
 							</div>
@@ -2883,7 +2830,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<a data-toggle="modal" data-target="#modalShot2" href="#">
 							<div class="video-slide">
 								<div class = "video-screenshot"  style = "border-radius:5px; padding: 5px; margin: 20px; border: 2px solid #a58650;">
-									<img src = "https://media.togas.com/media/couture/img/img-togas-lp3/tv/2/2.jpg" />								
+									<img class = "lazyload" data-src = "https://media.togas.com/media/couture/img/img-togas-lp3/tv/2/2.jpg" />								
 								</div>
 								<p style = "line-height:1rem"><span class="subscript-name">Идеальный ремонт<br/>Выпуск 30.09.2017</span></p>
 							</div>
@@ -2892,7 +2839,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<a data-toggle="modal" data-target="#modalShot3" href="#">
 							<div class="video-slide">
 								<div class = "video-screenshot"  style = "border-radius:5px; padding: 5px; margin: 20px; border: 2px solid #a58650;">
-									<img src = "https://media.togas.com/media/couture/img/img-togas-lp3/tv/3/6.jpg" />										
+									<img class = "lazyload" data-src = "https://media.togas.com/media/couture/img/img-togas-lp3/tv/3/6.jpg" />										
 								</div>
 								<p style = "line-height:1rem"><span class="subscript-name">Идеальный ремонт<br/>Выпуск 19.08.2017</span></p>
 							</div>
@@ -2901,7 +2848,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<a data-toggle="modal" data-target="#modalShot4" href="#">
 							<div class="video-slide">
 								<div class = "video-screenshot"  style = "border-radius:5px; padding: 5px; margin: 20px; border: 2px solid #a58650;">
-									<img src = "https://media.togas.com/media/couture/img/img-togas-lp3/tv/4/2.jpg" />								
+									<img class = "lazyload" data-src = "https://media.togas.com/media/couture/img/img-togas-lp3/tv/4/2.jpg" />								
 								</div>
 								<p style = "line-height:1rem"><span class="subscript-name">Идеальный ремонт<br/>Выпуск 02.09.2017</span></p>
 							</div>
@@ -2909,7 +2856,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<a data-toggle="modal" data-target="#modalShot5" href="#">
 							<div class="video-slide">
 								<div class = "video-screenshot"  style = "border-radius:5px; padding: 5px; margin: 20px; border: 2px solid #a58650;">
-									<img src = "https://media.togas.com/media/couture/img/img-togas-lp3/tv/5/3.jpg" />								
+									<img class = "lazyload" data-src = "https://media.togas.com/media/couture/img/img-togas-lp3/tv/5/3.jpg" />								
 								</div>
 								<p style = "line-height:1rem"><span class="subscript-name">Идеальный ремонт<br/>Выпуск 08.10.2016</span></p>
 							</div>
@@ -2917,7 +2864,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<a data-toggle="modal" data-target="#modalShot6" href="#">
 							<div class="video-slide">
 								<div class = "video-screenshot"  style = "border-radius:5px; padding: 5px; margin: 20px; border: 2px solid #a58650;">
-									<img src = "https://media.togas.com/media/couture/img/img-togas-lp3/video-6.jpg" />								
+									<img class = "lazyload" data-src = "https://media.togas.com/media/couture/img/img-togas-lp3/video-6.jpg" />								
 								</div>
 								<p style = "line-height:1rem"><span class="subscript-name">Идеальный ремонт<br/>Выпуск 17.06.2017</span></p>
 							</div>
@@ -2925,7 +2872,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<a data-toggle="modal" data-target="#modalShot7" href="#">
 							<div class="video-slide">
 								<div class = "video-screenshot"  style = "border-radius:5px; padding: 5px; margin: 20px; border: 2px solid #a58650;">
-									<img src = "https://media.togas.com/media/couture/img/img-togas-lp3/video-7.jpg" />								
+									<img class = "lazyload" data-src = "https://media.togas.com/media/couture/img/img-togas-lp3/video-7.jpg" />								
 								</div>
 								<p style = "line-height:1rem"><span class="subscript-name">Идеальный ремонт<br/>Выпуск 10.03.2018</span></p>
 							</div>
@@ -3252,7 +3199,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <!-- /col -->
 
                 <div class="col-12 col-lg-6 justify-content-sm-center my-4 py-md-0">
-                    <img src="https://media.togas.com/media/couture/img/img-togas-lp3/history.jpg" alt="History of Togas" class="img-fluid hoverable">
+                    <img class = "lazyload" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/history.jpg" alt="History of Togas" class="img-fluid hoverable">
                 </div>
                 
             </div>
@@ -3275,7 +3222,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="row mt-3">
                     <div class="col-sm-12 mt-3">
                     <h2 class="subscript-center">
-                        <img src="https://media.togas.com/media/couture/img/img-togas-lp3/line-02-left-08.svg" alt="" class="decor-line d-none d-sm-inline-block">
+                        <img class="lazyload decor-line d-none d-sm-inline-block" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/line-02-left-08.svg" alt="">
                         <span class="px-2">Изысканность и утонченный вкус</span>
                       <img src="https://media.togas.com/media/couture/img/img-togas-lp3/line-02-right-09.svg" alt="" class="decor-line d-none d-sm-inline-block">
                         </h2>      
@@ -3285,7 +3232,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="row row-margin d-flex justify-content-center">
                     <div class="col-10 col-sm-6 col-md-4">
                       <div class="mb-5 mt-5 text-center view overlay">
-                        <img class="card-img-top-tg mx-auto" src="https://media.togas.com/media/couture/img/img-togas-lp3/bed-01.jpg" alt="Bedding">
+                        <img class="lazyload card-img-top-tg mx-auto" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/bed-01.jpg" alt="Bedding">
                             <a href="https://www.togas.com/ru/postelnoe-belyo/" target="_blank">
                                 <div class="mask waves-effect waves-light rgba-white-slight"></div>
                             </a>
@@ -3299,7 +3246,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                     <div class="col-10 col-sm-6 col-md-4">
                       <div class="mb-5 mt-5 text-center view overlay">
-                        <img class="card-img-top-tg mx-auto" src="https://media.togas.com/media/couture/img/img-togas-lp3/bed-02.jpg" alt="Duvets">
+                        <img class="lazyload card-img-top-tg mx-auto" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/bed-02.jpg" alt="Duvets">
                             <a href="https://www.togas.com/ru/odeyala/" target="_blank">
                                 <div class="mask waves-effect waves-light rgba-white-slight"></div>
                             </a>
@@ -3313,7 +3260,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                     <div class="col-10 col-sm-6 col-md-4">
                       <div class="my-5 text-center view overlay">
-                        <img class="card-img-top-tg mx-auto" src="https://media.togas.com/media/couture/img/img-togas-lp3/bed-03.jpg" alt="Pillows">
+                        <img class="lazyload card-img-top-tg mx-auto" data-src="https://media.togas.com/media/couture/img/img-togas-lp3/bed-03.jpg" alt="Pillows">
                             <a href="https://www.togas.com/ru/podushki/" target="_blank">
                                 <div class="mask waves-effect waves-light rgba-white-slight"></div>
                             </a>
@@ -3360,7 +3307,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- SCRIPTS -->
  <!-- JQuery -->
 <script type="text/javascript" src="https://media.togas.com/media/couture/js/jquery-3.2.1.min.js"></script>
-
+ <!-- Lazy loading -->
+<script type="text/javascript" src="https://media.togas.com/media/couture/js/lazyload.js"></script>
+<script type = "text/javascript">lazyload();</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 
 <!-- Owl carousel -->
@@ -3398,7 +3347,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       $('body, html').animate({
         scrollTop: 0
       }, delay);
-    });
+    });	
   });
 </script>
 
@@ -3506,8 +3455,10 @@ $("#carousel-thumb .left").click(function(){
 $(document).ready(function(){
   $("#videos-slider").owlCarousel({
   nav : true,
+  loop: true,
+  dots: true,
   pagination : true,
-  responsive:{ //Адаптация в зависимости от разрешения экрана
+  responsive:{ 
 			0:{
 				items:1
 			},
@@ -3644,10 +3595,11 @@ function fabricsCollapse()
 	/*$('.bind-button').hide();		
 	$('.show-bind-button:not(#button-fabrics)').html('Discover');		
 	if ($('#button-fabrics').text() == 'Discover') $('#button-fabrics').html('<svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="23" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg>'); else $('#button-fabrics').html('Discover');*/
+	try {jssor_7_slider_init();} catch(e) {}	
 	$('.collapse').css("transition", "none");
 	$('.collapse:not(#collapseDesktopFabrics,#collapseMobileFabrics)').collapse('hide');	
 	$('.collapse').css("transition", "height 0.35s ease");	
-    
+	
 	if ($(window).width() > 992 )
 	{	
 		if ($('#collapseDesktopFabrics').is(":visible")) 
@@ -3681,7 +3633,7 @@ function fabricsCollapse()
 				scrollTop: $('#collapseMobileFabrics').offset().top
 			},500);		
 		}
-	}
+	}	
 } 
 
 function bedcoversCollapse()
@@ -3689,6 +3641,7 @@ function bedcoversCollapse()
 	/*$('.bind-button').hide();		
 	$('.show-bind-button:not(#button-shades)').html('Discover');		
 	if ($('#button-shades').text() == 'Discover') $('#button-shades').html('<svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg>'); else $('#button-shades').html('Discover');*/
+	try {jssor_2_slider_init();} catch(e) {}
 	$('.collapse').css("transition", "none");
 	$('.collapse:not(#collapseDesktopBedcovers,#collapseMobileBedcovers)').collapse('hide');	
 	$('.collapse').css("transition", "height 0.35s ease");	
@@ -3726,8 +3679,7 @@ function bedcoversCollapse()
 				scrollTop: $('#collapseMobileBedcovers').offset().top
 			},500);		
 		}
-	}
-
+	}	
 } 
 
 function upholsteryCollapse()
@@ -3735,6 +3687,7 @@ function upholsteryCollapse()
 	/*$('.bind-button').hide();		
 	$('.show-bind-button:not(#button-upholstery)').html('Discover');		
 	if ($('#button-upholstery').text() == 'Discover') $('#button-upholstery').html('<svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg>'); else $('#button-upholstery').html('Discover');*/
+	try {jssor_5_slider_init();} catch(e) {}
 	$('.collapse').css("transition", "none");
 	$('.collapse:not(#collapseDesktopUpholstery,#collapseMobileUpholstery)').collapse('hide');	
 	$('.collapse').css("transition", "height 0.35s ease");	
@@ -3771,7 +3724,7 @@ function upholsteryCollapse()
 				scrollTop: $('#collapseMobileUpholstery').offset().top
 			},500);		
 		}
-	}
+	}	
 } 
 
 function drapsCollapse()
@@ -3779,6 +3732,7 @@ function drapsCollapse()
 	/*$('.bind-button').hide();		
 	$('.show-bind-button:not(#button-draps)').html('Discover');		
 	if ($('#button-draps').text() == 'Discover') $('#button-draps').html('<svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg>'); else $('#button-draps').html('Discover');*/
+	try {jssor_1_slider_init();} catch(e) {} 	
 	$('.collapse').css("transition", "none");
 	$('.collapse:not(#collapseDesktopDraps,#collapseMobileDraps)').collapse('hide');	
 	$('.collapse').css("transition", "height 0.35s ease");	
@@ -3815,7 +3769,7 @@ function drapsCollapse()
 				scrollTop: $('#collapseMobileDraps').offset().top
 			},500);		
 		}
-	}
+	}	
 } 
 
 function headboardsCollapse()
@@ -3823,6 +3777,7 @@ function headboardsCollapse()
 	/*$('.bind-button').hide();		
 	$('.show-bind-button:not(#button-headboards)').html('Discover');		
 	if ($('#button-headboards').text() == 'Discover') $('#button-headboards').html('<svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg>'); else $('#button-headboards').html('Discover');*/
+	try {jssor_3_slider_init();} catch(e) {}
 	$('.collapse').css("transition", "none");
 	$('.collapse:not(#collapseDesktopHeadboards,#collapseMobileHeadboards)').collapse('hide');	
 	$('.collapse').css("transition", "height 0.35s ease");	
@@ -3866,6 +3821,7 @@ function b2bCollapse()
 	/*$('.bind-button').hide();		
 	$('.show-bind-button:not(#button-headboards)').html('Discover');		
 	if ($('#button-headboards').text() == 'Discover') $('#button-headboards').html('<svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg>'); else $('#button-headboards').html('Discover');*/
+	try {jssor_6_slider_init();} catch(e) {}
 	$('.collapse').css("transition", "none");
 	$('.collapse:not(#collapseDesktopB2b,#collapseMobileB2b)').collapse('hide');	
 	$('.collapse').css("transition", "height 0.35s ease");	
@@ -3909,6 +3865,7 @@ function inHouseDesignersCollapse()
 	/*$('.bind-button').hide();		
 	$('.show-bind-button:not(#button-headboards)').html('Discover');		
 	if ($('#button-headboards').text() == 'Discover') $('#button-headboards').html('<svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg>'); else $('#button-headboards').html('Discover');*/
+	try {jssor_4_slider_init();} catch(e) {}
 	$('.collapse').css("transition", "none");
 	$('.collapse:not(#collapseDesktopInHouseDesigners,#collapseMobileInHouseDesigners)').collapse('hide');	
 	$('.collapse').css("transition", "height 0.35s ease");	
@@ -3946,12 +3903,14 @@ function inHouseDesignersCollapse()
 			},500);		
 		}
 	}
-} 
+}
+ 
 function hardwareCollapse()
 {
 	/*$('.bind-button').hide();		
 	$('.show-bind-button:not(#button-accessories)').html('Discover');		
 	if ($('#button-accessories').text() == 'Discover') $('#button-accessories').html('<svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg>'); else $('#button-accessories').html('Discover');*/
+	try {jssor_8_slider_init();} catch(e) {}
 	$('.collapse').css("transition", "none");
 	$('.collapse:not(#collapseDesktopHardware,#collapseMobileHardware)').collapse('hide');	
 	$('.collapse').css("transition", "height 0.35s ease");	
@@ -3989,12 +3948,14 @@ function hardwareCollapse()
 			},500);		
 		}
 	}
-} 
+}
+ 
 function accessoriesCollapse()
 {
 	/*$('.bind-button').hide();		
 	$('.show-bind-button:not(#button-accessories)').html('Discover');		
 	if ($('#button-accessories').text() == 'Discover') $('#button-accessories').html('<svg id="i-close" style = "margin-bottom:-8px;vertical-align:top;" viewBox="0 0 32 42" width="62" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 30 L30 2 M30 30 L2 2" /></svg>'); else $('#button-accessories').html('Discover');*/
+	try {jssor_9_slider_init();} catch(e) {}
 	$('.collapse').css("transition", "none");
 	$('.collapse:not(#collapseDesktopAccessories,#collapseMobileAccessories)').collapse('hide');	
 	$('.collapse').css("transition", "height 0.35s ease");	
@@ -4031,7 +3992,7 @@ function accessoriesCollapse()
 				scrollTop: $('#collapseMobileAccessories').offset().top
 			},500);		
 		}
-	}
+	}	
 } 
 </script>
 
